@@ -37,7 +37,7 @@ const discovrApp = angular.module('DiscovrIndex', [
          $stateProvider
             .state('Welcome', {
               url: '/welcome',
-              templateUrl: 'modules/welcome/index.view.html',
+              templateUrl: 'modules/welcome/Index.View.html',
               controller: 'Login.IndexController',
               controllerAs: 'vm'
             })

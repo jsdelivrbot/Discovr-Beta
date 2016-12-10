@@ -49,6 +49,9 @@ hr.separator {
 }
 /*------------- FIN LINEA PARA SEPARAR TEXTO ----------*/
 /*------------- ESTILO PARA INPUTS & SELECT GENERAL ----------*/
+.bold {
+    font-weight: bold;
+}
 .input-group {
   position: relative;
   width: 100%;
@@ -111,14 +114,24 @@ hr.separator {
   transition: all .5s;
   border-radius: 0px;
   padding: 0px;
-  padding-bottom: 10px;
 }
 #modal-body div img {
     height: 296px;
 }
+#modal-body .tab-container {
+    height: 410px;
+    max-width: 100%;
+}
+#modal-body .tab-container .tab{
+    width: 50%;
+}
+#modal-body .tab-container .tab-content-container .tab-content{
+    background-color: rgba(0, 0, 0, 0.9);
+    height: 410px;
+}
 .modal-body .ModalContent {
     border-bottom: 0px;
-    padding: 10px;
+    padding: 10px;    
 }
 .modal-body .ModalContent p {
   margin-left: 5%;;
@@ -170,9 +183,11 @@ hr.separator {
 }
 .cardContent{
     padding: 5px 5px 3px 15px;
+    padding-left: 15px;
 }
 .cardHeader {
-    font-size: 0.9em;    
+    font-size: 0.9em;
+    margin-left: 15px;    
 }
 .roomCard {
     background-color: #fff;
@@ -183,7 +198,7 @@ hr.separator {
     display: inline-block;
 }
 .tagList{
-    margin-top: 15px;
+    margin-top: 5px;
     display: table;
 }
 .imgSection {
@@ -192,8 +207,7 @@ hr.separator {
     height: 100%;
 }
 .bodyCard {
-    height: 100%;
-    float:right;
+    height: 100%;    
 }
 .barRoomSelected {
   margin-top: 10px;
@@ -236,56 +250,6 @@ hr.separator {
 .ModalContent ul li {
     display: inline-block;
     margin-left: 5%;
-}
-/* ESTILOS PARA EL MODELO RESPONSITIVE */
-@media only screen and (max-width: 767px) {
-	
-}
-/*-----------NG ANIMATE---------------------------*/
-.view-animate-container {
-    position: relative;
-    /*height: 100px!important;*/
-    background: #f5f5f5;
-    height: 100vh;
-}
-.view-animate {}
-
-.view-animate.ng-leave { z-index:9999; }
-.view-animate.ng-enter{ z-index:8888; }
-
-.view-animate.ng-enter,
-.view-animate.ng-leave {
-  transition: all cubic-bezier(0.250, 0.460, 0.450, 0.940) 1.5s;
-  /*-webkit-animation:scaleUp 0.5s both ease-in;
-  -moz-animation:scaleUp 0.5s both ease-in;
-  animation:scaleUp 0.5s both ease-in;*/
-  display: block;
-  width: 100%;
-  position: absolute;
-  top: 0;
-  left: 0;
-  right: 0;
-  bottom: 0;
-}
-.view-animate.ng-enter {
-    left: 100%;
-}
-.view-animate.ng-enter.ng-enter-active {
-    left: 0;
-}
-.view-animate.ng-leave.ng-leave-active {
-    left: -100%;
-}
-
-/* scale up */
-@keyframes scaleUp {
-	from 		{ opacity: 0.3; transform: scale(0.8); }
-}
-@-moz-keyframes scaleUp {
-	from 		{ opacity: 0.3; -moz-transform: scale(0.8); }
-}
-@-webkit-keyframes scaleUp {
-	from 		{ opacity: 0.3; -webkit-transform: scale(0.8); }
 }
 
 /* slide in from the right */
@@ -348,44 +312,7 @@ hr.separator {
   color: #FFE111;
 }
 /*-----------------------  Card Style    -----------------------*/
-/* checkbox */
-input[type=checkbox].css-checkbox {
-	position:absolute; 
-    z-index:-1000; 
-    left:-1000px; 
-    overflow: 
-    hidden;
-    clip: rect(0 0 0 0); 
-    height:1px; 
-    width:1px; 
-    margin:-1px;     
-    padding:0; 
-    border:0;
-}
-input[type=checkbox].css-checkbox + label.css-label {
-	padding-left:23px;
-	height:18px; 
-	display:inline-block;
-	line-height:18px;
-	background-repeat:no-repeat;
-	background-position: 0 0;
-	font-size:14px;
-	vertical-align:middle;
-	cursor:pointer;
-    margin-left: 15px;
-}
-input[type=checkbox].css-checkbox:checked + label.css-label {
-	background-position: 0 -18px;
-}
-label.css-label {
-	background-image:url(http://csscheckbox.com/checkboxes/u/csscheckbox_001aa7bf6327f8fac80e0eb160776ef4.png);
-	-webkit-touch-callout: none;
-	-webkit-user-select: none;
-	-khtml-user-select: none;
-	-moz-user-select: none;
-	-ms-user-select: none;
-	user-select: none;
-}
+
 /*-------------TAB CONTAINER---------------*/
 .tab-container {
   list-style-type: none;
@@ -429,7 +356,7 @@ label.css-label {
   line-height: 22px;
   background: #fff;
   position: absolute;
-  top: 42px;
+  top: 42px;  
   width: 100%;  
   border-top: 0;
   box-shadow: 0 2px 2px 0 rgba(0,0,0,.14),0 3px 1px -2px rgba(0,0,0,.2),0 1px 5px 0 rgba(0,0,0,.12);
@@ -499,4 +426,94 @@ label.css-label {
   transform: translateY(0);
   -webkit-transition: all .5s ease-out .4s;
   transition: all .5s ease-out .4s;
+}
+/*-------------   Input Radio   ----------------*/
+.radio {
+  margin: 0.5rem;
+}
+.radio input[type="radio"] {
+  opacity: 0;
+  position: absolute;
+}
+.radio input[type="radio"] + .radio-label:before {
+  content: '';
+  background: #f4f4f4;
+  border-radius: 100%;
+  border: 1px solid #b4b4b4;
+  display: inline-block;
+  width: 1.4em;
+  height: 1.4em;
+  margin-right: 1em;
+  vertical-align: bottom;
+  cursor: pointer;
+  text-align: center;
+  -webkit-transition: all 250ms ease;
+  transition: all 250ms ease;
+}
+.radio input[type="radio"]:checked + .radio-label:before {
+  background-color: #3197EE;
+  box-shadow: inset 0 0 0 4px #f4f4f4;
+}
+.radio input[type="radio"]:focus + .radio-label:before {
+  outline: none;
+  border-color: #3197EE;
+}
+.radio input[type="radio"]:disabled + .radio-label:before {
+  box-shadow: inset 0 0 0 4px #f4f4f4;
+  border-color: #b4b4b4;
+  background: #b4b4b4;
+}
+.radio input[type="radio"] + .radio-label:empty:before {
+  margin-right: 0;
+}
+/*-------------     ----------------*/
+/* ESTILOS PARA EL MODELO RESPONSITIVE */
+@media only screen and (max-width: 767px) {
+	
+}
+/*-----------NG ANIMATE---------------------------*/
+.view-animate-container {
+    position: relative;
+    /*height: 100px!important;*/
+    background: #f5f5f5;
+    height: 100vh;
+}
+.view-animate {}
+
+.view-animate.ng-leave { z-index:9999; }
+.view-animate.ng-enter{ z-index:8888; }
+
+.view-animate.ng-enter,
+.view-animate.ng-leave {
+  transition: all cubic-bezier(0.250, 0.460, 0.450, 0.940) 1.5s;
+  /*-webkit-animation:scaleUp 0.5s both ease-in;
+  -moz-animation:scaleUp 0.5s both ease-in;
+  animation:scaleUp 0.5s both ease-in;*/
+  display: block;
+  width: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+}
+.view-animate.ng-enter {
+    left: 100%;
+}
+.view-animate.ng-enter.ng-enter-active {
+    left: 0;
+}
+.view-animate.ng-leave.ng-leave-active {
+    left: -100%;
+}
+
+/* scale up */
+@keyframes scaleUp {
+	from 		{ opacity: 0.3; transform: scale(0.8); }
+}
+@-moz-keyframes scaleUp {
+	from 		{ opacity: 0.3; -moz-transform: scale(0.8); }
+}
+@-webkit-keyframes scaleUp {
+	from 		{ opacity: 0.3; -webkit-transform: scale(0.8); }
 }

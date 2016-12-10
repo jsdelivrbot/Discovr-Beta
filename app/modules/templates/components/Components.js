@@ -70,10 +70,13 @@ discovrApp.component('navBar', {
         },
     controller: function($uibModal) {
         var $ctrl = this;
+        $ctrl.isNavCollapsed = true;
+        $ctrl.isCollapsed = false;
+        $ctrl.isCollapsedHorizontal = false;
         
         $ctrl.open = function() {
             $uibModal.open({                
-                template: '<modal-'+$ctrl.modal+' modal-data="$ctrl.modalData" $close="$close(result)" $dismiss="$dismiss(reason)"></modal-'+$ctrl.modal+'>',
+                template: '<modal-itinerary modal-data="$ctrl.modalData" $close="$close(result)" $dismiss="$dismiss(reason)"></modal-itinerary>',
                 controller: ['modalData', function(modalData) {
                     var $ctrl = this;
                     $ctrl.modalData = modalData;

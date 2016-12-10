@@ -43,9 +43,7 @@ discovrApp.controller('Home.IndexController', function(
         $translate.use('home/languages/' + opt);
     };
 
-    $scope.isNavCollapsed = true;
-    $scope.isCollapsed = false;
-    $scope.isCollapsedHorizontal = false;
+   
 
     $scope.myInterval = 10000;
     $scope.noWrapSlides = false;

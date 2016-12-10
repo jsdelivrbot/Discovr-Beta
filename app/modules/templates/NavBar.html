@@ -16,12 +16,12 @@
                 <span class="icon-bar"></span>
                 <span class="icon-bar"></span>
             </button>
-            <a class="navbar-brand" ui-sref="Home">{{ 'BrandTitle' | translate }}</a>
+            <a class="navbar-brand" ui-sref="Home">{{ 'BrandTitle' | translate }} | Home </a>
         </div>
         <!-- Collect the nav links, forms, and other content for toggling -->
         <div class="collapse navbar-collapse" uib-collapse="isNavCollapsed">
             <ul id="NavBarMenu" class="nav navbar-nav navbar-right">
-                <li >
+                <li>
                     <form id="demo-2" class="FloatRightMenu">
                         <input type="search" placeholder="Search">
                     </form>
@@ -42,15 +42,15 @@
                         <div class="NotificationList">
                             <div class="Notification">
                                 <div class="NotificationImage"><img src="http://www.ew.com/sites/default/files/i/2013/06/26/President-Obama_0.jpg" alt=""></div>
-                                <input type='checkbox' class="circle"></input>
+                                <input type="checkbox" class="circle"/>
                                 <p class="NotificationOwner">Nombre Notificación</p>
-                                <p id="NotificationDate">11/12/2015 07:28 a.m.</p>
+                                <p class="NotificationDate">11/12/2015 07:28 a.m.</p>
                             </div>
                             <div class="Notification">
                                 <div class="NotificationImage"><img src="http://www.ew.com/sites/default/files/i/2013/06/26/President-Obama_0.jpg" alt=""></div>
-                                <input type='checkbox' class="circle"></input>
+                                <input type="checkbox" class="circle"/>
                                 <p class="NotificationOwner">Nombre Notificación</p>
-                                <p id="NotificationDate">11/12/2015 07:28 a.m.</p>
+                                <p class="NotificationDate">11/12/2015 07:28 a.m.</p>
                             </div>
                         </div>
                       </div>
@@ -59,15 +59,15 @@
                         <div class="NotificationList">
                             <div class="Notification">
                                 <div class="NotificationImage"><img src="http://www.ew.com/sites/default/files/i/2013/06/26/President-Obama_0.jpg" alt=""></div>
-                                <input type='checkbox' class="circle"></input>
+                                <input type="checkbox" class="circle"/>
                                 <p class="NotificationOwner">Nombre Notificación</p>
-                                <p id="NotificationDate">11/12/2015 07:28 a.m.</p>
+                                <p class="NotificationDate">11/12/2015 07:28 a.m.</p>
                             </div>
                             <div class="Notification">
                                 <div class="NotificationImage"><img src="http://www.ew.com/sites/default/files/i/2013/06/26/President-Obama_0.jpg" alt=""></div>
-                                <input type='checkbox' class="circle"></input>
+                                <input type="checkbox" class="circle"/>
                                 <p class="NotificationOwner">Nombre Notificación</p>
-                                <p id="NotificationDate">11/12/2015 07:28 a.m.</p>
+                                <p class="NotificationDate">11/12/2015 07:28 a.m.</p>
                             </div>
                         </div>
                     </div>
@@ -76,15 +76,15 @@
                       <div class="NotificationList">
                           <div class="Notification">
                               <div class="NotificationImage"><img src="http://www.ew.com/sites/default/files/i/2013/06/26/President-Obama_0.jpg" alt=""></div>
-                              <input type='checkbox' class="circle"></input>
+                              <input type="checkbox" class="circle"/>
                               <p class="NotificationOwner">Nombre Notificación</p>
-                              <p id="NotificationDate">11/12/2015 07:28 a.m.</p>
+                              <p class="NotificationDate">11/12/2015 07:28 a.m.</p>
                           </div>
                           <div class="Notification">
                               <div class="NotificationImage"><img src="http://www.ew.com/sites/default/files/i/2013/06/26/President-Obama_0.jpg" alt=""></div>
-                              <input type='checkbox' class="circle"></input>
+                              <input type="checkbox" class="circle"/>
                               <p class="NotificationOwner">Nombre Notificación</p>
-                              <p id="NotificationDate">11/12/2015 07:28 a.m.</p>
+                              <p class="NotificationDate">11/12/2015 07:28 a.m.</p>
                           </div>
                       </div>
                     </div>
@@ -93,18 +93,19 @@
                       <div class="NotificationList">
                           <div class="Notification">
                               <div class="NotificationImage"><img src="http://www.ew.com/sites/default/files/i/2013/06/26/President-Obama_0.jpg" alt=""></div>
-                              <input type='checkbox' class="circle"></input>
+                              <input type="checkbox" class="circle"/>
                               <p class="NotificationOwner">Nombre Notificación</p>
-                              <p id="NotificationDate">11/12/2015 07:28 a.m.</p>
+                              <p class="NotificationDate">11/12/2015 07:28 a.m.</p>
                           </div>
                           <div class="Notification">
                               <div class="NotificationImage"><img src="http://www.ew.com/sites/default/files/i/2013/06/26/President-Obama_0.jpg" alt=""></div>
-                              <input type='checkbox' class="circle"></input>
+                              <input type="checkbox" class="circle"/>
                               <p class="NotificationOwner">Nombre Notificación</p>
-                              <p id="NotificationDate">11/12/2015 07:28 a.m.</p>
+                              <p class="NotificationDate">11/12/2015 07:28 a.m.</p>
                           </div>
                       </div>
                     </div>
+                  </div>
                   </div>
                 </li>
                 <li  tooltip-placement="bottom" uib-tooltip="{{ 'WelcomeTitle' | translate }} {{ vm.username }}" >
@@ -115,20 +116,22 @@
                     <a href="#"><i class="material-icons">event_note</i></a>
                 </li>
                 <li uib-dropdown>
-                    <a id="more" href="#" uib-dropdown-toggle>
+                    <a id="location" href="#" uib-dropdown-toggle>
                         <i class="material-icons">place</i>
                     </a>
-                    <ul class="dropdown-menu" uib-dropdown-menu role="menu" aria-labelledby="more" style="color:black">
-                        <li role="menuitem">
-                            <input type="checkbox" name="checkboxG1" id="checkboxG1" class="css-checkbox" />
-					        <label for="checkboxG1" class="css-label">Nicaragua</label>
+                    <ul class="dropdown-menu" uib-dropdown-menu role="menu" aria-labelledby="location" style="color:black">                    
+                        <li role="menuitem" class="radio">
+                            <input id="radio-1" name="rd" type="radio" checked>
+                            <label for="radio-1" class="radio-label">Nicaragua</label>
                         </li>
-                        <li role="menuitem"><input type="checkbox" name="checkboxG2" id="checkboxG2" class="css-checkbox" />
-					        <label for="checkboxG2" class="css-label">Hondura</label>
+                        <li role="menuitem" class="radio">
+                            <input id="radio-2" name="rd" type="radio">
+                            <label  for="radio-2" class="radio-label">Honduras</label>
                         </li>
-                        <li role="menuitem"><input type="checkbox" name="checkboxG3" id="checkboxG3" class="css-checkbox" />
-					        <label for="checkboxG3" class="css-label">Costa Rica</label>
-                        </li>
+                        <li role="menuitem" class="radio">
+                            <input id="radio-3" name="rd" type="radio">
+                            <label  for="radio-3" class="radio-label">Costa Rica</label>
+                        </li>                        
                         <li class="divider"></li>
                         <li role="menuitem"><a href="#" ng-click=""><i class="material-icons" style="vertical-align: middle;">add</i> Add Country </a></li>                        
                     </ul>

@@ -61,7 +61,7 @@ discovrApp.component('floatTile', {
   });
 /*-------------------------    Navbar    --------------------------------*/
 discovrApp.component('navBar', {
-    templateUrl:'modules/templates/components/Navbar.html',
+    templateUrl:'modules/templates/components/NavBar.html',
     bindings: {
             info: '<',
             modal: '<',

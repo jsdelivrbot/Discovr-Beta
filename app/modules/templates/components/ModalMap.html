@@ -1,7 +1,16 @@
 <div class="modal-body" id="modal-body">
     <div>
-        <iframe ng-src="{{ $ctrl.trustSrc($ctrl.modalData.coordinate) }}" width="100%" height="400" frameborder="0" scrolling="no" marginheight="0" marginwidth="0" ></iframe>
-        <br/>
+        <!--<iframe ng-src="{{ $ctrl.trustSrc($ctrl.modalData.coordinate) }}" width="100%" height="400" frameborder="0" scrolling="no" marginheight="0" marginwidth="0" ></iframe>
+        <br/> -->
+        <div class="details-on-map show-map">
+            <div class="paper-map">
+                <div class="map-side"></div>
+                <div class="map-side"></div>
+                <div class="map-side"></div>
+                <div class="map-side"></div>
+            </div>
+            <div id="mapLocation"></div>
+        </div>
     </div>
       <div class="ModalContent">
         <h5>{{ 'AddressTitle' | translate }}: </h5>

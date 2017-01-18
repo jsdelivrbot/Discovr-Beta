@@ -1,6 +1,6 @@
 <link rel="stylesheet" href="../../assets/css/GeneralSlider.css">
 
-<!-- Apartir de acá se inicia el slider principal-->
+<!-- Apartir de acá se inicia el slider principal-
 <div class="PrincipalSlider">
   <div class="slider">
     <div uib-carousel active="active" interval="myInterval" no-wrap="noWrapSlides">
@@ -27,3 +27,18 @@
 </div>
 
 <!-- <div class="slide_buttons"></div> -->
+<div class="PrincipalSlider">
+  <div class="slider">
+    <div class="PagesSlider">
+      <div class="PagesSlider-slides">
+        <a href="#" class="PagesSlider-slide" ng-repeat="slide in slides track by slide.id">
+          <img ng-src="{{slide.image}}"/>
+          <div class="BlurredTileBar"></div>
+          <div class="slide-title">
+            <h4>{{ slide.name }}</h4>
+          </div>
+        </a>
+      </div>
+    </div>
+ </div>
+</div>

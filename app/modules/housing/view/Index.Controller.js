@@ -20,7 +20,7 @@ discovrApp.controller('HousingView.IndexController', function(
       modal: 'map'
     };
     vm.mapInfo = {
-      coordinate: "http://www.openstreetmap.org/export/embed.html?bbox=-86.35768353939058%2C13.093481547864359%2C-86.35357439517976%2C13.09663739897683&amp;layer=mapnik",
+      coordinate: "-86.356288,13.09289",
       address: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.'
     };
     vm.bookInfo = {

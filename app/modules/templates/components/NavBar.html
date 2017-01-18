@@ -18,17 +18,32 @@
             </button>
             <a class="navbar-brand" ui-sref="Home">{{ 'BrandTitle' | translate }}</a>
             
-        </div>
+        </div>        
         <!-- Collect the nav links, forms, and other content for toggling -->
         <div class="collapse navbar-collapse" uib-collapse="$ctrl.isNavCollapsed">
-            <ul id="NavBarMenu" class="nav navbar-nav navbar-right">
-                <li>
-                    <form id="demo-2" class="FloatRightMenu">
-                        <input type="search" placeholder="Search">
-                    </form>
-                </li>
+            <div class="nav navbar-nav navbar-left" >
+                <form class="navbar-form">
+                    <div class="searchbar">
+                        <input type="search" class="searchbar--input" placeholder="Search...">
+                        <div class="searchbar--buttons">
+                            <input type="submit" class="searchbar--submit" value="Search">
+                            <div class="select-wrapper">
+                                <select class="searchbar--select">
+                                    <option value="0" selected>All Categories</option>
+                                    <option value="1">Packages</option>
+                                    <option value="2">Housings</option>
+                                    <option value="3">FADs</option>
+                                    <option value="4">Entertainments</option>
+                                    <option value="5">Stores</option>
+                                </select>
+                            </div>
+                        </div>
+                    </div>
+                </form>
+            </div>
+            <ul id="NavBarMenu" class="nav navbar-nav navbar-right">                
                 <li uib-dropdown>
-                  <a id="notification" href="#" uib-dropdown-toggle>
+                  <a id="notification" href="#" ng-click="$ctrl.notif()" uib-dropdown-toggle>
                       <i class="material-icons">notifications</i>
                   </a>
                   <div class="notifications" uib-dropdown-menu role="menu" aria-labelledby="notification">
@@ -41,69 +56,46 @@
                       <div class="NotificationContent">
                         <p class="NotificationTitle" translate>NotificationCategoryTitle1</p>
                         <div class="NotificationList">
-                            <div class="Notification">
-                                <div class="NotificationImage"><img src="http://www.ew.com/sites/default/files/i/2013/06/26/President-Obama_0.jpg" alt=""></div>
+                            <div class="Notification" ng-repeat="message in $ctrl.message track by $index">
+                                <div class="NotificationImage"><img src="{{ message.img }}" alt=""></div>
                                 <input type="checkbox" class="circle"/>
-                                <p class="NotificationOwner">Nombre Notificación</p>
-                                <p class="NotificationDate">11/12/2015 07:28 a.m.</p>
-                            </div>
-                            <div class="Notification">
-                                <div class="NotificationImage"><img src="http://www.ew.com/sites/default/files/i/2013/06/26/President-Obama_0.jpg" alt=""></div>
-                                <input type="checkbox" class="circle"/>
-                                <p class="NotificationOwner">Nombre Notificación</p>
-                                <p class="NotificationDate">11/12/2015 07:28 a.m.</p>
-                            </div>
+                                <p class="NotificationOwner">{{ message.title }}</p>
+                                <p class="NotificationDate">{{ message.date }}</p>
+                            </div>                           
                         </div>
                       </div>
                       <div class="NotificationContent">
                         <p class="NotificationTitle" translate>NotificationCategoryTitle2</p>
                         <div class="NotificationList">
-                            <div class="Notification">
-                                <div class="NotificationImage"><img src="http://www.ew.com/sites/default/files/i/2013/06/26/President-Obama_0.jpg" alt=""></div>
+                            <div class="Notification" ng-repeat="tag in $ctrl.tag track by $index">
+                                <div class="NotificationImage"><img src="{{ tag.img }}" alt=""></div>
                                 <input type="checkbox" class="circle"/>
-                                <p class="NotificationOwner">Nombre Notificación</p>
-                                <p class="NotificationDate">11/12/2015 07:28 a.m.</p>
-                            </div>
-                            <div class="Notification">
-                                <div class="NotificationImage"><img src="http://www.ew.com/sites/default/files/i/2013/06/26/President-Obama_0.jpg" alt=""></div>
-                                <input type="checkbox" class="circle"/>
-                                <p class="NotificationOwner">Nombre Notificación</p>
-                                <p class="NotificationDate">11/12/2015 07:28 a.m.</p>
-                            </div>
+                                <p class="NotificationOwner">{{ tag.title }}</p>
+                                <p class="NotificationDate">{{ tag.date }}</p>
+                            </div>         
                         </div>
                     </div>
                     <div class="NotificationContent">
                       <p class="NotificationTitle" translate>NotificationCategoryTitle3</p>
                       <div class="NotificationList">
-                          <div class="Notification">
-                              <div class="NotificationImage"><img src="http://www.ew.com/sites/default/files/i/2013/06/26/President-Obama_0.jpg" alt=""></div>
+                          <div class="Notification" ng-repeat="comment in $ctrl.comment track by $index">
+                              <div class="NotificationImage"><img src="{{ comment.img }}" alt=""></div>
                               <input type="checkbox" class="circle"/>
-                              <p class="NotificationOwner">Nombre Notificación</p>
-                              <p class="NotificationDate">11/12/2015 07:28 a.m.</p>
-                          </div>
-                          <div class="Notification">
-                              <div class="NotificationImage"><img src="http://www.ew.com/sites/default/files/i/2013/06/26/President-Obama_0.jpg" alt=""></div>
-                              <input type="checkbox" class="circle"/>
-                              <p class="NotificationOwner">Nombre Notificación</p>
-                              <p class="NotificationDate">11/12/2015 07:28 a.m.</p>
+                              <p class="NotificationOwner">{{ comment.title }}</p>
+                              <p class="NotificationDate">{{ comment.date }}</p>
                           </div>
                       </div>
                     </div>
                     <div class="NotificationContent">
                       <p class="NotificationTitle" translate>NotificationCategoryTitle4</p>
                       <div class="NotificationList">
-                          <div class="Notification">
-                              <div class="NotificationImage"><img src="http://www.ew.com/sites/default/files/i/2013/06/26/President-Obama_0.jpg" alt=""></div>
+                          <div class="Notification" ng-repeat="appraisal in $ctrl.appraisal track by $index">
+                              <div class="NotificationImage"><img src="{{ appraisal.img }}" alt=""></div>
                               <input type="checkbox" class="circle"/>
-                              <p class="NotificationOwner">Nombre Notificación</p>
-                              <p class="NotificationDate">11/12/2015 07:28 a.m.</p>
+                              <p class="NotificationOwner">{{ appraisal.title }}</p>
+                              <p class="NotificationDate">{{ appraisal.date }}</p>
                           </div>
-                          <div class="Notification">
-                              <div class="NotificationImage"><img src="http://www.ew.com/sites/default/files/i/2013/06/26/President-Obama_0.jpg" alt=""></div>
-                              <input type="checkbox" class="circle"/>
-                              <p class="NotificationOwner">Nombre Notificación</p>
-                              <p class="NotificationDate">11/12/2015 07:28 a.m.</p>
-                          </div>
+                         
                       </div>
                     </div>
                   </div>
@@ -143,7 +135,7 @@
                         <i class="material-icons">language</i>
                     </a>
                     <ul class="dropdown-menu" uib-dropdown-menu role="menu" aria-labelledby="language">
-                      <li role="menuitem" ng-repeat="lan in vm.listLan"><a href="#" ng-click="vm.changeLang(lan.key)">{{lan.value}}</a></li>
+                      <li role="menuitem" ng-repeat="lan in $ctrl.listLan"><a href="#" ng-click="$ctrl.changeLang(lan.key)">{{ lan.value }}</a></li>
                     </ul>
                 </li>
                 <li uib-dropdown>

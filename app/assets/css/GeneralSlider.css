@@ -11,50 +11,11 @@
 }
 .slider img {
   box-shadow: 0 2px 2px 0 rgba(0,0,0,.14),0 3px 1px -2px rgba(0,0,0,.2),0 1px 5px 0 rgba(0,0,0,.12);
-  height: 280px;
+  /*height: 280px;*/
 }
-@media only screen and (min-width: 820px) {
-  #Carousel-title {
-    bottom: -25px;
-    z-index: 98;
-  }
-  #Carousel-title h4 {
-    color:#fff;
-    z-index: 98;
-  }
-}
-#Slide1{
-  width: 29.5%
-}
- #Slide2{
-   width: 29.5%;
- }
-/* AQUI SE GENERA LA BARRA DIFUMINADA QUE ESTA EN LA PARTE INFERIOR DE LOS TILES */
-.BlurredTileBar {
-  position: relative;
-  margin-top: -50px;
-  height: 50px;
-  width: 100%;
-  z-index: 2;
-  background: -moz-linear-gradient(top, rgba(0, 0, 0, 0) 1%, rgba(0, 0, 0, 0.65) 83%, rgba(0, 0, 0, 0.65) 84%, rgba(0, 0, 0, 0.65) 85%, rgba(0, 0, 0, 0.65) 87%);
-  /* FF3.6-15 */
-  background: -webkit-linear-gradient(top, rgba(0, 0, 0, 0) 1%, rgba(0, 0, 0, 0.65) 83%, rgba(0, 0, 0, 0.65) 84%, rgba(0, 0, 0, 0.65) 85%, rgba(0, 0, 0, 0.65) 87%);
-  /* Chrome10-25,Safari5.1-6 */
-  background: linear-gradient(to bottom, rgba(0, 0, 0, 0) 1%, rgba(0, 0, 0, 0.65) 83%, rgba(0, 0, 0, 0.65) 84%, rgba(0, 0, 0, 0.65) 85%, rgba(0, 0, 0, 0.65) 87%);
-  /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
-  filter: progid: DXImageTransform.Microsoft.gradient( startColorstr='#00000000', endColorstr='#a6000000', GradientType=0);
-}
-.TileSite1 .BlurredTileBar {
-  position: relative;
-  margin-top: 90px;
-  height: 40px;
-  width: 100%;
-  z-index: 2;
-  background-color: rgba(33,33,33,0.5);
-}
-.LiContainer .BlurredTileBar {
-  z-index: 3;
-}
+
+
+
 /* _________________________________________________________________________________________________ */
 /*  Aqui estan las tranciciones para los tile sites, estos son los tiles que estan abajo el slider */
 .TileSite1 .slider img {
@@ -104,23 +65,7 @@ img {
   height: 100%;
   object-fit: cover;
 }
-.slide_buttons {
-  width: 100%;
-  height: 50px;
-  left: 0;
-  position: absolute;
-  right: 0;
-  text-align: left;
-  margin-top: -119px;
-  z-index: 50000;
-  background: -moz-linear-gradient(top, rgba(0, 0, 0, 0) 1%, rgba(0, 0, 0, 0.65) 83%, rgba(0, 0, 0, 0.65) 84%, rgba(0, 0, 0, 0.65) 85%, rgba(0, 0, 0, 0.65) 87%);
-  /* FF3.6-15 */
-  background: -webkit-linear-gradient(top, rgba(0, 0, 0, 0) 1%, rgba(0, 0, 0, 0.65) 83%, rgba(0, 0, 0, 0.65) 84%, rgba(0, 0, 0, 0.65) 85%, rgba(0, 0, 0, 0.65) 87%);
-  /* Chrome10-25,Safari5.1-6 */
-  background: linear-gradient(to bottom, rgba(0, 0, 0, 0) 1%, rgba(0, 0, 0, 0.65) 83%, rgba(0, 0, 0, 0.65) 84%, rgba(0, 0, 0, 0.65) 85%, rgba(0, 0, 0, 0.65) 87%);
-  /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
-  filter: progid: DXImageTransform.Microsoft.gradient( startColorstr='#00000000', endColorstr='#a6000000', GradientType=0);
-}
+
 /*------------------   INICIO DE LOS FILTROS POR LUGARES O CATEGORIAS   ----------------------------*/
 .Filters {
   height:45px;
@@ -204,27 +149,20 @@ img {
 
 /* ___________________________________VISTA RESPONSIVE______________________________________________________________ */
 @media only screen and (max-width: 767px) {
-  #Carousel-title {
-    bottom: -20px;
-    z-index: 98;
-  }
   .PrincipalSlider {
-    margin-top: 50px;
+    /*margin-top: 50px;*/
+    height: 215px;
+    max-height: 215px;
   }
   .slider {
-    height: 210px;
-    max-height: 210px;
+    height: 215px;
+    max-height: 215px;
   }
-  .SlideImg {
-    height: 210px;
-    width: 100%
+  .PagesSlider img {
+    height: 215px;
+    max-height: 215px;
   }
-  #Slide1{
-    width: 28%
-  }
-   #Slide2{
-     width: 28%;
-   }
+ 
 }
 .PrincipalSlider .slider p {
   position: relative;
@@ -235,4 +173,254 @@ img {
   background-color: rgba(245, 245, 245, 0.8);
   display: table;
   color: #424242;
+}
+/*-------------------------------------------*/
+
+
+img {
+  width: 100%;
+  height: 280px;
+}
+.slide-title{
+  position: relative;
+  z-index: 98;
+  top: -35px;
+  text-align: center;  
+  color:white;  
+}
+@media only screen and (max-width: 767px) {
+  .slide-title {
+    top: -40px;
+  }
+  .PagesSlider{
+    height: 215px;
+  }
+}
+/* AQUI SE GENERA LA BARRA DIFUMINADA QUE ESTA EN LA PARTE INFERIOR DE LOS TILES */
+.BlurredTileBar {
+  position: relative;
+  margin-top: -50px;
+  height: 50px;
+  width: 100%;
+  z-index: 2;
+  background: -moz-linear-gradient(top, rgba(0, 0, 0, 0) 1%, rgba(0, 0, 0, 0.65) 83%, rgba(0, 0, 0, 0.65) 84%, rgba(0, 0, 0, 0.65) 85%, rgba(0, 0, 0, 0.65) 87%);
+  /* FF3.6-15 */
+  background: -webkit-linear-gradient(top, rgba(0, 0, 0, 0) 1%, rgba(0, 0, 0, 0.65) 83%, rgba(0, 0, 0, 0.65) 84%, rgba(0, 0, 0, 0.65) 85%, rgba(0, 0, 0, 0.65) 87%);
+  /* Chrome10-25,Safari5.1-6 */
+  background: linear-gradient(to bottom, rgba(0, 0, 0, 0) 1%, rgba(0, 0, 0, 0.65) 83%, rgba(0, 0, 0, 0.65) 84%, rgba(0, 0, 0, 0.65) 85%, rgba(0, 0, 0, 0.65) 87%);
+  /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+  filter: progid: DXImageTransform.Microsoft.gradient( startColorstr='#00000000', endColorstr='#a6000000', GradientType=0);
+}
+
+.PagesSlider {
+  position: relative;
+  width: 21.8125em;
+  height: 280px;
+  /*margin: 2.1875em auto 0 auto;*/
+}
+@media (min-width: 165em) {
+  .PagesSlider::before, .PagesSlider::after {
+    content: '';
+    position: absolute;
+    top: 0;
+    z-index: 1;
+    width: 20em;
+    height: 100%;
+  }
+  .PagesSlider::before {
+    right: calc(-50vw + 50%);
+    background: -webkit-linear-gradient(left, rgba(255, 255, 255, 0), #FFF, #FFF);
+    background: linear-gradient(to right, rgba(255, 255, 255, 0), #FFF, #FFF);
+  }
+  .PagesSlider::after {
+    left: calc(-50vw + 50%);
+    background: -webkit-linear-gradient(right, rgba(255, 255, 255, 0), #FFF, #FFF);
+    background: linear-gradient(to left, rgba(255, 255, 255, 0), #FFF, #FFF);
+  }
+}
+
+.PagesSlider-phone {
+  position: absolute;
+  z-index: 1;
+}
+.PagesSlider-phone::after, .PagesSlider-phone::before {
+  position: absolute;
+  content: '';
+  bottom: 0;
+  width: 50vw;
+  height: 5.625em;
+  background: #FFF;
+  z-index: -1;
+}
+.PagesSlider-phone::before {
+  left: calc(100% - 0.625em);
+}
+.PagesSlider-phone::after {
+  right: calc(100% - 0.625em);
+}
+.PagesSlider-phone img {
+  display: block;
+  width: 28.8125em;
+  height: 25.5625em;
+}
+
+.PagesSlider-slides {
+  position: relative;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  /*top: 5em;
+  /*padding-left: 0.3125em;*/
+}
+
+.PagesSlider-slide {
+  position: absolute;
+  margin-left: -2em;
+  padding-left: 0.32em;
+  /*top: 3.5625em;*/
+  width: 29em;
+  height: 16.9375em;
+}
+.PagesSlider-slide:nth-child(1) {
+  -webkit-animation: PagesSlider-animation 20s -2.5s ease-in-out infinite;
+          animation: PagesSlider-animation 20s -2.5s ease-in-out infinite;
+}
+.PagesSlider-slide:nth-child(2) {
+  -webkit-animation: PagesSlider-animation 20s -5s ease-in-out infinite;
+          animation: PagesSlider-animation 20s -5s ease-in-out infinite;
+}
+.PagesSlider-slide:nth-child(3) {
+  -webkit-animation: PagesSlider-animation 20s -7.5s ease-in-out infinite;
+          animation: PagesSlider-animation 20s -7.5s ease-in-out infinite;
+}
+.PagesSlider-slide:nth-child(4) {
+  -webkit-animation: PagesSlider-animation 20s -10s ease-in-out infinite;
+          animation: PagesSlider-animation 20s -10s ease-in-out infinite;
+}
+.PagesSlider-slide:nth-child(5) {
+  -webkit-animation: PagesSlider-animation 20s -12.5s ease-in-out infinite;
+          animation: PagesSlider-animation 20s -12.5s ease-in-out infinite;
+}
+.PagesSlider-slide:nth-child(6) {
+  -webkit-animation: PagesSlider-animation 20s -15s ease-in-out infinite;
+          animation: PagesSlider-animation 20s -15s ease-in-out infinite;
+}
+.PagesSlider-slide:nth-child(7) {
+  -webkit-animation: PagesSlider-animation 20s -17.5s ease-in-out infinite;
+          animation: PagesSlider-animation 20s -17.5s ease-in-out infinite;
+}
+.PagesSlider-slide:nth-child(8) {
+  -webkit-animation: PagesSlider-animation 20s -20s ease-in-out infinite;
+          animation: PagesSlider-animation 20s -20s ease-in-out infinite;
+}
+.PagesSlider-slide:nth-child(9) {
+  -webkit-animation: PagesSlider-animation 20s -20s ease-in-out infinite;
+          animation: PagesSlider-animation 20s -20s ease-in-out infinite;
+}
+.PagesSlider-slide:nth-child(10) {
+  -webkit-animation: PagesSlider-animation 20s -20s ease-in-out infinite;
+          animation: PagesSlider-animation 20s -20s ease-in-out infinite;
+}
+.PagesSlider-slide:nth-child(11) {
+  -webkit-animation: PagesSlider-animation 20s -20s ease-in-out infinite;
+          animation: PagesSlider-animation 20s -20s ease-in-out infinite;
+}
+.PagesSlider-slide:nth-child(12) {
+  -webkit-animation: PagesSlider-animation 20s -20s ease-in-out infinite;
+          animation: PagesSlider-animation 20s -20s ease-in-out infinite;
+}
+@-webkit-keyframes PagesSlider-animation {
+  0%,
+		10% {
+    -webkit-transform: translateX(500%);
+            transform: translateX(500%);
+  }
+  12.5%,
+		22.5% {
+    -webkit-transform: translateX(400%);
+            transform: translateX(400%);
+  }
+  25%,
+		35% {
+    -webkit-transform: translateX(300%);
+            transform: translateX(300%);
+  }
+  37.5%,
+		47.5% {
+    -webkit-transform: translateX(200%);
+            transform: translateX(200%);
+  }
+  50%,
+		60% {
+    -webkit-transform: translateX(100%);
+            transform: translateX(100%);
+  }
+  62.5%,
+		72.5% {
+    -webkit-transform: translateX(0%);
+            transform: translateX(0%);
+  }
+  75%,
+		85% {
+    -webkit-transform: translateX(-100%);
+            transform: translateX(-100%);
+  }
+  87.5%,
+		97.5% {
+    -webkit-transform: translateX(-200%);
+            transform: translateX(-200%);
+  }
+  100%,
+		100% {
+    -webkit-transform: translateX(-300%);
+            transform: translateX(-300%);
+  }
+}
+
+@keyframes PagesSlider-animation {
+  0%,
+		10% {
+    -webkit-transform: translateX(500%);
+            transform: translateX(500%);
+  }
+  12.5%,
+		22.5% {
+    -webkit-transform: translateX(400%);
+            transform: translateX(400%);
+  }
+  25%,
+		35% {
+    -webkit-transform: translateX(300%);
+            transform: translateX(300%);
+  }
+  37.5%,
+		47.5% {
+    -webkit-transform: translateX(200%);
+            transform: translateX(200%);
+  }
+  50%,
+		60% {
+    -webkit-transform: translateX(100%);
+            transform: translateX(100%);
+  }
+  62.5%,
+		72.5% {
+    -webkit-transform: translateX(0%);
+            transform: translateX(0%);
+  }
+  75%,
+		85% {
+    -webkit-transform: translateX(-100%);
+            transform: translateX(-100%);
+  }
+  87.5%,
+		97.5% {
+    -webkit-transform: translateX(-200%);
+            transform: translateX(-200%);
+  }
+  100%,
+		100% {
+    -webkit-transform: translateX(-300%);
+            transform: translateX(-300%);
+  }
 }

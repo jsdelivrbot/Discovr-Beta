@@ -63,17 +63,47 @@ discovrApp.component('floatTile', {
 discovrApp.component('navBar', {
     templateUrl:'modules/templates/components/NavBar.html',
     bindings: {
-            info: '<',
+            notification: '<',
             modal: '<',
             title: '<',
-            option: '<'
+            languages: '<',
+            location: '<'
         },
     controller: function($uibModal) {
         var $ctrl = this;
+        $ctrl.message = [];
+        $ctrl.tag = [];
+        $ctrl.appraisal = [];
+        $ctrl.comment = [];
+
         $ctrl.isNavCollapsed = true;
         $ctrl.isCollapsed = false;
         $ctrl.isCollapsedHorizontal = false;
         
+        //languages options
+        $ctrl.listLan = [
+            {'key':'es-es','value':'Español'},
+            {'key':'en-us','value':'English'}
+        ];
+        //Function that change the language
+        $ctrl.changeLang = function changeLangFn(opt) {
+            console.log(opt);
+            $translate.use( $ctrl.languages.module + '/languages/' + opt);
+        };
+        //get notification
+        $ctrl.notif = function(){
+            for (i = 0; i<$ctrl.notification.length; i++) {
+                if ($ctrl.notification[i].kind == "appraisal") {
+                    $ctrl.appraisal.push($ctrl.notification[i]);
+                } else if ($ctrl.notification[i].kind == "comment") {
+                    $ctrl.comment.push($ctrl.notification[i]);
+                } else if ($ctrl.notification[i].kind == "message") {                    
+                    $ctrl.message.push($ctrl.notification[i]);
+                } else {
+                    $ctrl.tag.push($ctrl.notification[i]);
+                };                
+            };            
+        };
         $ctrl.open = function() {
             $uibModal.open({                
                 template: '<modal-itinerary modal-data="$ctrl.modalData" $close="$close(result)" $dismiss="$dismiss(reason)"></modal-itinerary>',
@@ -133,6 +163,21 @@ discovrApp.component('modalMap', {
             $ctrl.trustSrc = function(src) {
                 return $sce.trustAsResourceUrl(src);
             };
+            map = new OpenLayers.Map("mapLocation");
+            map.addLayer(new OpenLayers.Layer.OSM());
+            
+            var lonLat = new OpenLayers.LonLat( -86.356288,13.09289 )
+                .transform(
+                    new OpenLayers.Projection("EPSG:4326"), // transform from WGS 1984
+                    map.getProjectionObject() // to Spherical Mercator Projection
+                );
+            console.log(lonLat);         
+            var zoom=18;
+            var markers = new OpenLayers.Layer.Markers( "Markers" );
+            map.addLayer(markers);
+            markers.addMarker(new OpenLayers.Marker(lonLat));
+            map.setCenter (lonLat, zoom);
+
             $ctrl.handleClose = function() {
                 console.info("in handle close");
                 $ctrl.$close({
@@ -140,6 +185,7 @@ discovrApp.component('modalMap', {
                 });
             };
             $ctrl.handleDismiss = function() {
+                map = '';
                 console.info("in handle dismiss");
                 $ctrl.$dismiss({
                     reason: 'cancel'

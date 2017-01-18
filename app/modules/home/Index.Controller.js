@@ -8,6 +8,77 @@ discovrApp.controller('Home.IndexController', function(
   $translate) {
     var vm = this;
     //local variables
+    vm.notification = [
+        {
+            title: 'Everardo Quintana',
+            date: '21 Nov 2016 - 07:10 p.m.',
+            kind: 'message',
+            state: 0,
+            img: 'http://www.barcelona-bikes.com/img/layout/user.jpg'
+        },
+        {
+            title: 'Leonel Martinez',
+            date: '20 Nov 2016 - 07:00 p.m.',
+            kind: 'message',
+            state: 1,
+            img: 'http://www.barcelona-bikes.com/img/layout/user.jpg'
+        },
+        {
+            title: 'Joheman Ubrina',
+            date: '21 Nov 2016 - 07:10 p.m.',
+            kind: 'appraisal',
+            state: 0,
+            img: 'http://www.barcelona-bikes.com/img/layout/user.jpg'
+        },
+        {
+            title: 'Joheman Urbina',
+            date: '20 Nov 2016 - 06:10 p.m.',
+            kind: 'appraisal',
+            state: 0,
+            img: 'http://www.barcelona-bikes.com/img/layout/user.jpg'
+        },
+        {
+            title: 'Everardo Quintana',
+            date: '26 Nov 2016 - 07:10 p.m.',
+            kind: 'tag',
+            state: 1,
+            img: 'http://www.barcelona-bikes.com/img/layout/user.jpg'
+        },
+        {
+            title: 'Everardo Quintana',
+            date: '21 Nov 2016 - 07:10 p.m.',
+            kind: 'tag',
+            state: 1,
+            img: 'http://www.barcelona-bikes.com/img/layout/user.jpg'
+        },
+        {
+            title: 'Leonel Martinez',
+            date: '21 Nov 2016 - 07:10 p.m.',
+            kind: 'comment',
+            state: 0,
+            img: 'http://www.barcelona-bikes.com/img/layout/user.jpg'
+        },
+        {
+            title: 'Joheman Urbina',
+            date: '21 Nov 2016 - 07:10 p.m.',
+            kind: 'comment',
+            state: 0,
+            img: 'http://www.barcelona-bikes.com/img/layout/user.jpg'
+        }
+    ];
+    vm.Itinerary = {
+
+    };
+    vm.navbar = {
+        title: 'Discovr',
+        username: $localStorage.currentUser.username
+    };
+    vm.languages = {
+
+    };
+    vm.location = {
+
+    };
     vm.profile = profile;
     vm.getProfile = getProfile;
 

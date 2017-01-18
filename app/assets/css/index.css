@@ -86,11 +86,64 @@ hr.separator {
 .column-right { float: right; width: 32%; margin-right: 1%; }
 .column-center { display: inline-block; width: 32%; margin-right: 1%; }
 /*----------- Four Column*/
-.column-4left { float: left; width: 24%; margin-right: 1%; }
+.column-4left { float: left; width: 24%; margin-right: 1%; max-height: 70px;}
 .column-4right { float: right; width: 24%; }
 .column-4center { display: inline-block; width: 24%; margin-right: 1%; }
 .column-4center2 { display: inline-block; width: 24%; margin-right: 1%; }
 /*------------- FIN DE ESTILOS PARA INPUTS ----------*/
+/*-------------    BUTTON  ------------------------*/
+.iNumber {
+  padding: 15px 10px;
+  border: none;
+  /*margin-bottom: 20px;*/
+  box-shadow: 1px 3px 20px rgba(17, 17, 17, 0.1);
+  width: 100%;
+  height: 35px;
+  outline: #8DFEE1;
+  color:black;
+}
+input[type=date]::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  display: none;
+}
+#guestNo {
+  width: 45px;
+  margin: 0 5px;
+  text-align: center;
+}
+label {
+  padding-bottom: 2px;
+  display: inline;
+}
+.counter-btn {
+  position: relative;
+  display: inline-block;
+  height: 30px;
+  text-align: top;
+  vertical-align: top;
+  font-size: 1.5em;
+  font-weight: 300;
+  width: 30px;
+  background: #fff;
+  border: none;
+  /*margin-bottom: 20px;
+  margin-top: 5px;*/
+  border-radius: 50%;
+  box-shadow: 1px 3px 20px rgba(17, 17, 17, 0.1);
+  cursor: pointer;
+  outline: none;
+  color: black;
+}
+.counter-btn:nth-child(2) {
+  float: right;
+}
+.counter-btn:hover {
+  box-shadow: 1px 3px 20px rgba(17, 17, 17, 0.3);
+}
+.guests {
+  margin: 0px;
+}
+
 /*--------------- BACKGROUND-------------*/
 .FondoBodyIndex {
     background-color: #F2F4FE;

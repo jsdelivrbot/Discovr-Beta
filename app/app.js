@@ -84,6 +84,12 @@ const discovrApp = angular.module('DiscovrIndex', [
               controller: 'Place.IndexController',
               controllerAs: 'vm'
             })
+            .state('country', {
+              url: '/country',
+              templateUrl: 'modules/country/Country.View.html',
+              controller: 'Country.IndexController',
+              controllerAs: 'vm'
+               })
             .state('institution', {
               url: '/institution',
               templateUrl: 'modules/institutions/Institution.view.html',

@@ -1,0 +1,71 @@
+.cBody {
+height:100%;
+}
+b{
+	font-weight: bold;
+}
+.tab{
+	background: rgba(36, 36, 36, 0.84);
+	height:30px;
+	text-align: center;
+	color:white;
+}
+.tab spam{
+	padding-left:3%;
+	padding-right:3%;
+}
+.inline{
+	border-left: solid white;
+	border-right: solid white;
+	padding-left:3%;
+	padding-right:3%;	
+}
+.container{
+	padding-left:10px;
+	padding-right:10px;
+}
+.address{
+	height:260px;
+	background:white;
+	margin-top:35px;
+}
+.map{
+	float: left;
+	width:30%;
+}
+.detail{
+	float: right;
+	width:70%;
+}
+.contentdetail{
+height:210px;
+}
+.detail .contentdetail p{
+	margin-top:30px;
+}
+.downbar {
+	height:30px;
+}
+.update{
+	color:blue;
+	border-right:solid black;
+	padding-left:3%;
+	padding-right:3%;
+}
+.delete{
+	color:red;
+	padding-left:3%;
+	padding-right:3%;
+}
+.lang{
+	margin-top: -20px;
+	float:right;
+	width:120px;
+	height:40px;
+	text-align: center;
+}
+.regdat{
+	float:right;
+	padding-top:60px;
+	padding-right:15px;	
+}

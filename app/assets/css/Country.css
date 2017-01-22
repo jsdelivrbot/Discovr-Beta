@@ -69,3 +69,34 @@ height:210px;
 	padding-top:60px;
 	padding-right:15px;	
 }
+.countrycont{
+	height:200px;
+	background:white;
+	margin-top:35px;	
+}
+.countrydet p{
+	margin-top:60px;
+	margin-left:140px;
+}
+.flag img{
+	margin-top:30px;
+	margin-left:10px;
+	float: left;
+	width:120px;
+	height:120px;
+	border-radius:60px; 
+	box-shadow: 0 0 8px rgba(0, 0, 0, .8);
+}
+.countrydet{
+	width: 320px;
+	height:200px;
+	border: solid black;
+}
+.countrydet input{
+	float: right;
+}
+.deletebar {
+	height:30px;
+	margin-top: 50px;
+	margin-left:180px;
+}

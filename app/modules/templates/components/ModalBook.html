@@ -11,32 +11,36 @@
             <div class="form-group">
                 <div class="column-left"> 
                     <label for="checkIn">Check In:</label>
-                    <input type="date" class="form-control" name="checkIn" ng-model="vm.booking.dIn">
+                    <input type="text" onfocus="(this.type='date')" onblur="(this.type='text')" placeholder="{{ $ctrl.modalData.dIn }}" class="form-control" name="checkIn" ng-model="$ctrl.modalData.dIn">
                 </div>
                 <div class="column-center">
                     <label for="checkOut">Check Out:</label>
-                    <input type="date" class="form-control" name="checkOut" ng-model="vm.booking.dOut">
+                    <input type="text" onfocus="(this.type='date')" onblur="(this.type='text')" placeholder="{{ $ctrl.modalData.dOut }}" class="form-control" name="checkOut" ng-model="$ctrl.modalData.dOut">
                 </div>
                 <div class="column-right">
                     <label for="total">Total:</label>
-                    <input type="text" class="form-control" name="total" disabled="disabled" value="$00000" ng-model="vm.booking.total">
+                    <input type="text" class="form-control" name="total" disabled="disabled"  ng-model="$ctrl.modalData.total">
                 </div>					
             </div>
 
             <div class="form-group">
                 <div class="column-4left"> 
                     <label for="guests">Adults:</label><br>
-                    <button class="counter-btn" type="button" id="cnt-down">-</button>
-                    <input class="iNumber" type="text" id="guestNo" name="guests" value="2"/>
-                    <button class="counter-btn" type="button" id="cnt-up">+</button>                    
+                    <button class="counter-btn" type="button" ng-click="$ctrl.minusCounter(1)">-</button>
+                    <input class="iNumber" type="text" id="guestNo" name="guests"  ng-model="$ctrl.modalData.guest" disabled="disabled"/>
+                    <button class="counter-btn" type="button" ng-click="$ctrl.plusCounter(1)">+</button>                    
                 </div>
                 <div class="column-4center">
-                    <label for="qChildren">Children:</label>
-                    <input type="number" min="1" max="9" class="form-control" name="qChildren" ng-model="vm.profileData.name">
+                    <label for="guests">Children:</label><br>
+                    <button class="counter-btn" type="button" ng-click="$ctrl.minusCounter(2)">-</button>
+                    <input class="iNumber" type="text" id="guestNo" name="children"  ng-model="$ctrl.modalData.children" disabled="disabled"/>
+                    <button class="counter-btn" type="button" ng-click="$ctrl.plusCounter(2)">+</button> 
                 </div>
                 <div class="column-4center2">
-                    <label for="qRooms">Rooms:</label>
-                    <input type="number" min="1" max="9" class="form-control" name="qRooms" ng-model="vm.profileData.name">
+                    <label for="guests">Room:</label><br>
+                    <button class="counter-btn" type="button" ng-click="$ctrl.minusCounter(3)">-</button>
+                    <input class="iNumber" type="text" id="guestNo" name="room"  ng-model="$ctrl.modalData.room" disabled="disabled"/>
+                    <button class="counter-btn" type="button" ng-click="$ctrl.plusCounter(3)">+</button>
                 </div>
                 <div class="column-4right">
                     <label for="name">Select:</label>
@@ -50,20 +54,31 @@
                 <h5 class="TitleCont1">Habitaciones Seleccionadas: </h5>
                 <!-- cards -->
                 <div class="barRoomSelected">
-                    <div class="roomCard">
-                        <div class="imgSection">
-                           <img src="http://miamihotelsweb.com/wp-content/uploads/2016/02/WOW-690x380-Room-HR-Hotel-Room-Partial-Ocean-View-View-Refreshed.jpg" style="height:120px;">
-                           <span class="card-media-tag card-media-tag-orange">Familiar</span>
+                    <div class="card-media">
+                        <!-- media container -->
+                        <div class="card-media-object-container">
+                          <div class="card-media-object" style="background-image: url(http://miamihotelsweb.com/wp-content/uploads/2016/02/WOW-690x380-Room-HR-Hotel-Room-Partial-Ocean-View-View-Refreshed.jpg);"></div>
+                          <span class="card-media-object-tag subtle">Business</span>
+                          <ul class="card-media-object-social-list">        
+                            <li class="card-media-object-social-list-item-additional">
+                              <span><a href="#">View</a></span>
+                            </li>
+                          </ul>
                         </div>
-                        <div class="bodyCard">
-                            <div class="cardContent">
-                                <span class="cardHeader"> 
-                                    <label>Room Number: 404</label> 
-                                    <span class="righInfo">
-                                        <i class="material-icons md-16" style="vertical-align: middle;">people</i>: 02 
-                                    </span>
-                                </span>                                                                
-                                <ul class="tagList">                
+                        <!-- body container -->
+                        <div class="card-media-body">
+                          <div class="card-media-body-top">
+                            <span class="subtle">Price: US $ 200.99.</span>
+                            <div class="card-media-body-top-icons u-float-right">
+                              <i class="material-icons md-14" style="vertical-align: middle;">people</i><span class="subtle">: 04</span>
+                            </div>
+                          </div>
+                          <span class="card-media-body-heading">
+                            Room Number: 404
+                          </span>                          
+                          <div class="card-media-body-supporting-bottom">
+                            <span class="card-media-body-supporting-bottom-text subtle">
+                              <ul class="tagList">                
                                     <li>
                                         <i class="material-icons" tooltip-placement="bottom" uib-tooltip="Text">wifi</i>
                                         <i class="material-icons" tooltip-placement="bottom" uib-tooltip="Text">wifi</i>
@@ -74,31 +89,41 @@
                                         <i class="material-icons" tooltip-placement="bottom" uib-tooltip="Text">wifi</i>                                                                              
                                     </li>        
                                 </ul>
-                            </div>
-                            <div class="optBAr">                                
-                                <span class="card-button card-button-info">
-                                    Price: US$ 000,000,00
-                                </span>
-                                <a href="#/" class="card-button card-button-link">
-                                   Remove 
-                                </a>
-                            </div>
+                            </span>
+                            <!--/*<span class="card-media-body-supporting-bottom-text subtle u-float-right">Free &ndash; $30</span> -->
+                          </div>
+                          <div class="card-media-body-supporting-bottom card-media-body-supporting-bottom-reveal">                            
+                            <a href="#/" class="card-media-body-supporting-bottom-text card-media-link u-float-right">Pospone</a>
+                            <a href="#/" class="card-media-body-supporting-bottom-text card-action-link u-float-right">Remove</a>
+                          </div>
                         </div>
-                    </div>
-                    <div class="roomCard">
-                        <div class="imgSection">
-                           <img src="http://miamihotelsweb.com/wp-content/uploads/2016/02/WOW-690x380-Room-HR-Hotel-Room-Partial-Ocean-View-View-Refreshed.jpg" style="height:120px;">
-                           <span class="card-media-tag card-media-tag-orange">Familiar</span>
+                      </div>
+                      <!-- ------------------------------- -->
+                    <div class="card-media">
+                        <!-- media container -->
+                        <div class="card-media-object-container">
+                          <div class="card-media-object" style="background-image: url(http://miamihotelsweb.com/wp-content/uploads/2016/02/WOW-690x380-Room-HR-Hotel-Room-Partial-Ocean-View-View-Refreshed.jpg);"></div>
+                          <span class="card-media-object-tag subtle">Business</span>
+                          <ul class="card-media-object-social-list">        
+                            <li class="card-media-object-social-list-item-additional">
+                              <span><a href="#">View</a></span>
+                            </li>
+                          </ul>
                         </div>
-                        <div class="bodyCard">
-                            <div class="cardContent">
-                                <span class="cardHeader"> 
-                                    <label>Room Number: 404</label> 
-                                    <span class="righInfo">
-                                        <i class="material-icons md-16" style="vertical-align: middle;">people</i>: 02 
-                                    </span>
-                                </span>                                                                
-                                <ul class="tagList">                
+                        <!-- body container -->
+                        <div class="card-media-body">
+                          <div class="card-media-body-top">
+                            <span class="subtle">Price: US $ 100.99.</span>
+                            <div class="card-media-body-top-icons u-float-right">
+                              <i class="material-icons md-14" style="vertical-align: middle;">people</i><span class="subtle">: 04</span>
+                            </div>
+                          </div>
+                          <span class="card-media-body-heading">
+                            Room Number: 405
+                          </span>                          
+                          <div class="card-media-body-supporting-bottom">
+                            <span class="card-media-body-supporting-bottom-text subtle">
+                              <ul class="tagList">                
                                     <li>
                                         <i class="material-icons" tooltip-placement="bottom" uib-tooltip="Text">wifi</i>
                                         <i class="material-icons" tooltip-placement="bottom" uib-tooltip="Text">wifi</i>
@@ -109,17 +134,15 @@
                                         <i class="material-icons" tooltip-placement="bottom" uib-tooltip="Text">wifi</i>                                                                              
                                     </li>        
                                 </ul>
-                            </div>
-                            <div class="optBAr">                                
-                                <span class="card-button card-button-info">
-                                    Price: US$ 000,000,00
-                                </span>
-                                <a href="#/" class="card-button card-button-link">
-                                   Remove 
-                                </a>
-                            </div>
+                            </span>
+                            <!--/*<span class="card-media-body-supporting-bottom-text subtle u-float-right">Free &ndash; $30</span> -->
+                          </div>
+                          <div class="card-media-body-supporting-bottom card-media-body-supporting-bottom-reveal">                            
+                            <a href="#/" class="card-media-body-supporting-bottom-text card-media-link u-float-right">Pospone</a>
+                            <a href="#/" class="card-media-body-supporting-bottom-text card-action-link u-float-right">Remove</a>
+                          </div>
                         </div>
-                    </div>
+                      </div
                     
                     
                 </div>

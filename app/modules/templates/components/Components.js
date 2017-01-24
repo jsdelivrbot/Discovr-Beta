@@ -204,6 +204,24 @@ discovrApp.component('modalBook', {
         controller: function($sce) {
             var $ctrl = this;
 
+            $ctrl.plusCounter = function(counter){
+                if(counter === 1){
+                    $ctrl.modalData.guest++
+                }else if(counter === 2){
+                    $ctrl.modalData.children++
+                }else if(counter === 3){
+                    $ctrl.modalData.room++
+                }
+            };
+            $ctrl.minusCounter = function(counter){
+                 if(counter === 1){
+                    $ctrl.modalData.guest--
+                }else if(counter === 2){
+                    $ctrl.modalData.children--
+                }else if(counter === 3){
+                    $ctrl.modalData.room--
+                }
+            };
             $ctrl.trustSrc = function(src) {
                 return $sce.trustAsResourceUrl(src);
             };

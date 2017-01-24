@@ -5,6 +5,7 @@ discovrApp.controller('HousingView.IndexController', function(
   $scope,
   $uibModal,
   $log,
+  dateFilter,
   $document,
   $translate) {
     var vm = this;
@@ -23,13 +24,20 @@ discovrApp.controller('HousingView.IndexController', function(
       coordinate: "-86.356288,13.09289",
       address: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.'
     };
+    var date = new Date();
     vm.bookInfo = {
-
+      dIn: dateFilter(date, 'yyyy-MM-dd'),
+      dOut: dateFilter(date, 'yyyy-MM-dd'),
+      total: 0.00,
+      guest: 1,
+      children: 0,
+      room: 1
     };
     function initController() {
         vm.username = $localStorage.currentUser.username;
         $translate.use('housing/languages/' + browserLan);
         console.log(browserLan);
+        console.log(vm.bookInfo.guest);
         /*
         var stLan = localStorage.getItem('NG_TRANSLATE_LANG_KEY');
         var szLanLan = stLan.length;

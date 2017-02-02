@@ -28,10 +28,9 @@
 
 <!-- <div class="slide_buttons"></div> -->
 <div class="PrincipalSlider">
-  <div class="slider">
     <div class="PagesSlider">
       <div class="PagesSlider-slides">
-        <a href="#" class="PagesSlider-slide" ng-repeat="slide in slides track by slide.id">
+        <a href="#" class="PagesSlider-slide" ng-repeat="slide in slides">
           <img ng-src="{{slide.image}}"/>
           <div class="BlurredTileBar"></div>
           <div class="slide-title">
@@ -40,5 +39,4 @@
         </a>
       </div>
     </div>
- </div>
 </div>

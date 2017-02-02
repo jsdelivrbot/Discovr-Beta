@@ -143,27 +143,8 @@ discovrApp.controller('Housing.IndexController', function(
             image: 'http://t-ec.bstatic.com/images/hotel/840x460/166/16624720.jpg',
             id: 7,
             name: "Example Test Name 8"
-        },
-        {
-            image: 'https://media.expedia.com/hotels/7000000/6440000/6430200/6430170/6430170_32_z.jpg',
-            id: 8,
-            name: "Example Test Name 9"
-        },
-        {
-            image: 'http://t-ec.bstatic.com/images/hotel/840x460/403/40349579.jpg',
-            id: 9,
-            name: "Example Test Name 10"
-        },
-        {
-            image: 'http://www.jicarolodge.com/site/assets/files/1117/story_2000.jpg',
-            id: 10,
-            name: "Example Test Name 11"
-        },
-        {
-            image: 'http://barcadeoro.com/wp-content/uploads/2013/08/1407_nicaraga_laspenitas_barca_d700_099-420x284.jpg',
-            id: 11,
-            name: "Example Test Name 12"
-        },
+        }
+       
     ];
     var currIndex = 0;
     initController();

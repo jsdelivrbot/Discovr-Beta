@@ -31,7 +31,7 @@
 .TileSite1 .slider ul {
   display: flex;
   padding: 0;
-  width: 400%;
+  width: 400px;
   height: 128px;
   overflow: hidden;
   position: relative;
@@ -45,7 +45,7 @@
   display: flex;
   padding: 0;
   margin: 0px;
-  width: 400%;
+  width: 400px;
   height: 128px;
   overflow: hidden;
   position: relative;
@@ -54,7 +54,7 @@
   display: flex;
   padding: 0;
   margin: 0px;
-  width: 400%;
+  width: 400px;
   height: 128px;
   overflow: hidden;
   position: relative;
@@ -92,8 +92,8 @@
   line-height:43px;
   text-align:center;
   background-color: #fff;
-  border: 2px solid #426FC5;
-  color: #426FC5;
+  border: 2px solid #00ABC0;
+  color: #097988;
   padding-left: 12px;
   padding-right: 12px;
   padding-bottom: 30px;
@@ -114,7 +114,6 @@
   padding-top: 10px;
   height: 65px;
   padding-bottom: 10px;
-  border-bottom: 2px solid #e0e0e0;
 }
 .AllFilterOptions {
   height: 45px;

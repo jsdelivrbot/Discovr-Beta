@@ -13,13 +13,6 @@ a:active {
   position: relative;
   z-index: 1;
 }
-.ContainerAlltoAll {
-  width: 100%;
-  height: 100%;
-  background-color:  #F2F4FE;
-  min-height: 100vh;
-  display: table;
-}
 /* --------------- CONTENEDOR MENU  -------------- */
 .ContenedorMenu {
   z-index: 999;

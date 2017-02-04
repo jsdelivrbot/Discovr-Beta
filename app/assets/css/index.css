@@ -42,6 +42,7 @@ body {
   overflow-x: hidden;
 }
 .ContainerAlltoAll {
+  width: 100%;
   background: #936e76;
   background: -webkit-linear-gradient(315deg, #3f4159 0%, #725767 50%, #cd908b 100%);
   background: linear-gradient(135deg, #3f4159 0%, #725767 50%, #cd908b 100%);

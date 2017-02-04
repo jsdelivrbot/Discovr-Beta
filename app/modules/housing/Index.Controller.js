@@ -9,8 +9,7 @@ discovrApp.controller('Housing.IndexController', function(
   $stateParams,
   $translate) {
     var vm = this;
-    //local variables
-    vm.move = move;
+    //local variables    
     vm.id = $stateParams.id;
     vm.preview = [
       {name:'Hotel Example Name 1',
@@ -56,6 +55,7 @@ discovrApp.controller('Housing.IndexController', function(
     vm.lorem = 'lorem ipsiano';
 
     // -- -- - ---- - - -Funcion para desplazar filtros
+    vm.move = move;
     var position = 0;
     var moduleCount = document.querySelector(".module").length;
     function move(number){
@@ -74,7 +74,7 @@ discovrApp.controller('Housing.IndexController', function(
         moduleOffset =  document.querySelector(".module").offsetWidth;
         filler = document.querySelector("#filler");
         filler.style.left = -( position* moduleOffset) + "px";
-    }
+    };
     // -- -- - ---- - - - FIN Funcion para desplazar filtros
     //languages options
     vm.listLan = [

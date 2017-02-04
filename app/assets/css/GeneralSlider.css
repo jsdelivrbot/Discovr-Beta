@@ -114,6 +114,7 @@
   padding-top: 10px;
   height: 65px;
   padding-bottom: 10px;
+  z-index: 999;
 }
 .AllFilterOptions {
   height: 45px;
@@ -151,28 +152,11 @@
 }
 /*------------------   FIN DE LOS FILTROS POR LUGARES O CATEGORIAS   ----------------------------*/
 
-/* ___________________________________VISTA RESPONSIVE______________________________________________________________ */
-@media only screen and (max-width: 767px) {
-  .PrincipalSlider {
-    background-color: #1b232a;
-    /*margin-top: 50px;*/
-    height: 215px;
-    max-height: 215px;
-  }
-  .slider {
-    height: 215px;
-    max-height: 215px;
-  }
-  .PagesSlider img {
-    height: 215px;
-    max-height: 215px;
-  }
- 
-}
 .PrincipalSlider {
   background-color: #1b232a;
   font-size: calc(16px + (22 - 16) * (100vw - 320px)/ (1350 - 320));
   width: 100%;
+  height: 280px;
 }
 /*-------------------------------------------*/
 
@@ -187,14 +171,6 @@ img {
   top: -35px;
   text-align: center;  
   color:white;  
-}
-@media only screen and (max-width: 765px) {
-  .slide-title {
-    top: -40px;
-  }
-  .PagesSlider{
-    height: 215px;
-  }  
 }
 /* AQUI SE GENERA LA BARRA DIFUMINADA QUE ESTA EN LA PARTE INFERIOR DE LOS TILES */
 .BlurredTileBar {
@@ -267,6 +243,7 @@ img {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  max-height: 280px;
   /*top: 5em;*/
   padding-left: 0.3125em;
 }
@@ -275,13 +252,39 @@ img {
   /*margin-left: -2em;*/
   padding-left: 0.32em;
   /*top: 3.5625em;*/
+  max-height: 280px;
   width: 25em;
-  height: 16.9375em;
 }
 @media (min-width: 960px) {
   .PagesSlider-slide {
     margin-left: -8em;
   }
+  /* ___________________________________VISTA RESPONSIVE______________________________________________________________ */
+@media only screen and (max-width: 765px) {
+  .PrincipalSlider {
+    background-color: #1b232a;
+    /*margin-top: 50px;*/
+    height: 215px;
+    max-height: 215px;
+  }
+  .slider {
+    height: 215px;
+    max-height: 215px;
+  }
+  .PagesSlider img {
+    height: 215px;
+    max-height: 215px;
+  }
+  .slide-title {
+    top: -40px;
+  }
+  .PagesSlider-slides {
+    max-height: 215px;
+  }
+  .PagesSlider-slide {
+    max-height: 215px;
+  }
+}
 
 }
 .PagesSlider-slide:nth-child(1) {

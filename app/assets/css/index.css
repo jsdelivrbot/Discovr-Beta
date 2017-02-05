@@ -47,6 +47,7 @@ body {
   background: -webkit-linear-gradient(315deg, #3f4159 0%, #725767 50%, #cd908b 100%);
   background: linear-gradient(135deg, #3f4159 0%, #725767 50%, #cd908b 100%);
   filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='$mauve', endColorstr='$blush',GradientType=1 );
+  background-size: cover;  ;
 }
 /*-------- icon style  ------------*/
 .material-icons.md-12 { font-size: 12px; }
@@ -176,12 +177,13 @@ label {
   transition: all .5s;
   border-radius: 0px;
   padding: 0px;
+  max-height: 100%;
 }
 #modal-body div img {
     height: 296px;
 }
-#modal-body .tab-container {
-    height: 410px;
+#modal-body #settings {
+    height: 420px;
     max-width: 100%;
 }
 #modal-body .tab-container .tab{
@@ -194,6 +196,7 @@ label {
 .modal-body .ModalContent {
     border-radius: 0px;
     border-bottom: 0px;
+    height: 100%;
     padding: 10px;    
 }
 .modal-body .ModalContent p {
@@ -219,18 +222,18 @@ label {
 	text-align: center;
 	width: 100%;
 	border-style: none;
-	background-color: #1565c0;
+	background-color: #00ABC0;
 	margin: 0 auto;
 	color: #fff;
 	font-size: 17px;
 	cursor: pointer;
 }
 .btn-primary1:hover {
-	background-color: rgba(25,118,210,1.0);
+	background-color:#097988;
 	color: #fff;
 }
 .btn-primary1:active {
-	background-color:rgba(30,136,229,1);
+	background-color:#097988;
 	color: #fff;
 }
 /*---------     MODAL  DESIGN */
@@ -272,10 +275,12 @@ label {
     height: 100%;    
 }
 .barRoomSelected {
-  margin-top: 10px;
+  margin-left: 10px;
+  margin-top: 0px;
   /*white-space: nowrap;*/
   overflow-x: auto;
-  /*height: 270px;*/
+  overflow-y: hidden;
+  height: 140px;
   margin-bottom: 15px;
   display: -webkit-box;
   display: -moz-box;
@@ -370,118 +375,6 @@ label {
 }
 /*-----------------------  Card Style    -----------------------*/
 
-/*-------------TAB CONTAINER---------------*/
-.tab-container {
-  list-style-type: none;
-  padding: 0;
-  margin: 0 auto;
-  max-width: 98%;
-  position: relative;
-  background: #fff;
-}
-.tab-container ul {
-  list-style-type: none;
-  padding: 0;
-}
-.tab-container li {
-  display: block;
-}
-.tab-container .arrows {
-  display: block;
-  width: 60px;
-  font-size: 40px;
-  right: 0px;
-  position: absolute;
-}
-.tab-container .arrows label {
-  display: inline-block;
-  cursor: pointer;
-  color: #aaa;
-  -webkit-user-select: none;
-  -moz-user-select: none;
-  -ms-user-select: none;
-  user-select: none;
-  margin-left: 5px;
-}
-.tab-container .arrows label:hover {
-  color: #333;
-}
-.tab-container .tab-content-container {
-  height: 0;
-  opacity: 0;
-  overflow: hidden;
-  line-height: 22px;
-  background: #fff;
-  position: absolute;
-  top: 42px;  
-  width: 100%;  
-  border-top: 0;
-  box-shadow: 0 2px 2px 0 rgba(0,0,0,.14),0 3px 1px -2px rgba(0,0,0,.2),0 1px 5px 0 rgba(0,0,0,.12);
-}
-.tab-container .tab-content-container .tab-content {
-  opacity: 0;
-  cursor: default;
-  overflow: hidden;
-  padding: 10px 0;
-  min-height: 365px;
-  max-height: 365px;
-  left: 0;
-  padding: 10px;
-  width: 100%;  
-  overflow-y:auto;
-  transition: opacity 0.1s ease-in;
-}
-.tab-container .tab {
-  outline: 0;  
-  cursor: pointer;
-  opacity: 1;
-  float: left;
-  width: 20%;
-  line-height: 40px;
-  display: block;
-  margin: 0;
-  position: static;  
-  background: #446CB3;
-  color: #fff;
-  text-align: center;  
-  font-size: 14px;
-}
-.tab-container .tab:hover {
-  background: #365690;
-}
-.tab-container .tab-toggle {
-  display: none;
-}
-.tab-container .tab-toggle.active + .tab,
-.tab-container .tab-toggle:checked + .tab {
-  background: #fff;
-  transition: all 0.3s;
-  border-top: 2px solid orange;
-  color: #333;
-}
-.tab-container .tab-toggle.active ~ .tab-content-container,
-.tab-container .tab-toggle:checked ~ .tab-content-container {
-  height: auto;
-  opacity: 1;
-}
-.tab-container .tab-toggle.active ~ .tab-content-container .tab-content,
-.tab-container .tab-toggle:checked ~ .tab-content-container .tab-content {
-  pointer-events: all;
-  opacity: 1;
-  -webkit-transform: translateY(0);
-  transform: translateY(0);
-  -webkit-transition: all .5s ease-out .4s;
-  transition: all .5s ease-out .4s;
-}
-.tab-container .tab-toggle.active ~ .tab-content-container .tab-content label,
-.tab-container .tab-toggle:checked ~ .tab-content-container .tab-content label {
-  pointer-events: all;
-  opacity: 1;
-  -webkit-transform: translateY(0);
-  transform: translateY(0);
-  -webkit-transition: all .5s ease-out .4s;
-  transition: all .5s ease-out .4s;
-}
 /*-------------   Input Radio   ----------------*/
 .radio {
   margin: 0.5rem;
@@ -538,7 +431,7 @@ label {
   font-size: 10px;
 }
 .card-media {
-  box-shadow: 0 2px 8px rgba(0, 0, 0, .12);
+  box-shadow: -1px 2px 4px rgba(0,0,0,.25), 1px 1px 3px rgba(0,0,0,.1);
   height: 125px;
   /*margin-bottom: 25px;*/
   transition: all 300ms ease-out;
@@ -712,7 +605,9 @@ label {
 }
 /* ESTILOS PARA EL MODELO RESPONSITIVE */
 @media only screen and (max-width: 767px) {
-	
+	.barRoomSelected {
+    overflow-x: auto;
+  }
 }
 /*-----------NG ANIMATE---------------------------*/
 .view-animate-container {

@@ -49,7 +49,7 @@
   overflow-x: auto;
   /*height: 270px;*/
   padding-left: 5px;
-  margin-bottom: 5px;
+  margin-bottom: 0px;
 }
 .TilesSections1 { /* <---- check --*/
   height: 270px;
@@ -128,10 +128,10 @@
 /* ------------------------------------------------------------------------------------------ */
 .SpanTitleBis {
   float: left;
-  font-size: 0.9em;
+  font-size: 0.8em;
   margin-left: 12px;
   position: relative;
-  margin-top: -32px;
+  margin-top: -25px;
   z-index: 2;
 }
 .SpanStar {
@@ -204,6 +204,15 @@
   }
   .TilesSections {
     padding-left: 0px;
+  }
+  .SpanStar {
+    position: relative;
+    margin-top: -130px;
+    float: right;
+    width: 70px;
+    text-align: center;
+    z-index: 2;
+    margin-right: 12px;
   }
    ::-webkit-scrollbar {
     height: 0px;

@@ -8,6 +8,7 @@ const discovrApp = angular.module('DiscovrIndex', [
     'ngCookies',
     'angular-jwt',
     'ui.navbar',
+    'ngMap',
     'pascalprecht.translate'])
     .constant('apiURL', 'https://discovr-gekkou95.c9users.io/')
     .config(config)

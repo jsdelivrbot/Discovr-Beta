@@ -6,13 +6,15 @@ b{
 }
 .tab{
 	background: rgba(36, 36, 36, 0.84);
-	height:30px;
+	height:40px;
 	text-align: center;
 	color:white;
+	padding-top:10px;
 }
 .tab spam{
 	padding-left:3%;
 	padding-right:3%;
+	
 }
 .inline{
 	border-left: solid white;

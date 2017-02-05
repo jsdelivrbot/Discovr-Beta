@@ -32,6 +32,7 @@ b{
 .map{
 	float: left;
 	width:30%;
+	height:260px;
 }
 .detail{
 	float: right;
@@ -70,9 +71,18 @@ height:210px;
 	padding-right:15px;	
 }
 .countrycont{
-	height:200px;
-	background:white;
-	margin-top:35px;	
+	
+	margin-top:35px;
+	padding: 5px;
+	list-style: none;
+	display: -webkit-box;
+	display: -moz-box;
+	display: -ms-flexbox;
+	display: -webkit-flex;
+	display: flex;
+	flex-flow: row wrap;
+	-webkit-flex-flow: row wrap;
+	justify-content: space-around;	
 }
 .countrydet p{
 	margin-top:60px;
@@ -88,9 +98,11 @@ height:210px;
 	box-shadow: 0 0 8px rgba(0, 0, 0, .8);
 }
 .countrydet{
+	margin-bottom:20px;
 	width: 320px;
 	height:200px;
 	border: solid black;
+	background-color: white;
 }
 .countrydet input{
 	float: right;

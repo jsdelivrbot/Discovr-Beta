@@ -21,7 +21,7 @@ discovrApp.controller('HousingView.IndexController', function(
       modal: 'map'
     };
     vm.mapInfo = {
-      coordinate: "-86.356288,13.09289",
+      coordinate: "13.09289, -86.356288",
       address: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.'
     };
     var date = new Date();
@@ -32,7 +32,7 @@ discovrApp.controller('HousingView.IndexController', function(
       guest: 1,
       children: 0,
       room: 1
-    };
+    };    
     function initController() {
         vm.username = $localStorage.currentUser.username;
         $translate.use('housing/languages/' + browserLan);

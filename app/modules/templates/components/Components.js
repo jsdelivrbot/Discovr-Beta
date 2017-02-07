@@ -36,26 +36,30 @@ discovrApp.component('floatTile', {
             tile: '<',
             icon: '<'
         },
-    controller: function($uibModal) {
-        var $ctrl = this;
-        
+    controller: function($uibModal, $timeout, NgMap) {
+        var $ctrl = this;        
         $ctrl.open = function() {
             $uibModal.open({                
                 template: '<modal-'+$ctrl.modal+' modal-data="$ctrl.modalData" $close="$close(result)" $dismiss="$dismiss(reason)"></modal-'+$ctrl.modal+'>',
                 controller: ['modalData', function(modalData) {
                     var $ctrl = this;
                     $ctrl.modalData = modalData;
+                    NgMap.getMap().then(function(map) {
+                        $ctrl.map = map;
+                        //marker = map.markers[0]; 
+                        google.maps.event.trigger(map,'resize');
+                    });                                      
                 }],
                 controllerAs: '$ctrl',
                 resolve: {
                     modalData: $ctrl.info
                 }
-            }).result.then(function(result) {
+            }).result.then(function(result) {                
                 console.info("I was closed, so do what I need to do myContent's controller now and result was->");
                 console.info(result);
             }, function(reason) {
                 console.info("I was dimissed, so do what I need to do myContent's controller now and reason was->"+reason);
-            });
+            });        
         };
       }
   });
@@ -65,11 +69,12 @@ discovrApp.component('navBar', {
     bindings: {
             notification: '<',
             modal: '<',
+            route: '<',
             title: '<',
             languages: '<',
             location: '<'
         },
-    controller: function($uibModal) {
+    controller: function($uibModal, $timeout, NgMap) {
         var $ctrl = this;
         $ctrl.message = [];
         $ctrl.tag = [];
@@ -110,10 +115,15 @@ discovrApp.component('navBar', {
                 controller: ['modalData', function(modalData) {
                     var $ctrl = this;
                     $ctrl.modalData = modalData;
+                    NgMap.getMap().then(function(map) {
+                        $ctrl.map = map;
+                        //marker = map.markers[0]; 
+                        google.maps.event.trigger(map,'resize');
+                    });
                 }],
                 controllerAs: '$ctrl',
                 resolve: {
-                    modalData: $ctrl.info
+                    modalData: $ctrl.route
                 }
             }).result.then(function(result) {
                 console.info("I was closed, so do what I need to do myContent's controller now and result was->");
@@ -163,20 +173,6 @@ discovrApp.component('modalMap', {
             $ctrl.trustSrc = function(src) {
                 return $sce.trustAsResourceUrl(src);
             };
-            map = new OpenLayers.Map("mapLocation");
-            map.addLayer(new OpenLayers.Layer.OSM());
-            
-            var lonLat = new OpenLayers.LonLat( -86.356288,13.09289 )
-                .transform(
-                    new OpenLayers.Projection("EPSG:4326"), // transform from WGS 1984
-                    map.getProjectionObject() // to Spherical Mercator Projection
-                );
-            console.log(lonLat);         
-            var zoom=18;
-            var markers = new OpenLayers.Layer.Markers( "Markers" );
-            map.addLayer(markers);
-            markers.addMarker(new OpenLayers.Marker(lonLat));
-            map.setCenter (lonLat, zoom);
 
             $ctrl.handleClose = function() {
                 console.info("in handle close");

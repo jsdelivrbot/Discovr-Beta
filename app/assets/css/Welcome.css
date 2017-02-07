@@ -90,6 +90,7 @@
 	color: #fff;
 	font-size: 17px;
 	cursor: pointer;
+	z-index: 99;
 }
 .btn-primary1:hover{
 	background-color:#097988;
@@ -202,8 +203,6 @@
 	width: 100%;
 	float: left;
 	margin-top: -70px;
-	margin-right: 1%;
-	margin-left: 1%;
 }
 .ContainerText h1, .ContainerText h2{
 	font-size: 20px;

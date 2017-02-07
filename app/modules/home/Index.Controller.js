@@ -69,6 +69,13 @@ discovrApp.controller('Home.IndexController', function(
     vm.Itinerary = {
 
     };
+    vm.route = {
+        destination: "13.09289, -86.356288",
+        wayPoints: [
+            {location: {lat:12.974591, lng: -86.234460}, stopover: true},
+            {location: {lat:13.072182, lng: -86.350972}, stopover: true},
+        ]
+    };
     vm.navbar = {
         title: 'Discovr',
         username: $localStorage.currentUser.username

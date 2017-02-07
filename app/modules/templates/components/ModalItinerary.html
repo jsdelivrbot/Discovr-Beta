@@ -1,13 +1,15 @@
+<!-- -------------    Itinerary Modal    -------------- -->
 <link rel="stylesheet" href="../../../assets/css/Modal.css">
 <div class="modal-body" id="modal-body">
   <div id="settings" ontouchstart>
+    <!-- -------------    Tabs    -------------- -->
     <input  checked class="nav" name="nav" type="radio">
     <span class="nav" translate>ReservationTitle</span>
     <input class="nav" name="nav" type="radio">
     <span class="nav" translate>RouteTitle</span>
     <main class="content">
-
-      <section class="upcoming" id="advanced">
+      <!-- -------------    Tab Body Reserations    -------------- -->
+      <section class="upcoming" id="reservation">
         <div class="mContent"> 
           <h5 class="TitleCont1">Housings: </h5>
           <!-- cards -->
@@ -167,17 +169,30 @@
           </div>
         </div>
       </section>
-      <section class="upcoming" id="contact">
-        <div>
-          <iframe ng-src="{{ $ctrl.trustSrc($ctrl.modalData.coordinate) }}" width="100%" height="400" frameborder="0" scrolling="no" marginheight="0" marginwidth="0" ></iframe>
-          <br/>
-        </div>  
+      <!-- -------------    Tab Map Travel    -------------- -->
+      <section class="upcoming" id="route">
+        <div class="mContent">
+          <map zoom="14" center="{{ $ctrl.modalData.coordinate }}" style="height: 400px; width: 100%">
+            <directions draggable="true"
+                        panel="directions-panel"
+                        waypoints="{{$ctrl.modalData.wayPoints}}"
+                        origin="current-location"
+                        destination="{{ $ctrl.modalData.destination }}">
+            </directions>               
+          </map>
+          <h3>Indicaciones</h3>
+          <div id="directions-panel" style="width: 100%; padding: 15px;">
+          </div>
+          <br>          
+          <p>Las indicaciones dadas son una aproximacion, verificarlas o ir con precaucion</p>
+          <br>
+        </div>    
       </section>
     </main>
   </div>    
 </div>
 <div class="modal-footer" id="modal-footer">
-    <button style="width:100%;" class="btn btn-primary1" ng-click="$ctrl.handleClose()">
+    <button style="width:100%; " class="btn btn-primary1" ng-click="$ctrl.handleClose()">
             Got It!
     </button>
 </div>

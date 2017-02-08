@@ -8,6 +8,9 @@ a:hover {
 a:active {
   color: #cfd8dc;
 }
+select {
+    -moz-appearance: none;
+}
 /* ---------------------------------------------------------------------- */
 .slider {
   position: relative;

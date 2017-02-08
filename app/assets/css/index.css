@@ -290,7 +290,7 @@ label {
     display: table;
 }
 .mRate {
-    margin-top: -290px;
+    margin-top: -270px;
     margin-right: 3px;
     float: right;
     border-radius: 50%;    
@@ -305,7 +305,7 @@ label {
     text-align: center;
 }
 .mClose {
-    margin-top: -290px;
+    margin-top: -270px;
     margin-left: 3px;
     float: left;
     position:relative;
@@ -657,214 +657,127 @@ label {
 	from 		{ opacity: 0.3; -webkit-transform: scale(0.8); }
 }
 
-/*--------------------MAP EFFECT -----------------------*/
-.details-on-map {
-  border-radius: 0px;
-  position: relative;
-  min-height: 350px;
-  width: 100%;
-}
-#map {
-  border-radius: 0px;
-  position: absolute;
-  top: 0;
-  box-sizing: content-box;
-  width: 100%;
-  min-height: 350px;
-  opacity: 0;
-  visibility: hidden;
-}
-.paper-map {
-  position: absolute;
-  top: 0;
-  width: 99.9%;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-perspective: 150rem;
-          perspective: 150rem;
-  opacity: 0;
-}
-.map-side {
-  box-sizing: content-box;
-  width: 25%;
-  height: 350px;
-  background-image: url(http://premiumwebfreebies.com/wp-content/uploads/2013/12/vector-dotted-world-map-preview.jpg);
-  background-color: rgba(233, 229, 220, 1);
-  outline: 1px solid transparent;
-  overflow: hidden;
-}
-.map-side::before {
-  position: absolute;
-  top: 0;
-  bottom: 0;
-  left: 0;
-  right: 0;
+/*-------------------- Checkbox & Radio  -----------------------*/
+.control {
   display: block;
-  background-color: rgba(233, 229, 220, 0.5);
-  box-shadow: inset 0 0 5rem rgba(0, 0, 0, 0.1);
-  content: "";
+  position: relative;
+  padding-left: 30px;
+  margin-bottom: 15px;
+  cursor: pointer;
+  font-size: 18px;
 }
-.map-side:nth-of-type(1) {
-  background-position: 0 0;
-  -webkit-transform: translateX(5.05rem) rotateY(-60deg);
-          transform: translateX(5.05rem) rotateY(-60deg);
+.control input {
+  position: absolute;
+  z-index: -1;
+  opacity: 0;
 }
-.map-side:nth-of-type(2) {
-  background-position: -10rem 0;
-  -webkit-transform: translateX(5rem) rotateY(60deg);
-          transform: translateX(5rem) rotateY(60deg);
+.control__indicator {
+  position: absolute;
+  /*top: -4px;*/
+  left: 0;
+  height: 30px;
+  width: 30px;
+  border-radius: 50%;
+  background: #e6e6e6;
 }
-.map-side:nth-of-type(3) {
-  background-position: -20rem 0;
-  -webkit-transform: translateX(-5rem) rotateY(-60deg);
-          transform: translateX(-5rem) rotateY(-60deg);
+.control--radio .control__indicator {
+  border-radius: 50%;
 }
-.map-side:nth-of-type(4) {
-  background-position: -30rem 0;
-  -webkit-transform: translateX(-5.05rem) rotateY(60deg);
-          transform: translateX(-5.05rem) rotateY(60deg);
+.control:hover input ~ .control__indicator,
+.control input:focus ~ .control__indicator {
+  background: #ccc;
 }
-.show-map.details-on-map {
-  height: 21rem;
+.control input:checked ~ .control__indicator {
+  background: #2aa1c0;
 }
-.show-map #map {
-  visibility: visible;
-  -webkit-animation: fadeIn 0.5s 1.25s linear forwards;
-          animation: fadeIn 0.5s 1.25s linear forwards;
+.control:hover input:not([disabled]):checked ~ .control__indicator,
+.control input:checked:focus ~ .control__indicator {
+  background: #0e647d;
 }
-.show-map .paper-map {
-  -webkit-animation: 
-      paperMapFadeIn 0.33s ease-in forwards,
-      fadeOut 1s 3.5s linear forwards;
-          animation: 
-      paperMapFadeIn 0.33s ease-in forwards,
-      fadeOut 1s 3.5s linear forwards;
+.control input:disabled ~ .control__indicator {
+  background: #e6e6e6;
+  opacity: 0.6;
+  pointer-events: none;
 }
-.show-map .map-side::before {
-  -webkit-animation: fadeOut 0.5s 0.33s forwards ease-out;
-          animation: fadeOut 0.5s 0.33s forwards ease-out;
+.control__indicator:after {
+  content: '';
+  position: absolute;
+  display: none;
 }
-.show-map .map-side:nth-of-type(1) {
-  -webkit-animation: openMapOuter 0.33s 0.33s linear forwards;
-          animation: openMapOuter 0.33s 0.33s linear forwards;
+.control input:checked ~ .control__indicator:after {
+  display: block;
 }
-.show-map .map-side:nth-of-type(2) {
-  -webkit-animation: openMapInnerLeft 0.33s 0.33s linear forwards;
-          animation: openMapInnerLeft 0.33s 0.33s linear forwards;
+.control--checkbox .control__indicator:after {
+  left: 12px;
+  top: 7px;
+  width: 3px;
+  height: 15px;
+  border: solid #fff;
+  border-width: 0 2px 2px 0;
+  transform: rotate(45deg);
 }
-.show-map .map-side:nth-of-type(3) {
-  -webkit-animation: openMapInnerRight 0.33s 0.33s linear forwards;
-          animation: openMapInnerRight 0.33s 0.33s linear forwards;
+.control--checkbox input:disabled ~ .control__indicator:after {
+  border-color: #7b7b7b;
 }
-.show-map .map-side:nth-of-type(4) {
-  -webkit-animation: openMapOuter 0.33s 0.33s linear forwards;
-          animation: openMapOuter 0.33s 0.33s linear forwards;
+.control--radio .control__indicator:after {
+  left: 11px;
+  top: 9px;
+  height: 12px;
+  width: 12px;
+  border-radius: 50%;
+  background: #fff;
 }
-.map-side:nth-of-type(1), .map-side:nth-of-type(3){
-  -webkit-transform-origin: 100% 0;
-          transform-origin: 100% 0;
-  box-shadow: inset 0 0 2rem rgba(0, 0, 0, 0.3);
+.control--radio input:disabled ~ .control__indicator:after {
+  background: #7b7b7b;
 }
-.map-side:nth-of-type(2), .map-side:nth-of-type(4) {
-  -webkit-transform-origin: 0 0;
-          transform-origin: 0 0;
-  box-shadow: inset 0 0 2rem rgba(0, 0, 0, 0.3);
+/*---------- SELECT  ---------------*/
+.select {
+  position: relative;
+  display: inline-block;
+  margin-bottom: 15px;
+  width: 100%;
 }
-
-@-webkit-keyframes openMapOuter {
-  100% {
-    -webkit-transform: translateX(0) rotateY(0deg);
-            transform: translateX(0) rotateY(0deg);
-    box-shadow: inset 0 0 0.5rem rgba(0, 0, 0, 0.1);
-  }
+.select select {
+  display: inline-block;
+  width: 100%;
+  cursor: pointer;
+  padding: 10px 15px;
+  outline: 0;
+  border: 0;
+  border-radius: 0;
+  background: #e6e6e6;
+  color: #7b7b7b;
+  appearance: none;
+  -webkit-appearance: none;
+  -moz-appearance: none;
 }
-
-@keyframes openMapOuter {
-  100% {
-    -webkit-transform: translateX(0) rotateY(0deg);
-            transform: translateX(0) rotateY(0deg);
-    box-shadow: inset 0 0 0.5rem rgba(0, 0, 0, 0.1);
-  }
+.select select::-ms-expand {
+  display: none;
 }
-@-webkit-keyframes openMapInnerLeft {
-  0% {-webkit-transform: translateX(5rem) rotateY(60deg);transform: translateX(5rem) rotateY(60deg);}
-  20% {-webkit-transform: translateX(4rem) rotateY(53deg);transform: translateX(4rem) rotateY(53deg);}
-  38% {-webkit-transform: translateX(3.1rem) rotateY(46.2deg);transform: translateX(3.1rem) rotateY(46.2deg);}
-  50% {-webkit-transform: translateX(2.5rem) rotateY(41.5deg);transform: translateX(2.5rem) rotateY(41.5deg);}
-  65% {-webkit-transform: translateX(1.75rem) rotateY(34.5deg);transform: translateX(1.75rem) rotateY(34.5deg);}
-  75% {-webkit-transform: translateX(1.25rem) rotateY(29deg);transform: translateX(1.25rem) rotateY(29deg);}
-  83% {-webkit-transform: translateX(0.85rem) rotateY(23.8deg);transform: translateX(0.85rem) rotateY(23.8deg);}
-  90% {-webkit-transform: translateX(0.5rem) rotateY(18.1deg);transform: translateX(0.5rem) rotateY(18.1deg);}
-  95% {-webkit-transform: translateX(0.25rem) rotateY(12.8deg);transform: translateX(0.25rem) rotateY(12.8deg);}
-  98% {-webkit-transform: translateX(0.1rem) rotateY(8deg);transform: translateX(0.1rem) rotateY(8deg);}
-  99% {-webkit-transform: translateX(0.05rem) rotateY(5deg);transform: translateX(0.05rem) rotateY(5deg);}
-  100% {-webkit-transform: translateX(0) rotateY(0);transform: translateX(0) rotateY(0); box-shadow: inset 0 0 0.5rem rgba(0, 0, 0, 0.1);}
+.select select:hover,
+.select select:focus {
+  color: #000;
+  background: #ccc;
 }
-@keyframes openMapInnerLeft {
-  0% {-webkit-transform: translateX(5rem) rotateY(60deg);transform: translateX(5rem) rotateY(60deg);}
-  20% {-webkit-transform: translateX(4rem) rotateY(53deg);transform: translateX(4rem) rotateY(53deg);}
-  38% {-webkit-transform: translateX(3.1rem) rotateY(46.2deg);transform: translateX(3.1rem) rotateY(46.2deg);}
-  50% {-webkit-transform: translateX(2.5rem) rotateY(41.5deg);transform: translateX(2.5rem) rotateY(41.5deg);}
-  65% {-webkit-transform: translateX(1.75rem) rotateY(34.5deg);transform: translateX(1.75rem) rotateY(34.5deg);}
-  75% {-webkit-transform: translateX(1.25rem) rotateY(29deg);transform: translateX(1.25rem) rotateY(29deg);}
-  83% {-webkit-transform: translateX(0.85rem) rotateY(23.8deg);transform: translateX(0.85rem) rotateY(23.8deg);}
-  90% {-webkit-transform: translateX(0.5rem) rotateY(18.1deg);transform: translateX(0.5rem) rotateY(18.1deg);}
-  95% {-webkit-transform: translateX(0.25rem) rotateY(12.8deg);transform: translateX(0.25rem) rotateY(12.8deg);}
-  98% {-webkit-transform: translateX(0.1rem) rotateY(8deg);transform: translateX(0.1rem) rotateY(8deg);}
-  99% {-webkit-transform: translateX(0.05rem) rotateY(5deg);transform: translateX(0.05rem) rotateY(5deg);}
-  100% {-webkit-transform: translateX(0) rotateY(0);transform: translateX(0) rotateY(0); box-shadow: inset 0 0 0.5rem rgba(0, 0, 0, 0.1);}
+.select select:disabled {
+  opacity: 0.5;
+  pointer-events: none;
 }
-@-webkit-keyframes openMapInnerRight {
-  0% {-webkit-transform: translateX(-5rem) rotateY(-60deg);transform: translateX(-5rem) rotateY(-60deg);}
-  20% {-webkit-transform: translateX(-4rem) rotateY(-53deg);transform: translateX(-4rem) rotateY(-53deg);}
-  38% {-webkit-transform: translateX(-3.1rem) rotateY(-46.2deg);transform: translateX(-3.1rem) rotateY(-46.2deg);}
-  50% {-webkit-transform: translateX(-2.5rem) rotateY(-41.5deg);transform: translateX(-2.5rem) rotateY(-41.5deg);}
-  65% {-webkit-transform: translateX(-1.75rem) rotateY(-34.5deg);transform: translateX(-1.75rem) rotateY(-34.5deg);}
-  75% {-webkit-transform: translateX(-1.25rem) rotateY(-29deg);transform: translateX(-1.25rem) rotateY(-29deg);}
-  83% {-webkit-transform: translateX(-0.85rem) rotateY(-23.8deg);transform: translateX(-0.85rem) rotateY(-23.8deg);}
-  90% {-webkit-transform: translateX(-0.5rem) rotateY(-18.1deg);transform: translateX(-0.5rem) rotateY(-18.1deg);}
-  95% {-webkit-transform: translateX(-0.25rem) rotateY(-12.8deg);transform: translateX(-0.25rem) rotateY(-12.8deg);}
-  98% {-webkit-transform: translateX(-0.1rem) rotateY(-8deg);transform: translateX(-0.1rem) rotateY(-8deg);}
-  99% {-webkit-transform: translateX(-0.05rem) rotateY(-5deg);transform: translateX(-0.05rem) rotateY(-5deg);}
-  100% {-webkit-transform: translateX(0) rotateY(0);transform: translateX(0) rotateY(0); box-shadow: inset 0 0 0.5rem rgba(0, 0, 0, 0.1);}
- }
-@keyframes openMapInnerRight {
-  0% {-webkit-transform: translateX(-5rem) rotateY(-60deg);transform: translateX(-5rem) rotateY(-60deg);}
-  20% {-webkit-transform: translateX(-4rem) rotateY(-53deg);transform: translateX(-4rem) rotateY(-53deg);}
-  38% {-webkit-transform: translateX(-3.1rem) rotateY(-46.2deg);transform: translateX(-3.1rem) rotateY(-46.2deg);}
-  50% {-webkit-transform: translateX(-2.5rem) rotateY(-41.5deg);transform: translateX(-2.5rem) rotateY(-41.5deg);}
-  65% {-webkit-transform: translateX(-1.75rem) rotateY(-34.5deg);transform: translateX(-1.75rem) rotateY(-34.5deg);}
-  75% {-webkit-transform: translateX(-1.25rem) rotateY(-29deg);transform: translateX(-1.25rem) rotateY(-29deg);}
-  83% {-webkit-transform: translateX(-0.85rem) rotateY(-23.8deg);transform: translateX(-0.85rem) rotateY(-23.8deg);}
-  90% {-webkit-transform: translateX(-0.5rem) rotateY(-18.1deg);transform: translateX(-0.5rem) rotateY(-18.1deg);}
-  95% {-webkit-transform: translateX(-0.25rem) rotateY(-12.8deg);transform: translateX(-0.25rem) rotateY(-12.8deg);}
-  98% {-webkit-transform: translateX(-0.1rem) rotateY(-8deg);transform: translateX(-0.1rem) rotateY(-8deg);}
-  99% {-webkit-transform: translateX(-0.05rem) rotateY(-5deg);transform: translateX(-0.05rem) rotateY(-5deg);}
-  100% {-webkit-transform: translateX(0) rotateY(0);transform: translateX(0) rotateY(0); box-shadow: inset 0 0 0.5rem rgba(0, 0, 0, 0.1);}
- }
-@-webkit-keyframes fadeOut {
-  from {opacity: 1;}
-  to {opacity: 0;}
+.select__arrow {
+  position: absolute;
+  top: 16px;
+  right: 15px;
+  width: 0;
+  height: 0;
+  pointer-events: none;
+  border-style: solid;
+  border-width: 8px 5px 0 5px;
+  border-color: #7b7b7b transparent transparent transparent;
 }
-@keyframes fadeOut {
-  from {opacity: 1;}
-  to {opacity: 0;}
+.select select:hover ~ .select__arrow,
+.select select:focus ~ .select__arrow {
+  border-top-color: #000;
 }
-@-webkit-keyframes fadeIn {
-  to {opacity: 1;}
-}
-@keyframes fadeIn {
-  to {opacity: 1;}
-}
-@-webkit-keyframes paperMapFadeIn {
-  0% {-webkit-transform: scale(0, 0.5);transform: scale(0, 0.5); opacity: 0;}
-  100% {-webkit-transform: scale(1);transform: scale(1); opacity: 1;}
-}
-@keyframes paperMapFadeIn {
-  0% {-webkit-transform: scale(0, 0.5);transform: scale(0, 0.5); opacity: 0;}
-  100% {-webkit-transform: scale(1);transform: scale(1); opacity: 1;}
+.select select:disabled ~ .select__arrow {
+  border-top-color: #ccc;
 }

@@ -48,6 +48,7 @@ const discovrApp = angular.module('DiscovrIndex', [
               controller: 'Signup.IndexController',
               controllerAs: 'vm'
             })
+            //----------------------
             .state('Home', {
               url: '/',
               templateUrl: 'modules/home/Main.View.html',
@@ -55,6 +56,7 @@ const discovrApp = angular.module('DiscovrIndex', [
               controllerAs: 'vm',
               cache: false //required
             })
+            //----------------------
             .state('Housing', {
               url: '/housing',
               templateUrl: 'modules/housing/Main.View.html',
@@ -67,40 +69,48 @@ const discovrApp = angular.module('DiscovrIndex', [
               controller: 'HousingView.IndexController',
               controllerAs: 'vm'
             })
-            .state('HousingVirtualTour', {
+            .state('HousingVR', {
               url: '/housing/view/:id/tour',
-              templateUrl: 'modules/templates/VirtualTour.View.html',
+              templateUrl: 'modules/templates/VR.View.html',
               controller: 'HousingView.IndexController',
               controllerAs: 'vm'
             })
-            .state('placeView', {
-              url: '/placeview',
-              templateUrl: 'modules/places/view/PlaceView.view.html',
-              controller: 'PlaceView.IndexController',
-              controllerAs: 'vm'
-            })
+            //----------------------
             .state('Place', {
               url: '/place',
-              templateUrl: 'modules/places/Place.view.html',
+              templateUrl: 'modules/places/Main.View.html',
               controller: 'Place.IndexController',
               controllerAs: 'vm'
             })
-            .state('country', {
+            .state('PlaceView', {
+              url: '/place/view/:id',
+              templateUrl: 'modules/places/view/Main.View.html',
+              controller: 'PlaceView.IndexController',
+              controllerAs: 'vm'
+            })
+            .state('PlaceVR', {
+              url: '/place/view/:id/tour',
+              templateUrl: 'modules/templates/VR.View.html',
+              controller: 'HousingView.IndexController',
+              controllerAs: 'vm'
+            })
+            //----------------------            
+            .state('Country', {
               url: '/country',
-              templateUrl: 'modules/country/Country.View.html',
+              templateUrl: 'modules/country/Main.View.html',
               controller: 'Country.IndexController',
               controllerAs: 'vm'
                })
-               .state('countryv', {
-              url: '/country/countryv',
-              templateUrl: 'modules/country/Countryv/Country.View.html',
+            .state('CountryPlaces', {
+              url: '/country/places',
+              templateUrl: 'modules/country/places/Main.View.html',
               controller: 'Country.IndexController',
               controllerAs: 'vm'
                })
-               .state('countryPlaces', {
-              url: '/country/Places',
-              templateUrl: 'modules/country/Places/CountryP.View.html',
-              controller: 'CountryP.IndexController',
+            .state('CountryAddress', {
+              url: '/country/address',
+              templateUrl: 'modules/country/address/Main.View.html',
+              controller: 'Country.IndexController',
               controllerAs: 'vm'
                })
             .state('institution', {

@@ -4,6 +4,20 @@ height:100%;
 b{
 	font-weight: bold;
 }
+.ContainerFloatTiles {
+	list-style: none;
+    margin-top: -220px;
+    width: 32%;
+    height: 100px;
+}
+#DobleTile ul li {
+	width: 180px;
+	vertical-align: middle;
+	cursor: pointer;
+}
+.iconText {
+	vertical-align:15px;
+}
 .tab{
 	background: rgba(36, 36, 36, 0.84);
 	height:40px;
@@ -23,15 +37,22 @@ b{
 	padding-right:3%;	
 }
 .container{
+	margin-top: 20px;
 	padding-left:10px;
 	padding-right:10px;
+	margin-bottom: 50px;
 }
 .address{
 	height:260px;
 	background:white;
-	margin-top:35px;
+	box-shadow: 0 2px 2px 0 rgba(0,0,0,.14),0 3px 1px -2px rgba(0,0,0,.2),0 1px 5px 0 rgba(0,0,0,.12);
+	margin-top:20px;
 }
-.map{
+.addressText{
+	padding-left: 20px;
+	padding-right: 20px;
+}
+.coverPic{
 	float: left;
 	width:30%;
 	height:260px;
@@ -48,17 +69,7 @@ height:210px;
 }
 .downbar {
 	height:30px;
-}
-.update{
-	color:blue;
-	border-right:solid black;
-	padding-left:3%;
-	padding-right:3%;
-}
-.delete{
-	color:red;
-	padding-left:3%;
-	padding-right:3%;
+	float: right;
 }
 .lang{
 	margin-top: -20px;
@@ -68,13 +79,9 @@ height:210px;
 	text-align: center;
 }
 .regdat{
-	float:right;
-	padding-top:60px;
-	padding-right:15px;	
+	float:left;
 }
-.countrycont{
-	
-	margin-top:35px;
+.countrycont{	
 	padding: 5px;
 	list-style: none;
 	display: -webkit-box;
@@ -86,9 +93,10 @@ height:210px;
 	-webkit-flex-flow: row wrap;
 	justify-content: space-around;	
 }
-.countrydet p{
-	margin-top:60px;
-	margin-left:140px;
+.countrydet p {	
+	margin-top: 60px;
+	margin-left: 140px;
+	margin-bottom: 60px;
 }
 .flag img{
 	margin-top:30px;
@@ -97,20 +105,45 @@ height:210px;
 	width:120px;
 	height:120px;
 	border-radius:60px; 
-	box-shadow: 0 0 8px rgba(0, 0, 0, .8);
+	box-shadow: 0 2px 2px 0 rgba(0,0,0,.14),0 3px 1px -2px rgba(0,0,0,.2),0 1px 5px 0 rgba(0,0,0,.12);
 }
 .countrydet{
-	margin-bottom:20px;
-	width: 320px;
+	margin-bottom:15px;
+	display: inline-block;
+	width: 350px;
 	height:200px;
-	border: solid black;
+	padding-right: 10px;
+	box-shadow: 0 2px 2px 0 rgba(0,0,0,.14),0 3px 1px -2px rgba(0,0,0,.2),0 1px 5px 0 rgba(0,0,0,.12);
 	background-color: white;
 }
 .countrydet input{
 	float: right;
 }
 .deletebar {
+	float: right;
+	margin-right: 5px;
+	bottom: 0px;	
 	height:30px;
-	margin-top: 50px;
-	margin-left:180px;
+}
+.delete{
+  color: #e0655d;
+  cursor: pointer;
+  font-weight: 500;
+  margin: 15px 0 5px;
+  padding: 10px;
+}
+.delete:hover {
+  background-color: rgba(221, 65, 50, .2);
+  color: #e0655d;
+}
+.action{
+	color:#1464ab;
+	cursor: pointer;
+	font-weight: 500;
+	margin: 15px 0 5px;
+	padding: 10px
+}
+.action:hover {
+  background-color: rgba(20, 100, 171, .2);
+  color: #1464ab;
 }

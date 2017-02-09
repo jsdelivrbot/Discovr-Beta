@@ -1,0 +1,134 @@
+<!-- Begin Import CSS Files -->
+<link rel="stylesheet" href="../../../assets/css/Room.css">
+<!-- End Import CSS Files -->
+
+<!-- Body Page -->
+<div class="ContainerAlltoAll">
+  <!-- Import Navbar HTML -->
+  <div  id="colored" ng-include src="'modules/templates/NavBar.html'"> </div>
+
+  <!-- Room Container -->
+  <div class="ViewContainer">
+    <div class="MainContainer">
+      <!-- ----------------     IMPORT HTML CAROUSEL SLIDER     ------------------------- -->
+      <div ng-include src="'modules/templates/Slider.html'"> </div>
+      <!-- Begin Navbar -->
+      <nav class="tabOption">
+        <ul>
+          <li class="rightBorder">
+            <input class="tabHeader" id="tab1" type="radio" name="tabs" ng-click="vm.openContent(event,'about')" checked>
+            <label for="tab1">Acerca de</label>
+          </li>
+          <li class="rightBorder">
+            <input class="tabHeader" id="tab-2" type="radio" name="tabs" ng-click="vm.openContent(event,'opinion')" >
+            <label for="tab-2">Opiniones</label>
+          </li>
+          <li class="rightBorder">
+            <input class="tabHeader" id="tab-3" type="radio" name="tabs" ng-click="vm.openContent(event,'services')" >
+            <label for="tab-3">Servicios</label>
+          </li>
+          <li>
+            <input class="tabHeader" id="tab-4" type="radio" name="tabs" ng-click="vm.openContent(event,'gallery')" >
+            <label for="tab-4">Galeria</label>
+          </li>
+        </ul>
+      </nav>
+      <!-- En NavBar -->
+      <!-- Body -->
+      <div class="RoomContainer">
+        <section class="RoomBodyContainer">
+          <h5 style="text-align: center; font-weight: bold">Room 404</h5>
+          <hr class="separator">
+          <!--  Tab Content  -->
+          <section class="tabContent" id="about">
+            <p>
+              Bacon ipsum dolor sit amet beef venison beef ribs kielbasa. Sausage pig leberkas, t-bone sirloin shoulder bresaola. Frankfurter rump porchetta ham. Pork belly prosciutto brisket meatloaf short ribs.
+            </p>
+            <p>
+              Brisket meatball turkey short loin boudin leberkas meatloaf chuck andouille pork loin pastrami spare ribs pancetta rump. Frankfurter corned beef beef tenderloin short loin meatloaf swine ground round venison.
+            </p>
+          </section>
+            
+          <section class="tabContent" id="opinion">
+            <p>
+              Bacon ipsum dolor sit amet landjaeger sausage brisket, jerky drumstick fatback boudin ball tip turducken. Pork belly meatball t-bone bresaola tail filet mignon kevin turkey ribeye shank flank doner cow kielbasa shankle. Pig swine chicken hamburger, tenderloin turkey rump ball tip sirloin frankfurter meatloaf boudin brisket ham hock. Hamburger venison brisket tri-tip andouille pork belly ball tip short ribs biltong meatball chuck. Pork chop ribeye tail short ribs, beef hamburger meatball kielbasa rump corned beef porchetta landjaeger flank. Doner rump frankfurter meatball meatloaf, cow kevin pork pork loin venison fatback spare ribs salami beef ribs.
+            </p>
+            <p>
+              Jerky jowl pork chop tongue, kielbasa shank venison. Capicola shank pig ribeye leberkas filet mignon brisket beef kevin tenderloin porchetta. Capicola fatback venison shank kielbasa, drumstick ribeye landjaeger beef kevin tail meatball pastrami prosciutto pancetta. Tail kevin spare ribs ground round ham ham hock brisket shoulder. Corned beef tri-tip leberkas flank sausage ham hock filet mignon beef ribs pancetta turkey.
+            </p>
+          </section>
+            
+          <section class="tabContent" id="services">
+            <p>
+              Bacon ipsum dolor sit amet beef venison beef ribs kielbasa. Sausage pig leberkas, t-bone sirloin shoulder bresaola. Frankfurter rump porchetta ham. Pork belly prosciutto brisket meatloaf short ribs.
+            </p>
+            <p>
+              Brisket meatball turkey short loin boudin leberkas meatloaf chuck andouille pork loin pastrami spare ribs pancetta rump. Frankfurter corned beef beef tenderloin short loin meatloaf swine ground round venison.
+            </p>
+          </section>
+            
+          <section class="tabContent" id="gallery">
+            <p>
+              Bacon ipsum dolor sit amet landjaeger sausage brisket, jerky drumstick fatback boudin ball tip turducken. Pork belly meatball t-bone bresaola tail filet mignon kevin turkey ribeye shank flank doner cow kielbasa shankle. Pig swine chicken hamburger, tenderloin turkey rump ball tip sirloin frankfurter meatloaf boudin brisket ham hock. Hamburger venison brisket tri-tip andouille pork belly ball tip short ribs biltong meatball chuck. Pork chop ribeye tail short ribs, beef hamburger meatball kielbasa rump corned beef porchetta landjaeger flank. Doner rump frankfurter meatball meatloaf, cow kevin pork pork loin venison fatback spare ribs salami beef ribs.
+            </p>
+            <p>
+              Jerky jowl pork chop tongue, kielbasa shank venison. Capicola shank pig ribeye leberkas filet mignon brisket beef kevin tenderloin porchetta. Capicola fatback venison shank kielbasa, drumstick ribeye landjaeger beef kevin tail meatball pastrami prosciutto pancetta. Tail kevin spare ribs ground round ham ham hock brisket shoulder. Corned beef tri-tip leberkas flank sausage ham hock filet mignon beef ribs pancetta turkey.
+            </p>
+          </section>
+          <!--  End Tab Content  -->
+        </section>
+        <aside class="RoomRightSideBar">
+          <ul>
+            <li>
+              <h3>Price: </h3>
+              <span> US$ 1999.99</span>
+            </li>
+            <hr class="separator">
+            <li>
+              <h3>Rate: </h3>
+              <span> 5 Star </span>
+            </li>
+            <hr class="separator">
+            <li>
+              <h3>Capacity: </h3>
+              <span> 02 People</span>
+            </li>
+          </ul>
+        </aside>
+      </div>
+      <!-- End Body -->
+    </div>    
+    <div class="leftSideBar">
+      <ul>
+        <li>
+          <picture>
+            <img src="http://3.bp.blogspot.com/-7QT8crQv1eo/U8vvzE9ArDI/AAAAAAAACrI/MHNZVyzAnTU/s1600/verano-14.png">
+          </picture>
+          <div class="BarraTitle" translate>SeasonTitle1</div>
+        </li>
+        <li>
+          <picture>
+            <img src="http://www.avuelapluma.com/Fotos/sonata-triste-de-invierno.jpg">
+          </picture>
+          <div class="BarraTitle" translate>SeasonTitle2</div>
+        </li>
+         <li>
+          <picture>
+            <img src="http://identidadgeek.com/wp-content/uploads/2015/09/oton%CC%83o.jpg">
+          </picture>
+          <div class="BarraTitle" translate>SeasonTitle3</div>
+        </li>
+
+         <li>
+          <picture>
+            <img src="https://www.futurlife21.com/wp-content/uploads/primavera.jpg">
+          </picture>
+          <div class="BarraTitle" translate>SeasonTitle4</div>
+        </li>
+      </ul>
+    </div>
+    <!-- Room Container -->
+    
+  </div>
+
+</div>

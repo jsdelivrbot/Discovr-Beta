@@ -8,6 +8,11 @@
   margin-top: 50px;
 }
 .VrView{
+  width: 100%;
+  float: left;
+  height: calc(100vh - 50px);
+}
+.VrPlaceView{
   width: calc(100% - 200px);
   float: left;
   height: calc(100vh - 50px);
@@ -56,7 +61,7 @@
     flex-flow: row wrap;
     overflow-y: hidden;
   }
-  .VrView{
+  .VrPlaceView{
     order: 2;
     width: 100%;
     height: calc(100vh - 214px);

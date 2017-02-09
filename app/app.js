@@ -69,6 +69,18 @@ const discovrApp = angular.module('DiscovrIndex', [
               controller: 'HousingView.IndexController',
               controllerAs: 'vm'
             })
+            .state('HousingGallery', {
+              url: '/housing/view/:id/gallery',
+              templateUrl: 'modules/templates/Gallery.View.html', //<--Check This
+              controller: 'HousingView.IndexController',
+              controllerAs: 'vm'
+            })
+            .state('HousingRooms', {
+              url: '/housing/view/:id/rooms',
+              templateUrl: 'modules/templates/Room.View.html', //<--Check This
+              controller: 'HousingView.IndexController',
+              controllerAs: 'vm'
+            })
             .state('HousingVR', {
               url: '/housing/view/:id/tour',
               templateUrl: 'modules/templates/VR.View.html',

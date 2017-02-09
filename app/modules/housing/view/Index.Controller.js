@@ -34,6 +34,7 @@ discovrApp.controller('HousingView.IndexController', function(
       room: 1
     };    
     function initController() {
+        //vm.openContent(event,'about')
         vm.username = $localStorage.currentUser.username;
         $translate.use('housing/languages/' + browserLan);
         console.log(browserLan);
@@ -78,6 +79,14 @@ discovrApp.controller('HousingView.IndexController', function(
     $scope.isCollapsed = false;
     $scope.isCollapsedHorizontal = false;
 
+    vm.openContent = function(evt, id) {
+      var i, x, tablinks;
+      x = document.getElementsByClassName("tabContent");
+      for (i = 0; i < x.length; i++) {
+        x[i].style.display = "none";
+      }
+      document.getElementById(id).style.display = "block";
+    }
 
     /*$scope.dataArray = [
       {

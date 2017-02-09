@@ -28,6 +28,32 @@
     height: 280px;
     object-fit: cover;
 }
+.tabOption {
+    width: 50%;
+    position: relative;
+    float: right;
+    margin-top: -25px;
+    z-index: 9999;
+    color: white;
+}
+.tabOption ul {
+    list-style: none;
+    margin-bottom: -10px;
+}
+.tabOption ul li {
+    display:inline-block; 
+    width:120px;
+    height: 20px;
+    vertical-align:middle;
+    text-align: center;
+    overflow:hidden;
+}
+.rightBorder{
+	border-right: solid white;	
+}
+.ViewContainer .MainContainer .carousel-caption {
+    display: none;
+}
 @media only screen and (min-width: 820px) {
   #Carousel-title {
     right: 0%;
@@ -39,6 +65,7 @@
     color:#fff;
     z-index: 98;
   }
+          
 }
 /* AQUI SE GENERA LA BARRA DIFUMINADA QUE ESTA EN LA PARTE INFERIOR DE LOS TILES */
 .BlurredTileBar {
@@ -213,8 +240,19 @@ img {
     bottom: -20px;
     z-index: 98;
   }
+    .tabOption {
+        width: 94%;
+        margin-right: 3%;
+        margin-left: 3%;
+    }
+  .tabOption ul li {
+        width:100px;
+    } 
   .PrincipalSlider {
-      margin-top: 50px;
+      margin-top: 0px;
+  }
+  .MainContainer .PrincipalSlider {
+      margin-top: 0px;
   }
   .slider {
       height: 210px;

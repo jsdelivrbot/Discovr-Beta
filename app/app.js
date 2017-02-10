@@ -88,6 +88,19 @@ const discovrApp = angular.module('DiscovrIndex', [
               controllerAs: 'vm'
             })
             //----------------------
+            .state('Store', {
+              url: '/store',
+              templateUrl: 'modules/store/Main.View.html',
+              controller: 'Store.IndexController',
+              controllerAs: 'vm'
+            })
+            .state('StoreView', {
+              url: '/store/view',
+              templateUrl: 'modules/store/view/Main.View.html',
+              controller: 'Store.IndexController',
+              controllerAs: 'vm'
+            })
+            //----------------------
             .state('Place', {
               url: '/place',
               templateUrl: 'modules/places/Main.View.html',
@@ -100,10 +113,29 @@ const discovrApp = angular.module('DiscovrIndex', [
               controller: 'PlaceView.IndexController',
               controllerAs: 'vm'
             })
+            .state('PlaceGallery', {
+              url: '/place/view/:id/gallery',
+              templateUrl: 'modules/templates/Gallery.View.html', //<--Check This
+              controller: 'PlaceView.IndexController',
+              controllerAs: 'vm'
+            })
             .state('PlaceVR', {
               url: '/place/view/:id/tour',
               templateUrl: 'modules/templates/VR.View.html',
-              controller: 'HousingView.IndexController',
+              controller: 'PlaceView.IndexController',
+              controllerAs: 'vm'
+            })
+            //----------------------        
+            .state('Institution', {
+              url: '/institution',
+              templateUrl: 'modules/institutions/Main.View.html',
+              controller: 'Institution.IndexController',
+              controllerAs: 'vm'
+            })
+            .state('InstitutionView', {
+              url: '/institution/view/:id',
+              templateUrl: 'modules/institutions/view/Main.View.html',
+              controller: 'Institution.IndexController',
               controllerAs: 'vm'
             })
             //----------------------            
@@ -112,48 +144,32 @@ const discovrApp = angular.module('DiscovrIndex', [
               templateUrl: 'modules/country/Main.View.html',
               controller: 'Country.IndexController',
               controllerAs: 'vm'
-               })
+            })
             .state('CountryPlaces', {
               url: '/country/places',
               templateUrl: 'modules/country/places/Main.View.html',
               controller: 'Country.IndexController',
               controllerAs: 'vm'
-               })
+            })
             .state('CountryAddress', {
               url: '/country/address',
               templateUrl: 'modules/country/address/Main.View.html',
               controller: 'Country.IndexController',
               controllerAs: 'vm'
-               })
-            .state('institution', {
-              url: '/institution',
-              templateUrl: 'modules/institutions/Institution.view.html',
-              controller: 'Institution.IndexController',
+            })            
+            //----------------------      
+            .state('Emergency', {
+              url: '/emergency',
+              templateUrl: 'modules/emergency/Main.View.html',
+              controller: 'Emergency.IndexController',
               controllerAs: 'vm'
             })
-            .state('institutionView', {
-              url: '/institutionview',
-              templateUrl: 'modules/institutions/view/InstitutionView.view.html',
-              controller: 'InstitutionView.IndexController',
-              controllerAs: 'vm'
-            })
+            //----------------------        
             .state('working', {
               url: '/working',
               templateUrl: 'modules/templates/working.html',
-            })
-            .state('Store', {
-              url: '/store',
-              templateUrl: 'modules/store/Store.view.html',
-              controller: 'Store.IndexController',
-              controllerAs: 'vm'
-            })
-            .state('StoreView', {
-              url: '/store/view',
-              templateUrl: 'modules/store/view/View.view.html',
-              controller: 'Sview.IndexController',
-              controllerAs: 'vm'
-            })
-
+            })            
+            //----------------------    
             .state('BusinessWelcome', {
               url: '/business/welcome',
               templateUrl: 'module2/welcome/index.view.html',

@@ -100,6 +100,80 @@ const discovrApp = angular.module('DiscovrIndex', [
               controller: 'Store.IndexController',
               controllerAs: 'vm'
             })
+             .state('StoreGallery', {
+              url: '/store/view/:id/gallery',
+              templateUrl: 'modules/templates/Gallery.View.html', //<--Check This
+              controller: 'StoreView.IndexController',
+              controllerAs: 'vm'
+            })
+            .state('StoreArticle', {
+              url: '/store/view/:id/article/',
+              templateUrl: 'modules/templates/Article.View.html', //<--Check This
+              controller: 'StoreView.IndexController',
+              controllerAs: 'vm'
+            })
+            .state('StoreVR', {
+              url: '/store/view/:id/tour',
+              templateUrl: 'modules/templates/VR.View.html',
+              controller: 'StoreView.IndexController',
+              controllerAs: 'vm'
+            })
+             //----------------------
+            .state('Entertaintment', {
+              url: '/entertaintment',
+              templateUrl: 'modules/entertaintment/Main.View.html',
+              controller: 'Entertaintment.IndexController',
+              controllerAs: 'vm'
+            })
+            .state('EntertaintmentView', {
+              url: '/entertaintment/view',
+              templateUrl: 'modules/entertaintment/view/Main.View.html',
+              controller: 'Entertaintment.IndexController',
+              controllerAs: 'vm'
+            })
+            .state('EntertaintmentGallery', {
+              url: '/entertaintment/view/:id/gallery',
+              templateUrl: 'modules/templates/Gallery.View.html', //<--Check This
+              controller: 'EntertaintmentView.IndexController',
+              controllerAs: 'vm'
+            })
+            .state('EntertaintmentVR', {
+              url: '/entertaintment/view/:id/tour',
+              templateUrl: 'modules/templates/VR.View.html',
+              controller: 'EntertaintmentView.IndexController',
+              controllerAs: 'vm'
+            })
+            //----------------------
+            .state('FAD', {
+              url: '/fad',
+              templateUrl: 'modules/fad/Main.View.html',
+              controller: 'FAD.IndexController',
+              controllerAs: 'vm'
+            })
+            .state('FADView', {
+              url: '/fad/view',
+              templateUrl: 'modules/fad/view/Main.View.html',
+              controller: 'FAD.IndexController',
+              controllerAs: 'vm'
+            })
+            .state('FADGallery', {
+              url: '/fad/view/:id/gallery',
+              templateUrl: 'modules/templates/Gallery.View.html', //<--Check This
+              controller: 'FADView.IndexController',
+              controllerAs: 'vm'
+            })
+            .state('FADArticle', {
+              url: '/fad/view/:id/article/',
+              templateUrl: 'modules/templates/Article.View.html', //<--Check This
+              controller: 'FADView.IndexController',
+              controllerAs: 'vm'
+            })
+            .state('FADVR', {
+              url: '/fad/view/:id/tour',
+              templateUrl: 'modules/templates/VR.View.html',
+              controller: 'FADView.IndexController',
+              controllerAs: 'vm'
+            })
             //----------------------
             .state('Place', {
               url: '/place',
@@ -156,7 +230,7 @@ const discovrApp = angular.module('DiscovrIndex', [
               templateUrl: 'modules/country/address/Main.View.html',
               controller: 'Country.IndexController',
               controllerAs: 'vm'
-            })            
+            })                      
             //----------------------      
             .state('Emergency', {
               url: '/emergency',
@@ -164,8 +238,72 @@ const discovrApp = angular.module('DiscovrIndex', [
               controller: 'Emergency.IndexController',
               controllerAs: 'vm'
             })
+            /*
+            //----------------------      
+            .state('Preferences', {
+              url: '/preferences',
+              templateUrl: 'modules/preferences/Main.View.html',
+              controller: 'Preferences.IndexController',
+              controllerAs: 'vm'
+            })
+            //----------------------      
+            .state('Wallet', {
+              url: '/wallet',
+              templateUrl: 'modules/wallet/Main.View.html',
+              controller: 'Wallet.IndexController',
+              controllerAs: 'vm'
+            })  
+            //----------------------      
+            .state('Adventures', {
+              url: '/adventures',
+              templateUrl: 'modules/adventures/Main.View.html',
+              controller: 'Adventures.IndexController',
+              controllerAs: 'vm'
+            })
+            //----------------------      
+            .state('Clubs', {
+              url: '/preferences',
+              templateUrl: 'modules/clubs/Main.View.html',
+              controller: 'Clubs.IndexController',
+              controllerAs: 'vm'
+            })
+            //----------------------      
+            .state('Preferences', {
+              url: '/preferences',
+              templateUrl: 'modules/preferences/Main.View.html',
+              controller: 'Preferences.IndexController',
+              controllerAs: 'vm'
+            })*/
             //----------------------        
-            .state('working', {
+            .state('Events', {
+              url: '/events',
+              templateUrl: 'modules/events/Main.View.html',
+              controller: 'Events.IndexController',
+              controllerAs: 'vm'
+            }) 
+            //----------------------        
+            .state('WhereToGo', {
+              url: '/wheretogo',
+              templateUrl: 'modules/wheretogo/Main.View.html',
+              controller: 'WhereToGo.IndexController',
+              controllerAs: 'vm'
+            })
+            //----------------------        
+            .state('Gallery', {
+              url: '/gallery',
+              templateUrl: 'modules/gallery/Main.View.html',
+              controller: 'Gallery.IndexController',
+              controllerAs: 'vm'
+            })
+            //----------------------        
+            .state('Promotion', {
+              url: '/promotion',
+              templateUrl: 'modules/promotion/Main.View.html',
+              controller: 'Promotion.IndexController',
+              controllerAs: 'vm'
+            })
+            //----------------------        
+            .state('Working', {
               url: '/working',
               templateUrl: 'modules/templates/working.html',
             })            

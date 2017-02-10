@@ -1,6 +1,6 @@
 <!-- TILES POCICIONADOS SOBRE EL SLIDER-->
 <ul>
-    <a ui-sref="working">
+    <a ui-sref="Wallet">
         <li class="scale">
             <div class="LiContainer">
                 <i class="material-icons">account_balance_wallet</i>
@@ -9,7 +9,7 @@
             <div class="TitleDiv" translate>WalletTitle</div>
         </li>
     </a>
-    <a ui-sref="working">
+    <a ui-sref="Emergency">
         <li class="scale">
             <div class="LiContainer">
                 <i class="material-icons">security</i>
@@ -17,7 +17,7 @@
             <div class="TitleDiv" translate>EmergenciesTitle</div>
         </li>
     </a>
-    <a ui-sref="working">
+    <a ui-sref="Preferences">
         <li class="scale">
             <div class="LiContainer">
                 <i class="material-icons">extension</i>
@@ -26,7 +26,7 @@
             <div class="TitleDiv" translate>PreferencesTitle</div>
         </li>
     </a>
-    <a ui-sref="institution">
+    <a ui-sref="Institution">
         <li class="scale">
                 <div class="LiContainer">
                     <i class="material-icons">business</i>
@@ -42,7 +42,7 @@
             <div class="TitleDiv" translate>CountriesTitle</div>
         </li>
     </a>
-        <a ui-sref="working">
+        <a ui-sref="Working">
         <li class="scale">
             <div class="LiContainer">
                 <i class="material-icons">directions_car</i>
@@ -51,7 +51,8 @@
         </li>
     </a>
     <li class="lessFont scale">
-        <div class="LiContainer">
+        <a ui-sref="Clubs">
+            <div class="LiContainer">
             <i class="material-icons materialOut">group</i>
             <div class="slider">
                 <ul>
@@ -73,30 +74,34 @@
                 <div class="BlurredTileBar"></div>
             </div>
         </div>
+        </a>
+        
         <!-- ---------------------------------------------------------------------------------------------------- x -->
         <li id="DobleTile" class="lessFont scale2">
-            <div class="LiContainer">
-                <i class="material-icons materialOut">collections_bookmark</i>
-                <div class="slider">
-                    <ul>
-                        <li>
-                            <img src="https://unmundodesuenos.files.wordpress.com/2012/06/para-escalar1.jpg" alt="">
-                        </li>
-                        <li>
-                            <img src="http://www.trips-peru.com/wp-content/uploads/2013/08/trek-mountain-lodge-6d.jpg" alt="">
-                        </li>
-                        <li>
-                            <img src="http://www.actividadesypaseos.com/wp-content/gallery/canopy/Canopy-4.jpg" alt="">
-                        </li>
-                        <li>
-                            <img src="http://guiafitness.com/wp-content/uploads/trekking-y-senderismo.jpg" alt="">
-                        </li>
-                    </ul>
-                    <span class="SpanTitle" translate>AdventureTitle</span>
-                    <div class="NotificacionTileFloat">1</div>
-                    <div class="BlurredTileBar"></div>
+            <a ui-sref="Adventures">
+                <div class="LiContainer">
+                    <i class="material-icons materialOut">collections_bookmark</i>
+                    <div class="slider">
+                        <ul>
+                            <li>
+                                <img src="https://unmundodesuenos.files.wordpress.com/2012/06/para-escalar1.jpg" alt="">
+                            </li>
+                            <li>
+                                <img src="http://www.trips-peru.com/wp-content/uploads/2013/08/trek-mountain-lodge-6d.jpg" alt="">
+                            </li>
+                            <li>
+                                <img src="http://www.actividadesypaseos.com/wp-content/gallery/canopy/Canopy-4.jpg" alt="">
+                            </li>
+                            <li>
+                                <img src="http://guiafitness.com/wp-content/uploads/trekking-y-senderismo.jpg" alt="">
+                            </li>
+                        </ul>
+                        <span class="SpanTitle" translate>AdventureTitle</span>
+                        <div class="NotificacionTileFloat">1</div>
+                        <div class="BlurredTileBar"></div>
+                    </div>
                 </div>
-            </div>
+            </a>
         </li>
     </li>
 </ul>

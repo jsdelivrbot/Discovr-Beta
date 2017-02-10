@@ -25,13 +25,13 @@
 .gnumber{ /* Estilo de contenedor de numeros generales */
     width:80%;
     float:left;
-   	list-style: none;
+	list-style: none;
 	display: -webkit-box;
 	display: -moz-box;
 	display: -ms-flexbox;
 	display: -webkit-flex;
 	display: flex;
-	/*flex-flow: row wrap;*/
+	flex-flow: row wrap;
 	-webkit-flex-flow: row wrap;
 	justify-content: space-around;
 }
@@ -42,9 +42,9 @@
     float: right;
 }
 .gnumdet{ /* Estilo detalle de números generales */
-    width: 250px;
+    width: 290px;
 	height:140px;
-    margin:10px;
+	margin-bottom: 10px;
     box-shadow: 0 2px 2px 0 rgba(0,0,0,.14),0 3px 1px -2px rgba(0,0,0,.2),0 1px 5px 0 rgba(0,0,0,.12);
 	background-color: white;
     
@@ -55,4 +55,40 @@
     margin-left:30px;
     box-shadow: 0 2px 2px 0 rgba(0,0,0,.14),0 3px 1px -2px rgba(0,0,0,.2),0 1px 5px 0 rgba(0,0,0,.12);
 	background-color: white;
+}
+.contact img{ /* Estilo aplicado a la imágen en el detalle de general number */
+	margin-top:20px;
+	margin-left:5px;
+	margin-right:5px;
+	float: left;
+	width:100px;
+	height:100px;
+	border-radius:60px; 
+	box-shadow: 0 2px 2px 0 rgba(0,0,0,.14),0 3px 1px -2px rgba(0,0,0,.2),0 1px 5px 0 rgba(0,0,0,.12);
+}
+.phonedet{/*Contenedor del detalle telefónico  */
+	height: 110px;
+		
+}
+.editbar {/* Contenedor del boton editar */
+	float: right;
+	height:30px;
+	background:limegreen;
+	width: 60px;
+}
+.edit{/* Botón editar*/
+  cursor: pointer;
+  padding-left:2px;
+  font-size:20px;
+}
+.edit:hover {
+  color: black;
+ 
+}
+.text{/* Detalle del número telefónico, solo el texto */
+	padding-top:30px;
+}
+.num{/* Estilo aplicado únicamente al número telefónico */
+	margin-top:5px;
+	font-weight: bold;	
 }

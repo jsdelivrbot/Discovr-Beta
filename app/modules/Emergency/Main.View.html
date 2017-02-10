@@ -1,0 +1,33 @@
+<link rel="stylesheet" href="../../../assets/css/FloatTiles.css">
+<link rel="stylesheet" href="../../../assets/css/Emergency.css">
+<div class="ContainerAlltoAll">
+    <div ng-include src="'modules/templates/NavBar.html'"> </div>
+    <div ng-include src="'modules/templates/Slider.html'"> </div>    
+    <!-- Float Tiles -->
+    <div class="ContainerFloatTiles">
+      <li id="DobleTile">
+       <div class="LiContainer"></div>
+       <div id="HaveThis">
+         <ul style="">
+           <li>
+             <a href="#">
+                <i class="material-icons">call</i>
+                <span class="iconText">Policia</span>
+             </a>
+           </li>
+           <li>
+             <i class="material-icons">call</i>
+             <span class="iconText">Servicios médicos</span>
+           </li>
+           <li>
+             <i class="material-icons">language</i>
+             <span class="iconText">Agregar número</span>
+           </li>
+        </ul>
+      </div>
+     </li>
+    </div>
+    <!-- Finaliza Float tiles -->
+    
+    <div ng-include src="'modules/Emergency/MainTiles.html'"> </div>
+</div>

@@ -38,13 +38,13 @@ const discovrApp = angular.module('DiscovrIndex', [
          $stateProvider
             .state('Welcome', {
               url: '/welcome',
-              templateUrl: 'modules/welcome/Index.View.html',
+              templateUrl: 'modules/welcome/Main.View.html',
               controller: 'Login.IndexController',
               controllerAs: 'vm'
             })
             .state('Signup', {
               url: '/welcome/signup',
-              templateUrl: 'modules/welcome/signup/Index.View.html',
+              templateUrl: 'modules/welcome/signup/Main.View.html',
               controller: 'Signup.IndexController',
               controllerAs: 'vm'
             })
@@ -300,6 +300,25 @@ const discovrApp = angular.module('DiscovrIndex', [
               url: '/promotion',
               templateUrl: 'modules/promotion/Main.View.html',
               controller: 'Promotion.IndexController',
+              controllerAs: 'vm'
+            })
+            //----------------------        
+            .state('BookedRoom', {
+              url: '/booked/room/:id',
+              templateUrl: 'modules/booked/Room.View.html',
+              controller: 'Booked.IndexController',
+              controllerAs: 'vm'
+            })
+            .state('BookedTable', {
+              url: '/booked/table/:id',
+              templateUrl: 'modules/booked/Table.View.html',
+              controller: 'Booked.IndexController',
+              controllerAs: 'vm'
+            })
+            .state('Orders', {
+              url: '/orders/item/:id',
+              templateUrl: 'modules/orders/Main.View.html',
+              controller: 'Orders.IndexController',
               controllerAs: 'vm'
             })
             //----------------------        

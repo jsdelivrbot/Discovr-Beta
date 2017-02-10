@@ -28,5 +28,23 @@
      </li>
     </div>
     <!-- Finaliza Float tiles -->
+    <!-- Begin Navbar -->
+      <nav class="tabOption" style="margin-right: -230px;">
+        <ul>
+          <li class="rightBorder">
+            <input class="tabHeader" id="tab1" type="radio" name="tabs" ng-click="vm.openContent(event,'about')">
+            <label for="tab1"><a ui-sref="CountryAddress">Dirección</a></label>
+          </li>
+          <li class="rightBorder">
+            <input class="tabHeader" id="tab-2" type="radio" name="tabs" ng-click="vm.openContent(event,'opinion')" >
+            <label for="tab-2"><a ui-sref="CountryPlaces">Favoritos</a></label>
+          </li>
+          <li class="">
+            <input class="tabHeader" id="tab-3" type="radio" name="tabs" ng-click="vm.openContent(event,'services')" checked>
+            <label for="tab-3"><a ui-sref="Country">País</a></label>
+          </li>
+        </ul>
+      </nav>
+      <!-- En NavBar -->
     <div ng-include src="'modules/Country/address/MainTiles.html'"> </div>
 </div>

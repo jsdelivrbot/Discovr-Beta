@@ -29,6 +29,7 @@
 }
 .RoomContainer {
  width: 100%;
+ height: 450px;
 }
 .RoomBodyContainer {
     background-color: white;
@@ -67,7 +68,8 @@
 }
 .tabContent {
   display: none;
-  padding: 20px 0 0;
+  height: 365px;
+  overflow-y: auto;
 }
 input {
   display: none;
@@ -83,15 +85,48 @@ input.tabHeader:checked + label {
   border-top: 2px solid orange;
 }
 
-.tapOption ul li #tab1[id^="tab"]:checked~.RoomContainer .RoomBodyContainer #content1 {
-    display: block;
+/*----------------------------------------------------------------------*/
+/* --------------------------------------------------- */
+.CardTab {
+  max-width: 100%;
+  height: 90%;
+  padding: 5px;
+  font-size: 14px;
 }
+.Usertab {
+  float: left;
+  padding-right: 10px;
+  display: table;
+}
+.Usertab img {
+  width: 60px;
+  height: 60px;
+  float: left;
+  margin-right: 10px;
+  border-radius: 50%;
 
-#tab1:checked ~ #content1,
-#tab2:checked ~ #content2,
-#tab3:checked ~ #content3,
-#tab4:checked ~ #content4 {
-  display: block;
+}
+.Usertab .material-icons{
+  font-size: 16px;
+  vertical-align: bottom;
+}
+.NameUserTab {
+  font-weight: bold;
+}
+.DatePubl {
+  font-size: 10px;
+  font-style: italic;
+}
+.DatePubl2 {
+  font-size: 14px;
+
+}
+.Usertab .activ {
+  width: 80px;
+  height: 80px;
+  float: left;
+  margin-right: 10px;
+  border-radius: 50%;
 }
 /*-----------------------MOBILE -------------------------------*/
 @media only screen and (max-width: 767px) {

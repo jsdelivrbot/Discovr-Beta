@@ -110,32 +110,32 @@ discovrApp.controller('Signup.IndexController', function(
     $scope.noWrapSlides = false;
     $scope.active = 0;
     var slides = $scope.slides = [{
-            image: '../../assets/files/img/main/prinsipalSlider/1.jpg',
+            image: '../../assets/files/img/main/slider/1.jpg',
             id: 0,
             name: "Esto es un Nombre de Ejemplo"
         },
         {
-            image: '../../assets/files/img/main/prinsipalSlider/2.jpg',
+            image: '../../assets/files/img/main/slider/2.jpg',
             id: 1,
             name: "Esto es un Nombre de Ejemplo"
         },
         {
-            image: '../../assets/files/img/main/prinsipalSlider/3.jpg',
+            image: '../../assets/files/img/main/slider/3.jpg',
             id: 2,
             name: "Esto es un Nombre de Ejemplo"
         },
         {
-            image: '../../assets/files/img/main/prinsipalSlider/4.jpg',
+            image: '../../assets/files/img/main/slider/4.jpg',
             id: 3,
             name: "Esto es un Nombre de Ejemplo"
         },
         {
-            image: '../../assets/files/img/main/prinsipalSlider/5.jpg',
+            image: '../../assets/files/img/main/slider/5.jpg',
             id: 4,
             name: "Esto es un Nombre de Ejemplo"
         },
         {
-            image: '../../assets/files/img/main/prinsipalSlider/6.jpg',
+            image: '../../assets/files/img/main/slider/6.jpg',
             id: 5,
             name: "Esto es un Nombre de Ejemplo"
         }

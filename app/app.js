@@ -240,7 +240,7 @@ const discovrApp = angular.module('DiscovrIndex', [
             })
             //----------------------      
             .state('Clubs', {
-              url: '/preferences',
+              url: '/clubs',
               templateUrl: 'modules/clubs/Main.View.html',
               controller: 'Clubs.IndexController',
               controllerAs: 'vm'

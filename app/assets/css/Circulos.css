@@ -19,7 +19,7 @@
 	width: 100%;
 	margin-top:15px;
 }
-.gnumber{ /* Estilo de contenedor de numeros generales */
+.friends{ /* Estilo de contenedor de amigos */
     width:80%;
 	padding-right:10px;
     float:left;
@@ -33,27 +33,27 @@
 	-webkit-flex-flow: row wrap;
 	justify-content: space-around;
 }
-.mnumber{ /* Estilo contenedor de números principales */
+.recomend{ /* Estilo contenedor de recomendados */
     width:20%;
     margin-top:5px;
     border-left: solid white;
     float: right;
 }
-.mnumber h4{/* Estilo para el téxto en contenedor de números principales */
+.recomend h4{/* Estilo para el téxto en contenedor de recomendados */
 	font-weight: bold;
-	padding-left:40px;;
+	padding-left:50px;;
 	padding-bottom:20px;
 	color:white;
 }
-.gnumdet{ /* Estilo detalle de números generales */
-    width: 290px;
-	height:140px;
+.frienddet{ /* Estilo detalle de amigos */
+    width: 250px;
+	height:250px;
 	margin-bottom: 10px;
     box-shadow: 0 2px 2px 0 rgba(0,0,0,.14),0 3px 1px -2px rgba(0,0,0,.2),0 1px 5px 0 rgba(0,0,0,.12);
 	background-color: white;
     
 }
-.mnumdet{ /* Estilo detalle de números principales */
+.rdet{ /* Estilo detalle de recomendados */
     width: 200px;
 	height:80px;
     margin-left:30px;
@@ -61,37 +61,47 @@
 	background-color: white;
 	margin-bottom:10px;
 }
-.contact img{ /* Estilo aplicado a la imágen en el detalle de general number */
-	margin-top:20px;
-	margin-left:5px;
-	margin-right:5px;
-	float: left;
-	width:100px;
-	height:100px;
-	border-radius:60px; 
+.contact img{ /* Estilo aplicado a la imágen de friends */
+	width:250px;
+	height:150px;
 	box-shadow: 0 2px 2px 0 rgba(0,0,0,.14),0 3px 1px -2px rgba(0,0,0,.2),0 1px 5px 0 rgba(0,0,0,.12);
 }
-.phonedet{/*Contenedor del detalle telefónico  */
-	height: 110px;
-		
+.det{/*Contenedor del detalle de friend  */
+	height: 70px;
+	margin-top:34px;	
 }
-.editbar {/* Contenedor del boton editar */
+.editbar {/* Contenedor del boton friend */
+	float: left;
+    height: 30px;
+	cursor: pointer;
+    background-color: rgba(0,0,0,.14);
+	padding-top: 2.5px;
+    text-align: center;
+    width: 124px;
+	position: relative;
+	bottom: 0px;
+	transition: all ease 0.3s;
+}
+.followbar {/* Contenedor del boton follow */
 	float: right;
     height: 30px;
 	cursor: pointer;
-    background-color: rgba(42,187,155,.7);
-	color: #2abb9b; 
+    background-color: rgba(0,0,0,.14);
 	padding-top: 2.5px;
     text-align: center;
-    width: 120px;
+    width: 124px;
 	position: relative;
 	bottom: 0px;
 	transition: all ease 0.3s;
 }
 .editbar:active {
 	bottom: 3px;
-	background: #2abb9b;
-	color: white; 
+	background: red;
+	box-shadow: 0 3px 0 #58646D ;  
+}
+.followbar:active {
+	bottom: 3px;
+	background: blue;
 	box-shadow: 0 3px 0 #58646D ;  
 }
 .edit{/* Botón editar*/ 	
@@ -99,20 +109,14 @@
 	font-weight: bold;
 	font-size:18px; 
 }
-.text{/* Detalle del número telefónico, solo el texto para número generales*/
-	padding-top:30px;
+.text{/* Nombre de friends*/
+	text-align:center;
 }
-.num{/* Estilo aplicado únicamente al número telefónico */
-	margin-top:5px;
-	margin-left:15px;
+.num{/* frase dabajo de nombre */
+	text-align:center;
 	font-weight: bold;	
 }
-.ic{/* Estilo aplicado únicamente ícono en la tarjeta para números principales*/
-	width:50px;
-	float:left;
-	margin-top:20px;
-	padding-left:1px;
-}
+
 .content{/* Estilo aplicado únicamente al contenido de la tarjeta para números principales*/
 	width:150px;
 	float:right;

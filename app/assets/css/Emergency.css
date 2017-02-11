@@ -21,6 +21,7 @@
 	width: 100%;
     height: 100%;
 	margin-bottom: 50px;
+	margin-top:10px;
 }
 .gnumber{ /* Estilo de contenedor de numeros generales */
     width:80%;
@@ -40,6 +41,11 @@
     margin-top:25px;
     border-left: solid black;
     float: right;
+}
+.mnumber p{/* Estilo para el téxto en contenedor de números principales */
+	font-weight: bold;
+	padding-left:50px;;
+	padding-bottom:30px;
 }
 .gnumdet{ /* Estilo detalle de números generales */
     width: 290px;
@@ -85,10 +91,18 @@
   color: black;
  
 }
-.text{/* Detalle del número telefónico, solo el texto */
+.text{/* Detalle del número telefónico, solo el texto para número generales*/
 	padding-top:30px;
 }
-.num{/* Estilo aplicado únicamente al número telefónico */
+.num{/* Estilo aplicado únicamente al número telefónico para número generales*/
 	margin-top:5px;
 	font-weight: bold;	
+}
+.ic{/* Estilo aplicado únicamente ícono en la tarjeta para números principales*/
+	width:50px;
+	float:left;
+}
+.content{/* Estilo aplicado únicamente al contenido de la tarjeta para números principales*/
+	width:150px;
+	float:right;
 }

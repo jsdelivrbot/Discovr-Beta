@@ -1,0 +1,22 @@
+<link rel="stylesheet" href="../../../assets/css/FloatTiles.css">
+<link rel="stylesheet" href="../../../assets/css/country.css">
+<div class="ContainerAlltoAll">
+    <div ng-include src="'modules/templates/NavBar.html'"> </div>
+    <div ng-include src="'modules/templates/Slider.html'"> </div>    
+    <!-- Begin Navbar -->
+      <nav class="tabOption" style="margin-right: -230px;">
+        <ul>
+          <li class="rightBorder" uib-tooltip="Escribe una Reseña" tooltip-placement="bottom">           
+            <label for="tab1"><a ui-sref="CountryAddress"><i class="material-icons md-24">rate_review</i></a></label>
+          </li>
+          <li class="rightBorder" uib-tooltip="Ve Tu Agenta" tooltip-placement="bottom">           
+            <label for="tab-2"><a ui-sref="CountryPlaces"><i class="material-icons md-24">event</i></a></label>
+          </li>
+          <li class="" uib-tooltip="Haz una Consulta Telefonica" tooltip-placement="bottom">           
+            <label for="tab-3"><a ui-sref="Country"><i class="material-icons md-24">phone</i></a></label>
+          </li>
+        </ul>
+      </nav>
+      <!-- En NavBar -->
+    <div ng-include src="'modules/booked/RoomServices.html'"> </div>
+</div>

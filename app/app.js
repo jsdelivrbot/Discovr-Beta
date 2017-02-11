@@ -238,6 +238,13 @@ const discovrApp = angular.module('DiscovrIndex', [
               controller: 'Emergency.IndexController',
               controllerAs: 'vm'
             })
+            //----------------------      
+            .state('Clubs', {
+              url: '/preferences',
+              templateUrl: 'modules/clubs/Main.View.html',
+              controller: 'Clubs.IndexController',
+              controllerAs: 'vm'
+            })
             /*
             //----------------------      
             .state('Preferences', {
@@ -260,13 +267,7 @@ const discovrApp = angular.module('DiscovrIndex', [
               controller: 'Adventures.IndexController',
               controllerAs: 'vm'
             })
-            //----------------------      
-            .state('Clubs', {
-              url: '/preferences',
-              templateUrl: 'modules/clubs/Main.View.html',
-              controller: 'Clubs.IndexController',
-              controllerAs: 'vm'
-            })
+            
             //----------------------      
             .state('Preferences', {
               url: '/preferences',

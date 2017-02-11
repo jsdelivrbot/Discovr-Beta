@@ -32,7 +32,7 @@
     width: 50%;
     position: relative;
     float: right;
-    margin-top: -25px;
+    margin-top: -30px;
     z-index: 9999;
     color: white;
 }
@@ -43,7 +43,7 @@
 .tabOption ul li {
     display:inline-block; 
     width:120px;
-    height: 20px;
+    height: 24px;
     vertical-align:middle;
     text-align: center;
     overflow:hidden;
@@ -57,7 +57,7 @@
 @media only screen and (min-width: 820px) {
   #Carousel-title {
     right: 0%;
-    left: -70%;
+    left: -65%;
     bottom: -25px;
     z-index: 98;
   }

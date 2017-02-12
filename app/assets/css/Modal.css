@@ -31,7 +31,6 @@ a, button, input[type="submit"] {
   box-shadow: 0 0 20px rgba(21, 21, 29, 0.2);
   overflow: hidden;
   color: #3f4159;
-  border-radius: 2px;
   width: 100%;
   max-width: 98%;
   height: 100%;

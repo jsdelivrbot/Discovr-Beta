@@ -19,29 +19,24 @@ discovrApp.controller('Emergency.IndexController', function(
     $scope.noWrapSlides = false;
     $scope.active = 0;
     var slides = $scope.slides = [{
-            image: '../../assets/files/img/main/emergency/E1.jpg',
+            image: '../../assets/files/img/main/emergency/1.jpg',
             id: 0,
-            name: "Hospital"
+            name: "Centro Hospitalario"
         },
         {
-            image: '../../assets/files/img/main/emergency/E2.png',
+            image: '../../assets/files/img/main/emergency/2.jpg',
             id: 1,
             name: "Centro de Salud"
         },
         {
-            image: '../../assets/files/img/main/emergency/E3.jpg',
+            image: '../../assets/files/img/main/emergency/3.jpg',
             id: 2,
-            name: "Policía"
+            name: "Estacion de Policia"
         },
         {
-            image: '../../assets/files/img/main/emergency/E4.jpg',
+            image: '../../assets/files/img/main/emergency/4.jpg',
             id: 3,
-            name: "Bomberos"
-        },
-        {
-            image: '../../assets/files/img/main/emergency/E5.jpg',
-            id: 4,
-            name: "Emergencias"
+            name: "Estacion de Bomberos"
         }
         
     ];

@@ -1,3 +1,17 @@
+.ContainerFloatTiles {
+	list-style: none;
+  margin-top: -270px;
+  width: 210px;
+  height: 100px;
+}
+#DobleTile ul li {
+	width: 180px;
+	vertical-align: middle;
+	cursor: pointer;
+}
+.iconText {
+	vertical-align:15px;
+}
 .ViewContainer{
   width: 100%;
   height: calc(100vh - 50px);

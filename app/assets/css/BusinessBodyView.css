@@ -297,6 +297,84 @@
   width: 100%;
   padding-bottom: 10px;
 }
+/*--------------SERVICIOS TAB CONTENT--------------------*/
+.servicesContent {
+  width: 100%;
+  padding: 15px;
+    float:left;
+	list-style: none;
+	display: -webkit-box;
+	display: -moz-box;
+	display: -ms-flexbox;
+	display: -webkit-flex;
+	display: flex;
+	flex-flow: row wrap;
+	-webkit-flex-flow: row wrap;
+	justify-content: space-around;
+}
+.gnumdet{ /* Estilo detalle de números generales */
+    width: 275px;
+	height:140px;
+	margin-bottom: 10px;
+    box-shadow: 0 2px 2px 0 rgba(0,0,0,.14),0 3px 1px -2px rgba(0,0,0,.2),0 1px 5px 0 rgba(0,0,0,.12);
+	background-color: white;    
+}
+.mnumdet{ /* Estilo detalle de números principales */
+    width: 200px;
+	height:100px;
+    margin-left:30px;
+    box-shadow: 0 2px 2px 0 rgba(0,0,0,.14),0 3px 1px -2px rgba(0,0,0,.2),0 1px 5px 0 rgba(0,0,0,.12);
+	background-color: white;
+}
+.contact img{ /* Estilo aplicado a la imágen en el detalle de general number */
+	margin-top:20px;
+	margin-left:5px;
+	margin-right:5px;
+	float: left;
+	width:100px;
+	height:100px;
+	border-radius:60px; 
+	box-shadow: 0 2px 2px 0 rgba(0,0,0,.14),0 3px 1px -2px rgba(0,0,0,.2),0 1px 5px 0 rgba(0,0,0,.12);
+}
+.phonedet{/*Contenedor del detalle telefónico  */
+	height: 110px;
+	padding-right: 5px;		
+}
+.editbar {/* Contenedor del boton editar */
+	float: right;
+    height: 30px;
+	cursor: pointer;
+    background-color: rgba(42,187,155,.7);
+	color: #2abb9b; 
+	padding-top: 2.5px;
+    text-align: center;
+    width: 120px;
+	position: relative;
+	bottom: 0px;
+	transition: all ease 0.3s;
+}
+.editbar:active {
+	bottom: 3px;
+	background: #2abb9b;
+	color: white; 
+	box-shadow: 0 3px 0 #58646D ;  
+}
+.edit{/* Botón editar*/ 	
+	padding-left:2px;
+	font-weight: bold;
+	font-size:18px;
+}
+.text{/* Detalle del número telefónico, solo el texto para número generales*/
+	font-weight: bold;
+	padding-top:30px;
+}
+.num{/* Estilo aplicado únicamente al número telefónico para número generales*/
+	margin-top:5px;
+	font-weight: bold;	
+}
+.price{/* Estilo aplicado únicamente al número telefónico para número generales*/
+	font-weight: 500;	
+}
 /* INICIO MODELO RESPONSITIVE */
 @media only screen and (max-width: 765px) {
   .ContainerDual {

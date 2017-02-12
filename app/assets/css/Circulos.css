@@ -20,7 +20,7 @@
 	margin-top:15px;
 }
 .friends{ /* Estilo de contenedor de amigos */
-    width:80%;
+    width:79.5%;
 	padding-right:10px;
     float:left;
 	list-style: none;
@@ -34,8 +34,8 @@
 	justify-content: space-around;
 }
 .recomend{ /* Estilo contenedor de recomendados */
-    width:20%;
-    margin-top:5px;
+    width:20.5%;
+    padding:10px;
     border-left: solid white;
     float: right;
 }
@@ -53,17 +53,10 @@
 	background-color: white;
     
 }
-.rdet{ /* Estilo detalle de recomendados */
-    width: 200px;
-	height:80px;
-    margin-left:30px;
-    box-shadow: 0 2px 2px 0 rgba(0,0,0,.14),0 3px 1px -2px rgba(0,0,0,.2),0 1px 5px 0 rgba(0,0,0,.12);
-	background-color: white;
-	margin-bottom:10px;
-}
 .contact img{ /* Estilo aplicado a la imágen de friends */
 	width:250px;
-	height:150px;
+	height:180px;
+	margin-bottom:-30px;
 	box-shadow: 0 2px 2px 0 rgba(0,0,0,.14),0 3px 1px -2px rgba(0,0,0,.2),0 1px 5px 0 rgba(0,0,0,.12);
 }
 .det{/*Contenedor del detalle de friend  */
@@ -74,25 +67,27 @@
 	float: left;
     height: 30px;
 	cursor: pointer;
-    background-color: rgba(0,0,0,.14);
+    background-color: rgba(0,0,0,.5);
 	padding-top: 2.5px;
     text-align: center;
     width: 124px;
 	position: relative;
 	bottom: 0px;
 	transition: all ease 0.3s;
+	color:white;
 }
 .followbar {/* Contenedor del boton follow */
 	float: right;
     height: 30px;
 	cursor: pointer;
-    background-color: rgba(0,0,0,.14);
+    background-color: rgba(0,0,0,.5);
 	padding-top: 2.5px;
     text-align: center;
-    width: 124px;
+	width: 124px;
 	position: relative;
 	bottom: 0px;
 	transition: all ease 0.3s;
+	color:white;
 }
 .editbar:active {
 	bottom: 3px;
@@ -107,7 +102,8 @@
 .edit{/* Botón editar*/ 	
 	padding-left:2px;
 	font-weight: bold;
-	font-size:18px; 
+	font-size:18px;
+	vertical-align:top; 
 }
 .text{/* Nombre de friends*/
 	text-align:center;
@@ -116,15 +112,21 @@
 	text-align:center;
 	font-weight: bold;	
 }
-
-.content{/* Estilo aplicado únicamente al contenido de la tarjeta para números principales*/
-	width:150px;
-	float:right;
-	height:60px;
-	border-left:solid black;
-	margin-top:10px;
+.reditbar {/* Contenedor del boton friend */
+	float: left;
+    height: 30px;
+	cursor: pointer;
+    background-color: rgba(0,0,0,.5);
+	padding-top: 2.5px;
+    text-align: center;
+    width: 124px;
+	position: relative;
+	bottom: 0px;
+	transition: all ease 0.3s;
+	color:white;
 }
-.textc{ /* Detalle del número telefónico, solo el texto para número principal*/
-	padding-left:20px;
-	margin-top:9px;
+.reditbar:active {
+	bottom: 3px;
+	background: limegreen;
+	box-shadow: 0 3px 0 #58646D ;  
 }

@@ -24,13 +24,12 @@ const discovrApp = angular.module('DiscovrIndex', [
         }else{
             browserLan = 'es-es';
         }
-
         $translateProvider.useStaticFilesLoader({
             prefix: 'modules/',
             suffix: '.json'
         });
         $translateProvider.useLocalStorage();
-        $translateProvider.preferredLanguage('welcome/languages/' + browserLan);
+        $translateProvider.preferredLanguage('languages/' + browserLan);
         // here the html tag works
         $translateProvider.useSanitizeValueStrategy('sanitizeParameters');
         // Configuración de las rutas
@@ -249,6 +248,13 @@ const discovrApp = angular.module('DiscovrIndex', [
             .state('Preferences', {
               url: '/preferences',
               templateUrl: 'modules/preferences/Main.View.html',
+              controller: 'Preferences.IndexController',
+              controllerAs: 'vm'
+            })
+            //----------------------      
+            .state('PreferencesView', {
+              url: '/preferences/view/:id',
+              templateUrl: 'modules/preferences/view/Main.View.html',
               controller: 'Preferences.IndexController',
               controllerAs: 'vm'
             })

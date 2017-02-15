@@ -24,17 +24,17 @@
             <div class="nav navbar-nav navbar-left" >
                 <form class="navbar-form">
                     <div class="searchbar">
-                        <input type="search" class="searchbar--input" placeholder="Search...">
+                        <input type="search" class="searchbar--input" placeholder="{{ 'SearchTitle' | translate }}...">
                         <div class="searchbar--buttons">
-                            <input type="submit" class="searchbar--submit" value="Search">
+                            <input type="submit" class="searchbar--submit" value="{{ 'SearchTitle' | translate }}">
                             <div class="select-wrapper">
                                 <select class="searchbar--select">
-                                    <option value="0" selected>All Categories</option>
-                                    <option value="1">Packages</option>
-                                    <option value="2">Housings</option>
-                                    <option value="3">FADs</option>
-                                    <option value="4">Entertainments</option>
-                                    <option value="5">Stores</option>
+                                    <option value="0" selected translate>searchOptionTitle</option>
+                                    <option value="1" translate>SearchOptionTitle1</option>
+                                    <option value="2" translate>SearchOptionTitle2</option>
+                                    <option value="3" translate>SearchOptionTitle3</option>
+                                    <option value="4" translate>SearchOptionTitle4</option>
+                                    <option value="5" translate>SearchOptionTitle5</option>
                                 </select>
                             </div>
                         </div>
@@ -126,7 +126,7 @@
                             <label  for="radio-3" class="radio-label">Costa Rica</label>
                         </li>                        
                         <li class="divider"></li>
-                        <li role="menuitem"><a href="#" ng-click=""><i class="material-icons" style="vertical-align: middle;">add</i> Add Country </a></li>                        
+                        <li role="menuitem"><a href="#" ng-click=""><i class="material-icons" style="vertical-align: middle;">add</i> {{ 'AddCountryTitle' | translate }} </a></li>                        
                     </ul>
                 </li>
                 <!-------------------------------------------------------------------!-->
@@ -151,8 +151,6 @@
                         <li role="menuitem"><a href="#" ng-click="">{{ 'SettingsOpt5' | translate }}</a></li>
                     </ul>
                 </li>
-
-
  <!--------------------------------------------------------------------- !-->
             </ul>
         </div>

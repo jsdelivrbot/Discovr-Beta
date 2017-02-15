@@ -1,0 +1,194 @@
+{
+
+"PageTitle": "Discovr, Inicio de Sesion",
+"UserInputLabel": "Nombre de Usuario:",
+"UserInputPlaceHolder": "Ingrese su Usuario...",
+"PassInputLabel": "Contraseña:",
+"PassInputPlaceHolder": "Ingrese su Contraseña...",
+"BtnLogin": "Acceder",
+"MenuOpt1": "Bienvenido",
+"MenuOpt2": "A donde ir?",
+"MenuOpt3": "Presupuestos",
+"MenuOpt4": "Eventos",
+"MenuOpt5": "Soporte",
+"MenuOpt6": "Acerca de",
+"FormText1": "No tienes cuenta? ",
+"FormText2": " Registrate ya!.",
+"BodyTitle1": "Bienvenido a Discovr, tu plataforma para viajes!.",
+"BodyTitle2": "No sabes a Donde ir? Te lo mostramos!.",
+"BodyTitle3": "No sabes hasta donde tu dinero te puede llevar? Te ayudamos a decidir.",
+"BodyTitle4": "Descubre los eventos y tradiciones populares, Te ayudamos a virvirlo.",
+"BodyTitle5": "Tienes algun problema?, háznolo saber!",
+
+"HomeTitle": "Inicio",
+"BrandTitle": "Discovr",
+"WelcomeTitle": "Bienvenido",
+
+"SearchTitle": "Buscar",
+"SearchPlaceHolder": "Escriba aquí...",
+"searchOptionTitle": "Todas",
+"SearchOptionTitle1": "Paquetes",
+"SearchOptionTitle2": "Hospedajes",
+"SearchOptionTitle3": "Restaurantes",
+"SearchOptionTitle4": "Entretenimiento",
+"SearchOptionTitle5": "Tiendas",
+
+"NotificationTitle": "Notificaciones",
+"NotificationCategoryTitle1": "Mensajes",
+"NotificationCategoryTitle2": "Etiquetas",
+"NotificationCategoryTitle3": "Comentarios",
+"NotificationCategoryTitle4": "Valoraciones",
+
+"ReservationTitle": "Reservado",
+"RouteTitle": "Rutas",
+
+"FADTitle": "Comida & Bebidas",
+"OrderTitle": "Ordenes",
+"MakeOrderTitle": "Hacer Pedido",
+"ViewTitle": "Ver",
+"IndicationTitle": "Direccion",
+"RouteMessageTitle": "Las Indicaciones son un aproximado, Rervisarlas e ir con precaucion.",
+"CloseModalTitle": "Entendido",
+
+"AddCountryTitle": "Agregar País",
+
+"SettingsOpt1": "Registro de Actividad",
+"SettingsOpt2": "Configuracion",
+"SettingsOpt3": "Cerrar Sesion",
+"SettingsOpt4": "Ayuda",
+"SettingsOpt5": "Reportar un Error",
+
+"ConditionsTitle": "Padecimientos",
+"WalletTitle": "Billetera",
+"EmergenciesTitle": "Emergencia",
+"PreferencesTitle": "Preferencias",
+"InstitutionsTitle": "Instituciones",
+"CountriesTitle": "Países",
+"TransportTitle": "Transporte",
+"ClubsTitle": "Clubs & Amigos",
+"AdventureTitle": "Aventuras",
+
+"EventsTitle": "Eventos",
+"WhereToGoTitle": "Dónde Ir?",
+"GalleryTitle": "Galeria",
+"HousingTitle": "Hospedajes",
+"StoreTitle": "Tiendas",
+"EntertainmentTitle": "Entretenimiento",
+"FadTitle": "Comida & Bebidas",
+"PromotionsTitle": "Promociones & Descuentos",
+"PlaceTitle": "Lugares",
+
+"ActionAddTitle": "Agregar",
+"ActionEditTitle": "Editar",
+"ActionDeleteTitle": "Eliminar",
+"ActionUpdateTitle": "Actualizar",
+"ActionViewTitle": "Ver",
+"ActionCancelTitle": "Cancelar",
+"ActionClaimTitle": "Reclamar",
+"ActionDeleteFromTitle": "Eliminar de Lista",
+"ActionSendTitle": "Enviar",
+"BtnSelectTitle": "Seleccionar",
+"ActionPosponeTitle": "Poponer",
+
+"FollowTitle": "Seguir",
+"UnFollowTitle": "No Seguir",
+
+"OrderActionTitle": "Ordenar",
+"PriceTitle": "Precio",
+
+"CallPoliceTitle": "Policia",
+"CallMedicalServiceTitle": "Servicios Medicos",
+"AddNumberTitle": "Agregar Número",
+
+"HeaderMainNumbersTitle": "Numeros Principales",
+"PoliceTitle": "Policia",
+"AmbulanceTitle": "Ambulancia",
+"FiremansTitle": "Bomberos",
+
+"AddPlaceTitle": "Agregar Lugar",
+"AddAddressTitle": "Agregar Direccion",
+
+"AddressHeaderTitle": "Direcciones",
+"FavoritedHeaderTitle": "Favoritos",
+"CountryHeaderTitle": "Paises",
+
+"SearchPeopleTitle": "Buscar Personas",
+
+"FriendHeaderTitle": "Amigos",
+"FollowerHeaderTitle": "Seguidores",
+"FollowingTitle": "Siguiendo",
+
+"RecommendationTitle": "Recomendaciones",
+
+
+"AddCardTitle": "Agregar Tarjeta",
+"BudgetTitle": "Presupuesto",
+
+"BillingHeaderTitle": "Historial de Pagos",
+"DateHeaderTitle": "Fecha",
+"OrderHeaderTitle": "ORden",
+"ConceptHeaderTitle": "Concepto",
+"MerchantHeaderTitle": "Vendedor",
+"AmountHeaderTitle": "Cantidad",
+
+"FilterTitle": "Todos",
+"HotelsTitle": "Hoteles",
+"MotelsTitle": "Moteles",
+"HostelsTitle": "Hosteles",
+"OthersTitle": "Otros",
+
+"AboutTitle": "Acerca de",
+"ContactTitle": "Contacto",
+"ActivitiesTitle": "Actividades",
+"ReviewTitle": "Reseñas",
+"ExperienceTitle": "Experiencias",
+"ServicesTitle": "Servicios",
+"AppraisalTitle": "Valoraciones",
+"MisionTitle": "Mision",
+"VisionTitle": "Vision",
+
+"FloatBookTitle": "Reservar",
+"FloatHowToGoTitle": "Como Llegar?",
+"FloatGalleryTitle": "Galeria",
+"FloatVRTitle": "Recorrido Virtual",
+
+"OpinionTitle": "Opiniones",
+"RateTitle": "Calificacion",
+"CapacityTitle": "Capacidad",
+"PeopleTitle": "Personas",
+
+"TagsTitle": "Etiquetas",
+"PreviewTitle": "Ver",
+
+"ModalBookTitle": "Reservacion",
+"CheckInTitle": "Entrada",
+"CheckOutTitle": "Salida",
+"TotalTitle": "Total",
+"AdultsTitle": "Adultos",
+"ChildrenTitle": "Niños",
+"ModalBookedRoomTitle": "Seleccionar Cuartos:",
+"BookConditionText1Title": "Al clickear 'Reservar', estas aceptando nuestros ",
+"BookConditionText2Title": "Terminos",
+"BookConditionText3Title": " y ",
+"BookConditionText4Title": "Condiciones",
+"BookConditionText5Title": " de Pagos.",
+"PayTitle": "Reservar",
+
+"AddressTitle": "Direccion",
+"BookRoomTitle": "Reservar Cuarto",
+"OkTitle": "Entendido",
+
+"EventTitle": "Eventos",
+"RoomTitle": "Habitaciones",
+
+
+"SeasonTitle1": "Verano",
+"SeasonTitle2": "Invierno",
+"SeasonTitle3": "Otoño",
+"SeasonTitle4": "Primavera"
+
+
+
+}
+
+

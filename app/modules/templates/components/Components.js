@@ -74,7 +74,7 @@ discovrApp.component('navBar', {
             languages: '<',
             location: '<'
         },
-    controller: function($uibModal, $timeout, NgMap) {
+    controller: function($uibModal, $timeout, NgMap, $translate) {
         var $ctrl = this;
         $ctrl.message = [];
         $ctrl.tag = [];
@@ -93,7 +93,7 @@ discovrApp.component('navBar', {
         //Function that change the language
         $ctrl.changeLang = function changeLangFn(opt) {
             console.log(opt);
-            $translate.use( $ctrl.languages.module + '/languages/' + opt);
+            $translate.use('languages/' + opt);
         };
         //get notification
         $ctrl.notif = function(){

@@ -76,27 +76,6 @@ discovrApp.controller('Housing.IndexController', function(
         filler.style.left = -( position* moduleOffset) + "px";
     };
     // -- -- - ---- - - - FIN Funcion para desplazar filtros
-    //languages options
-    vm.listLan = [
-        {'key':'es-es','value':'Español'},
-        {'key':'en-us','value':'English'}
-    ];
-
-    var browserLan = navigator.language; //Get browser language
-    if (browserLan === 'es' || browserLan === 'es-es' || browserLan === 'es-NI'){
-        browserLan = 'es-es';
-    }else if(browserLan === 'en' || browserLan === 'en-us' || browserLan === 'en-US') {
-        browserLan = 'en-us';
-    }else{
-        browserLan = 'es-es';
-    }
-    //Get the selected user language and set at the begining the browser default language
-    vm.selected = browserLan;
-    //Function that change the language
-    vm.changeLang = function changeLangFn(opt) {
-         console.log(opt);
-        $translate.use('housing/languages/' + opt);
-    };
     $scope.isNavCollapsed = true;
     $scope.isCollapsed = false;
     $scope.isCollapsedHorizontal = false;
@@ -105,42 +84,42 @@ discovrApp.controller('Housing.IndexController', function(
     $scope.noWrapSlides = false;
     $scope.active = 0;
     var slides = $scope.slides = [{
-            image: 'https://exp.cdn-hotels.com/hotels/7000000/6980000/6975400/6975392/6975392_10_z.jpg',
+            image: '../../assets/files/img/main/housing/slider/1.jpg',            
             id: 0,
             name: "Example Test Name 1"
         },
         {
-            image: 'http://www.hotelhex.com/Esteli/img/Fondo/06.jpg',
+            image: '../../assets/files/img/main/housing/slider/2.jpg',
             id: 1,
             name: "Example Test Name 2"
         },
         {
-            image: 'https://media-cdn.tripadvisor.com/media/photo-s/08/cd/99/1a/hard-rock-hotel-ibiza.jpg',
+            image: '../../assets/files/img/main/housing/slider/3.jpg',
             id: 2,
             name: "Example Test Name 3"
         },
         {
-            image: 'https://images.trvl-media.com/media/content/expus/graphics/launch/hotel1320x742.jpg',
+            image: '../../assets/files/img/main/housing/slider/4.jpg',
             id: 3,
             name: "Example Test Name 4"
         },
         {
-            image: 'https://media-cdn.tripadvisor.com/media/photo-s/03/0c/2e/fe/hotel-ibis-hermosillo.jpg',
+            image: '../../assets/files/img/main/housing/slider/5.jpg',
             id: 4,
             name: "Example Test Name 5"
         },
         {
-            image: 'http://a.otcdn.com/headers/ilusion/img/hoteles_destinia.jpg',
+            image: '../../assets/files/img/main/housing/slider/6.jpg',
             id: 5,
             name: "Example Test Name 6"
         },
         {
-            image: 'https://www.barcelo.com/barcelohotels/es_es/images/swimming-pool-hotel-barcelo-montelimar-nicaragua37-8508.jpg',
+            image: '../../assets/files/img/main/housing/slider/7.jpg',
             id: 6,
             name: "Example Test Name 7"
         },
         {
-            image: 'http://t-ec.bstatic.com/images/hotel/840x460/166/16624720.jpg',
+            image: '../../assets/files/img/main/housing/slider/8.jpg',
             id: 7,
             name: "Example Test Name 8"
         }
@@ -151,13 +130,6 @@ discovrApp.controller('Housing.IndexController', function(
 
     function initController() {
         vm.username = $localStorage.currentUser.username;
-        $translate.use('housing/languages/' + browserLan);
-        console.log(browserLan);
-        /*
-        var stLan = localStorage.getItem('NG_TRANSLATE_LANG_KEY');
-        var szLanLan = stLan.length;
-        var lang = stLan.substr((szLanLan - 5), szLanLan);
-        localStorage.setItem('NG_TRANSLATE_LANG_KEY', 'housing/languages/' + lang);*/
     };
 
 

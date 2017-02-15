@@ -22,7 +22,7 @@
             <li>
               <a href="#">
                   <i class="material-icons">bookmark</i>
-                  <span class="iconText">Seleccionar</span>
+                  <span class="iconText" translate>BtnSelectTitle</span>
               </a>
             </li>
           </ul>
@@ -35,19 +35,19 @@
         <ul>
           <li class="rightBorder">
             <input class="tabHeader" id="tab1" type="radio" name="tabs" ng-click="vm.openContent(event,'about')" checked>
-            <label for="tab1">Acerca de</label>
+            <label for="tab1" translate>AboutTitle</label>
           </li>
           <li class="rightBorder">
             <input class="tabHeader" id="tab-2" type="radio" name="tabs" ng-click="vm.openContent(event,'opinion')" >
-            <label for="tab-2">Opiniones</label>
+            <label for="tab-2" translate>OpinionTitle</label>
           </li>
           <li class="rightBorder">
             <input class="tabHeader" id="tab-3" type="radio" name="tabs" ng-click="vm.openContent(event,'services')" >
-            <label for="tab-3">Servicios</label>
+            <label for="tab-3" translate>ServicesTitle</label>
           </li>
           <li>
             <input class="tabHeader" id="tab-4" type="radio" name="tabs" ng-click="vm.openContent(event,'gallery')" >
-            <label for="tab-4">Galeria</label>
+            <label for="tab-4" translate>GalleryTitle</label>
           </li>
         </ul>
       </nav>
@@ -130,18 +130,18 @@
         <aside class="RoomRightSideBar">
           <ul>
             <li>
-              <h3>Price: </h3>
+              <h3>{{ 'PriceTitle' | translate }}: </h3>
               <span> US$ 1999.99</span>
             </li>
             <hr class="separator">
             <li>
-              <h3>Rate: </h3>
+              <h3>{{ 'RateTitle' | translate }}: </h3>
               <span> 5 Star </span>
             </li>
             <hr class="separator">
             <li>
-              <h3>Capacity: </h3>
-              <span> 02 People</span>
+              <h3>{{ 'CapacityTitle' | translate }}: </h3>
+              <span> 02 {{ 'PeopleTitle' | translate }}</span>
             </li>
           </ul>
         </aside>

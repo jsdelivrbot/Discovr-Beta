@@ -1,7 +1,7 @@
 <div class="modal-body" id="modal-body">
     <!-- -------------    Modal    -------------- -->
     <div class="ModalContent" >
-        <h4 class="mTitle">Booking</h4>
+        <h4 class="mTitle" translate>ModalBookTitle</h4>
         <span class="mClose" style="margin-top:-35px;">
             <a ng-click="$ctrl.handleClose()"><i class="material-icons">close</i></a>
         </span>
@@ -10,49 +10,49 @@
         <div class="mBook">
             <div class="form-group">
                 <div class="column-left"> 
-                    <label for="checkIn">Check In:</label>
+                    <label for="checkIn">{{ 'CheckInTitle' | translate }}:</label>
                     <input type="text" onfocus="(this.type='date')" onblur="(this.type='text')" placeholder="{{ $ctrl.modalData.dIn }}" class="form-control" name="checkIn" ng-model="$ctrl.modalData.dIn">
                 </div>
                 <div class="column-center">
-                    <label for="checkOut">Check Out:</label>
+                    <label for="checkOut">{{ 'CheckOutTitle' | translate }}:</label>
                     <input type="text" onfocus="(this.type='date')" onblur="(this.type='text')" placeholder="{{ $ctrl.modalData.dOut }}" class="form-control" name="checkOut" ng-model="$ctrl.modalData.dOut">
                 </div>
                 <div class="column-right">
-                    <label for="total">Total:</label>
+                    <label for="total">{{ 'TotalTitle' | translate }}:</label>
                     <input type="text" class="form-control" name="total" disabled="disabled"  ng-model="$ctrl.modalData.total">
                 </div>					
             </div>
 
             <div class="form-group">
                 <div class="column-4left"> 
-                    <label for="guests">Adults:</label><br>
+                    <label for="guests">{{ 'AdultsTitle' | translate }}:</label><br>
                     <button class="counter-btn" type="button" ng-click="$ctrl.minusCounter(1)">-</button>
                     <input class="iNumber" type="text" id="guestNo" name="guests"  ng-model="$ctrl.modalData.guest" disabled="disabled"/>
                     <button class="counter-btn" type="button" ng-click="$ctrl.plusCounter(1)">+</button>                    
                 </div>
                 <div class="column-4center">
-                    <label for="guests">Children:</label><br>
+                    <label for="guests">{{ 'ChildrenTitle' | translate }}:</label><br>
                     <button class="counter-btn" type="button" ng-click="$ctrl.minusCounter(2)">-</button>
                     <input class="iNumber" type="text" id="guestNo" name="children"  ng-model="$ctrl.modalData.children" disabled="disabled"/>
                     <button class="counter-btn" type="button" ng-click="$ctrl.plusCounter(2)">+</button> 
                 </div>
                 <div class="column-4center2">
-                    <label for="guests">Room:</label><br>
+                    <label for="guests">{{ 'RoomTitle' | translate }}:</label><br>
                     <button class="counter-btn" type="button" ng-click="$ctrl.minusCounter(3)">-</button>
                     <input class="iNumber" type="text" id="guestNo" name="room"  ng-model="$ctrl.modalData.room" disabled="disabled"/>
                     <button class="counter-btn" type="button" ng-click="$ctrl.plusCounter(3)">+</button>
                 </div>
                 <div class="column-4right">
-                    <label for="name">Select:</label>
-                    <button style="width:100%; height: 35px; padding: 0px;" class="btn btn-primary1" ng-click="vm.cancel()">
-                            Select Rooms
+                    <label for="name">{{ 'BtnSelectTitle' | translate }}:</label>
+                    <button style="width:100%; height: 35px; padding: 0px;" class="btn btn-primary1" ng-click="vm.cancel()" translate>
+                            RoomTitle
                     </button>
                 </div>						
             </div>
             <!-- -------------    Room Selected    -------------- -->
             <hr class="separator" />
             <div class="sRoom"> 
-                <h5 class="TitleCont1">Habitaciones Seleccionadas: </h5>
+                <h5 class="TitleCont1" translate>ModalBookedRoomTitle</h5>
                 <!-- cards -->
                 <div class="barRoomSelected">
                     <div class="card-media">
@@ -62,7 +62,7 @@
                           <span class="card-media-object-tag subtle">Business</span>
                           <ul class="card-media-object-social-list">        
                             <li class="card-media-object-social-list-item-additional">
-                              <span><a href="#">View</a></span>
+                              <span><a href="#" translate>ViewTitle</a></span>
                             </li>
                           </ul>
                         </div>
@@ -94,8 +94,8 @@
                             <!--/*<span class="card-media-body-supporting-bottom-text subtle u-float-right">Free &ndash; $30</span> -->
                           </div>
                           <div class="card-media-body-supporting-bottom card-media-body-supporting-bottom-reveal">                            
-                            <a href="#/" class="card-media-body-supporting-bottom-text card-media-link u-float-right">Pospone</a>
-                            <a href="#/" class="card-media-body-supporting-bottom-text card-action-link u-float-right">Remove</a>
+                            <a href="#/" class="card-media-body-supporting-bottom-text card-media-link u-float-right" translate>ActionPosponeTitle</a>
+                            <a href="#/" class="card-media-body-supporting-bottom-text card-action-link u-float-right" translate>ActionDeleteTitle</a>
                           </div>
                         </div>
                       </div>
@@ -107,7 +107,7 @@
                           <span class="card-media-object-tag subtle">Business</span>
                           <ul class="card-media-object-social-list">        
                             <li class="card-media-object-social-list-item-additional">
-                              <span><a href="#">View</a></span>
+                              <span><a href="#" translate>ViewTitle</a></span>
                             </li>
                           </ul>
                         </div>
@@ -139,8 +139,8 @@
                             <!--/*<span class="card-media-body-supporting-bottom-text subtle u-float-right">Free &ndash; $30</span> -->
                           </div>
                           <div class="card-media-body-supporting-bottom card-media-body-supporting-bottom-reveal">                            
-                            <a href="#/" class="card-media-body-supporting-bottom-text card-media-link u-float-right">Pospone</a>
-                            <a href="#/" class="card-media-body-supporting-bottom-text card-action-link u-float-right">Remove</a>
+                            <a href="#/" class="card-media-body-supporting-bottom-text card-media-link u-float-right" translate>ActionPosponeTitle</a>
+                            <a href="#/" class="card-media-body-supporting-bottom-text card-action-link u-float-right" translate>ActionDeleteTitle</a>
                           </div>
                         </div>
                       </div>                                
@@ -148,8 +148,8 @@
             </div>
             <!-- Here put a divider -->
             <!-- terms & condition of the services -->
-            <p id="terms">
-                By clicking Book, you agree to our <a href="#" class="SingUp">Terms</a> and <a href="#" class="SingUp">Condition</a> of Payments.
+            <p id="terms" style="text-align: center;">
+                {{ 'BookConditionText1Title' | translate }}<a href="#" class="SingUp" translate="">BookConditionText2Title</a> {{ 'BookConditionText3Title' | translate }} <a href="#" class="SingUp" translate>BookConditionText4Title</a> {{ 'BookConditionText5Title' | translate }}
             </p>
         </div>
     </div>

@@ -1,0 +1,31 @@
+.mcont{ /* Contenedor principal para las tarjetas */
+	padding-top:50px;
+    list-style: none;
+	display: -webkit-box;
+	display: -moz-box;
+	display: -ms-flexbox;
+	display: -webkit-flex;
+	display: flex;
+	flex-flow: row wrap;
+	-webkit-flex-flow: row wrap;
+	justify-content: space-around;
+}
+.pref{ /* Estilo de las tarjetas */
+	width:320px;
+	height:240px;
+	background-color:white;
+	margin:15px;
+	padding-left:75px;
+	padding-top:15px;
+}
+.prefimg img{
+	width:170px;
+	height:160px;
+}
+.descrip{
+	font-weight: bold;
+	padding-top:15px;
+	text-align:center;
+	margin-left:-70px;
+	color:black;
+}

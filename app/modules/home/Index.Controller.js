@@ -14,56 +14,56 @@ discovrApp.controller('Home.IndexController', function(
             date: '21 Nov 2016 - 07:10 p.m.',
             kind: 'message',
             state: 0,
-            img: 'http://www.barcelona-bikes.com/img/layout/user.jpg'
+            img: '../../assets/files/img/main/notifications/obama.jpg'
         },
         {
             title: 'Leonel Martinez',
             date: '20 Nov 2016 - 07:00 p.m.',
             kind: 'message',
             state: 1,
-            img: 'http://www.barcelona-bikes.com/img/layout/user.jpg'
+            img: '../../assets/files/img/main/notifications/obama.jpg'
         },
         {
             title: 'Joheman Ubrina',
             date: '21 Nov 2016 - 07:10 p.m.',
             kind: 'appraisal',
             state: 0,
-            img: 'http://www.barcelona-bikes.com/img/layout/user.jpg'
+            img: '../../assets/files/img/main/notifications/obama.jpg'
         },
         {
             title: 'Joheman Urbina',
             date: '20 Nov 2016 - 06:10 p.m.',
             kind: 'appraisal',
             state: 0,
-            img: 'http://www.barcelona-bikes.com/img/layout/user.jpg'
+            img: '../../assets/files/img/main/notifications/obama.jpg'
         },
         {
             title: 'Everardo Quintana',
             date: '26 Nov 2016 - 07:10 p.m.',
             kind: 'tag',
             state: 1,
-            img: 'http://www.barcelona-bikes.com/img/layout/user.jpg'
+            img: '../../assets/files/img/main/notifications/obama.jpg'
         },
         {
             title: 'Everardo Quintana',
             date: '21 Nov 2016 - 07:10 p.m.',
             kind: 'tag',
             state: 1,
-            img: 'http://www.barcelona-bikes.com/img/layout/user.jpg'
+            img: '../../assets/files/img/main/notifications/obama.jpg'
         },
         {
             title: 'Leonel Martinez',
             date: '21 Nov 2016 - 07:10 p.m.',
             kind: 'comment',
             state: 0,
-            img: 'http://www.barcelona-bikes.com/img/layout/user.jpg'
+            img: '../../assets/files/img/main/notifications/obama.jpg'
         },
         {
             title: 'Joheman Urbina',
             date: '21 Nov 2016 - 07:10 p.m.',
             kind: 'comment',
             state: 0,
-            img: 'http://www.barcelona-bikes.com/img/layout/user.jpg'
+            img: '../../assets/files/img/main/notifications/obama.jpg'
         }
     ];
     vm.Itinerary = {
@@ -104,17 +104,6 @@ discovrApp.controller('Home.IndexController', function(
         {'key':'es-es','value':'Español'},
         {'key':'en-us','value':'English'}
     ];
-
-    var browserLan = navigator.language; //Get browser language
-    if (browserLan === 'es' || browserLan === 'es-es' || browserLan === 'es-NI'){
-        browserLan = 'es-es';
-    }else if(browserLan === 'en' || browserLan === 'en-us' || browserLan === 'en-US') {
-        browserLan = 'en-us';
-    }else{
-        browserLan = 'es-es';
-    }
-    //Get the selected user language and set at the begining the browser default language
-    vm.selected = browserLan;
     //Function that change the language
     vm.changeLang = function changeLangFn(opt) {
          console.log(opt);
@@ -423,8 +412,6 @@ discovrApp.controller('Home.IndexController', function(
     initController();
     //Start Function
     function initController() {
-      $translate.use('home/languages/' + browserLan);
-      console.log(browserLan);
       vm.username = $localStorage.currentUser.username;
       //var stLan = localStorage.getItem('NG_TRANSLATE_LANG_KEY');
       //var szLanLan = stLan.length;

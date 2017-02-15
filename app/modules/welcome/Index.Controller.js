@@ -53,21 +53,12 @@ discovrApp.controller('Login.IndexController', function(
         {'key':'es-es','value':'Español'},
         {'key':'en-us','value':'English'}
     ];
-
-    var browserLan = navigator.language; //Get browser language
-    if (browserLan === 'es' || browserLan === 'es-es' || browserLan === 'es-NI'){
-        browserLan = 'es-es';
-    }else if(browserLan === 'en' || browserLan === 'en-us' || browserLan === 'en-US') {
-        browserLan = 'en-us';
-    }else{
-        browserLan = 'es-es';
-    }
     //Function that change the language
     vm.changeLang = function changeLangFn(opt) {
          console.log(opt);
-        $translate.use('welcome/languages/' + opt);
+        $translate.use('languages/' + opt);
     };
-
+    //--------- Show/Hide Password
     function togglePassword(e) {
       e.preventDefault();
       let passwordInput = document.getElementById('txtPassword'),
@@ -130,7 +121,7 @@ discovrApp.controller('Login.IndexController', function(
 
     initController();
     function initController(){
-      $translate.use('welcome/languages/' + browserLan);
+      //$translate.use('welcome/languages/' + browserLan);
       //reset login status
       AuthenticationService.Logout();
     };

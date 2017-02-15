@@ -3,7 +3,7 @@
 .ContainerFloatTiles {
 	list-style: none;
     margin-top: -220px;
-    width: 32%;
+   	width: 210px;
     height: 100px;
 }
 #DobleTile ul li {
@@ -17,10 +17,12 @@
 /* Fin estilo contenedor flotante */
 .contain{ /* Estilo de contenedor principal */
 	width: 100%;
-	margin-top:15px;
+	height: 100%;
+	padding-top:15px;
+	display: flex;
 }
 .friends{ /* Estilo de contenedor de amigos */
-    width:79.5%;
+    width: 79.5%;
 	padding-right:10px;
     float:left;
 	list-style: none;
@@ -41,8 +43,7 @@
 }
 .recomend h4{/* Estilo para el téxto en contenedor de recomendados */
 	font-weight: bold;
-	padding-left:50px;;
-	padding-bottom:20px;
+	text-align: center;
 	color:white;
 }
 .frienddet{ /* Estilo detalle de amigos */

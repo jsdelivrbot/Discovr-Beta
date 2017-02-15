@@ -10,10 +10,10 @@ discovrApp.controller('Emergency.IndexController', function(
 
     function initController() {
         vm.username = $localStorage.currentUser.username;
-        var stLan = localStorage.getItem('NG_TRANSLATE_LANG_KEY');
-        var szLanLan = stLan.length;
-        var lang = stLan.substr((szLanLan - 5), szLanLan);
-        localStorage.setItem('NG_TRANSLATE_LANG_KEY', 'places/languages/' + lang);
+        //var stLan = localStorage.getItem('NG_TRANSLATE_LANG_KEY');
+        //var szLanLan = stLan.length;
+        //var lang = stLan.substr((szLanLan - 5), szLanLan);
+        //localStorage.setItem('NG_TRANSLATE_LANG_KEY', 'languages/' + lang);
     };
      $scope.myInterval = 6000;
     $scope.noWrapSlides = false;

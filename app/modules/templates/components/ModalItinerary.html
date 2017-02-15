@@ -11,7 +11,7 @@
       <!-- -------------    Tab Body Reserations    -------------- -->
       <section class="upcoming" id="reservation">
         <div class="mContent"> 
-          <h5 class="TitleCont1">Housings: </h5>
+          <h5 class="TitleCont1">{{ 'HousingTitle' | translate }}:</h5>
           <!-- cards -->
           <div class="barRoomSelected">
               <div class="card-media">
@@ -21,7 +21,7 @@
                   <span class="card-media-object-tag subtle">Business</span>
                   <ul class="card-media-object-social-list">        
                     <li class="card-media-object-social-list-item-additional">
-                      <span><a href="#">View</a></span>
+                      <span><a href="#" translate>ActionViewTitle</a></span>
                     </li>
                   </ul>
                 </div>
@@ -44,8 +44,8 @@
                     <!--/*<span class="card-media-body-supporting-bottom-text subtle u-float-right">Free &ndash; $30</span> -->
                   </div>
                   <div class="card-media-body-supporting-bottom card-media-body-supporting-bottom-reveal">                            
-                    <a href="#/" class="card-media-body-supporting-bottom-text card-media-link u-float-right">Make a Order</a>
-                    <a href="#/" class="card-media-body-supporting-bottom-text card-action-link u-float-right">Cancel</a>
+                    <a href="#/" class="card-media-body-supporting-bottom-text card-media-link u-float-right" translate>MakeOrderTitle</a>
+                    <a href="#/" class="card-media-body-supporting-bottom-text card-action-link u-float-right" translate>ActionCancelTitle</a>
                   </div>
                 </div>
               </div>
@@ -57,7 +57,7 @@
                   <span class="card-media-object-tag subtle">Family</span>
                   <ul class="card-media-object-social-list">        
                     <li class="card-media-object-social-list-item-additional">
-                      <span><a href="#">View</a></span>
+                      <span><a href="#" translate>ActionViewTitle</a></span>
                     </li>
                   </ul>
                 </div>
@@ -80,14 +80,14 @@
                     <!--/*<span class="card-media-body-supporting-bottom-text subtle u-float-right">Free &ndash; $30</span> -->
                   </div>
                   <div class="card-media-body-supporting-bottom card-media-body-supporting-bottom-reveal">                            
-                    <a href="#/" class="card-media-body-supporting-bottom-text card-media-link u-float-right">Make a Order</a>
-                    <a href="#/" class="card-media-body-supporting-bottom-text card-action-link u-float-right">Cancel</a>
+                    <a href="#/" class="card-media-body-supporting-bottom-text card-media-link u-float-right" translate>MakeOrderTitle</a>
+                    <a href="#/" class="card-media-body-supporting-bottom-text card-action-link u-float-right" translate>ActionCancelTitle</a>
                   </div>
                 </div>
               </div>
               <!-- ------------------------------- -->                                                               
           </div>
-            <h5 class="TitleCont1">FADs: </h5>
+            <h5 class="TitleCont1">{{ 'FADTitle' | translate }}:</h5>
           <!-- cards -->
           <div class="barRoomSelected">
               <div class="card-media">
@@ -97,7 +97,7 @@
                   <span class="card-media-object-tag subtle">Tipica</span>
                   <ul class="card-media-object-social-list">        
                     <li class="card-media-object-social-list-item-additional">
-                      <span><a href="#">View</a></span>
+                      <span><a href="#" translate>ActionViewTitle</a></span>
                     </li>
                   </ul>
                 </div>
@@ -120,8 +120,8 @@
                     <!--/*<span class="card-media-body-supporting-bottom-text subtle u-float-right">Free &ndash; $30</span> -->
                   </div>
                   <div class="card-media-body-supporting-bottom card-media-body-supporting-bottom-reveal">                            
-                    <a href="#/" class="card-media-body-supporting-bottom-text card-media-link u-float-right">Postpone</a>
-                    <a href="#/" class="card-media-body-supporting-bottom-text card-action-link u-float-right">Cancel</a>
+                    <a href="#/" class="card-media-body-supporting-bottom-text card-media-link u-float-right" translate>ActionPosponeTitle</a>
+                    <a href="#/" class="card-media-body-supporting-bottom-text card-action-link u-float-right" translate>ActionCancelTitle</a>
                   </div>
                 </div>
               </div>
@@ -137,7 +137,7 @@
                 <span class="card-media-object-tag subtle">Travel</span>
                 <ul class="card-media-object-social-list">        
                   <li class="card-media-object-social-list-item-additional">
-                    <span><a href="#">View</a></span>
+                    <span><a href="#" translate>ActionViewTitle</a></span>
                   </li>
                 </ul>
               </div>
@@ -160,8 +160,8 @@
                   <!--/*<span class="card-media-body-supporting-bottom-text subtle u-float-right">Free &ndash; $30</span> -->
                 </div>
                 <div class="card-media-body-supporting-bottom card-media-body-supporting-bottom-reveal">                            
-                  <a href="#/" class="card-media-body-supporting-bottom-text card-media-link u-float-right">Claim</a>
-                  <a href="#/" class="card-media-body-supporting-bottom-text card-action-link u-float-right">Cancel</a>
+                  <a href="#/" class="card-media-body-supporting-bottom-text card-media-link u-float-right" translate>ActionClaimTitle</a>
+                  <a href="#/" class="card-media-body-supporting-bottom-text card-action-link u-float-right" translate>ActionCancelTitle</a>
                 </div>
               </div>
             </div>
@@ -180,11 +180,11 @@
                         destination="{{ $ctrl.modalData.destination }}">
             </directions>               
           </map>
-          <h3>Indicaciones</h3>
+          <h3 translate>IndicationTitle</h3>
           <div id="directions-panel" style="width: 100%; padding: 15px;">
           </div>
           <br>          
-          <p>Las indicaciones dadas son una aproximacion, verificarlas o ir con precaucion</p>
+          <p translate>RouteMessageTitle</p>
           <br>
         </div>    
       </section>
@@ -192,7 +192,7 @@
   </div>    
 </div>
 <div class="modal-footer" id="modal-footer">
-    <button style="width:100%; " class="btn btn-primary1" ng-click="$ctrl.handleClose()">
-            Got It!
+    <button style="width:100%; " class="btn btn-primary1" ng-click="$ctrl.handleClose()" translate>
+            OkTitle
     </button>
 </div>

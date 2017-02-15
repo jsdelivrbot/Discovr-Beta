@@ -1,0 +1,194 @@
+{
+"PageTitle": "Discovr, LogIn",
+"UserInputLabel": "Username:",
+"UserInputPlaceHolder": "Insert your Username...",
+"PassInputLabel": "Password:",
+"PassInputPlaceHolder": "Insert your Password...",
+"BtnLogin": "LogIn",
+"MenuOpt1": "Welcome",
+"MenuOpt2": "Where to go?",
+"MenuOpt3": "Budget",
+"MenuOpt4": "Events",
+"MenuOpt5": "Support",
+"MenuOpt6": "About us",
+"FormText1": "Doesn't have account yet? ",
+"FormText2": " SignUp Now!.",
+"BodyTitle1": "Welcome to Discovr, your travel platform!.",
+"BodyTitle2": "Dont know where to go? We show you!.",
+"BodyTitle3": "Don't you know how far can you go with your money?",
+"BodyTitle4": "Discover populars events and traditions, We help you to live them.",
+"BodyTitle5": "Do you have a problem?, Tell it us!",
+
+"HomeTitle": "Home",
+"BrandTitle": "Discovr",
+"WelcomeTitle": "Welcome",
+
+"SearchTitle": "Search",
+"SearchPlaceHolder": "Write here...",
+"searchOptionTitle": "All Categories",
+"SearchOptionTitle1": "Packages",
+"SearchOptionTitle2": "Housing",
+"SearchOptionTitle3": "FADs",
+"SearchOptionTitle4": "Entertaintments",
+"SearchOptionTitle5": "Stores",
+
+"NotificationTitle": "Notifications",
+"NotificationCategoryTitle1": "Messages",
+"NotificationCategoryTitle2": "Tags",
+"NotificationCategoryTitle3": "Comments",
+"NotificationCategoryTitle4": "Appraisals",
+
+"ReservationTitle": "Booked",
+"RouteTitle": "Routes",
+
+"FADTitle": "Food And Drinks",
+"OrderTitle": "Orders",
+"MakeOrderTitle": "Make a Order",
+"ViewTitle": "View",
+"IndicationTitle": "Direction",
+"RouteMessageTitle": "The indications are an approximate, check it and go with precaution.",
+"CloseModalTitle": "Got It!",
+
+"AddCountryTitle": "Add a Country",
+
+"SettingsOpt1": "Activity Log",
+"SettingsOpt2": "Settings",
+"SettingsOpt3": "Log Out",
+"SettingsOpt4": "Help",
+"SettingsOpt5": "Report a Problem",
+
+"ConditionsTitle": "Ailing",
+"WalletTitle": "Wallet",
+"EmergenciesTitle": "Emergency",
+"PreferencesTitle": "Preferences",
+"InstitutionsTitle": "Institutions",
+"CountriesTitle": "Countries",
+"TransportTitle": "Transporte",
+"ClubsTitle": "Clubs & Friends",
+"AdventureTitle": "Adventures",
+
+"EventsTitle": "Events",
+"WhereToGoTitle": "Where to Go?",
+"GalleryTitle": "Gallery",
+"HousingTitle": "Housing",
+"StoreTitle": "Store",
+"EntertainmentTitle": "Entertaintment",
+"FadTitle": "Food & Drinks",
+"PromotionsTitle": "Promotions & Discounts",
+"PlaceTitle": "Places",
+
+
+"ActionAddTitle": "Add",
+"ActionEditTitle": "Edit",
+"ActionDeleteTitle": "Delete",
+"ActionUpdateTitle": "Update",
+"ActionViewTitle": "View",
+"ActionCancelTitle": "Cancel",
+"ActionClaimTitle": "Reclamar",
+"ActionDeleteFromTitle": "Delete from here",
+"ActionSendTitle": "Send",
+"BtnSelectTitle": "Select",
+"ActionPosponeTitle": "Pospone",
+
+"FollowTitle": "Follow",
+"UnFollowTitle": "Unfollow",
+
+"OrderActionTitle": "Order",
+"PriceTitle": "Price",
+
+
+"CallPoliceTitle": "Police",
+"CallMedicalServiceTitle": "Medicale Service",
+"AddNumberTitle": "Add Number",
+
+"HeaderMainNumbersTitle": "Main Numbers",
+"PoliceTitle": "Police",
+"AmbulanceTitle": "Ambulance",
+"FiremansTitle": "Firemans",
+
+
+"AddPlaceTitle": "Add Place To Go",
+"AddAddressTitle": "Add Address",
+
+
+"AddressHeaderTitle": "Address",
+"FavoritedHeaderTitle": "Favorite",
+"CountryHeaderTitle": "Country",
+
+"SearchPeopleTitle": "Search People",
+
+"FriendHeaderTitle": "Friends",
+"FollowerHeaderTitle": "Followers",
+"FollowingTitle": "Following",
+
+"RecommendationTitle": "Recommendations",
+
+
+"AddCardTitle": "Add Card",
+"BudgetTitle": "Budget",
+
+"BillingHeaderTitle": "Billing History",
+"DateHeaderTitle": "Date",
+"OrderHeaderTitle": "Order",
+"ConceptHeaderTitle": "Concept",
+"MerchantHeaderTitle": "Merchant",
+"AmountHeaderTitle": "Amount",
+
+"FilterTitle": "All",
+"HotelsTitle": "Hotels",
+"MotelsTitle": "Motels",
+"HostelsTitle": "Hostels",
+"OthersTitle": "Others",
+
+"AboutTitle": "About",
+"ContactTitle": "Contact",
+"ActivitiesTitle": "Activities",
+"ReviewTitle": "Reviews",
+"ExperienceTitle": "Experiences",
+"ServicesTitle": "Services",
+"AppraisalTitle": "Appraisal",
+"MisionTitle": "Mision",
+"VisionTitle": "Vision",
+
+"FloatBookTitle": "Book",
+"FloatHowToGoTitle": "How to Go?",
+"FloatGalleryTitle": "Gallery",
+"FloatVRTitle": "Virtual Tour",
+
+"OpinionTitle": "Opinions",
+"RateTitle": "Rate",
+"CapacityTitle": "Capacity",
+"PeopleTitle": "People",
+
+"TagsTitle": "Tags",
+"PreviewTitle": "Preview",
+
+"ModalBookTitle": "Booking",
+"CheckInTitle": "Check In",
+"CheckOutTitle": "Check Out",
+"TotalTitle": "Total",
+"AdultsTitle": "Adults",
+"ChildrenTitle": "Childrens",
+"ModalBookedRoomTitle": "Romms Selected:",
+"BookConditionText1Title": "By cliclking 'Book', you agree to our ",
+"BookConditionText2Title": "Terms",
+"BookConditionText3Title": " and ",
+"BookConditionText4Title": "Condition",
+"BookConditionText5Title": " of Payments.",
+"PayTitle": "Book",
+
+"AddressTitle": "Address",
+"BookRoomTitle": "Book Room",
+"OkTitle": "Got It!",
+
+"EventTitle": "Events",
+"RoomTitle": "Rooms",
+
+"SeasonTitle1": "Summer",
+"SeasonTitle2": "Winter",
+"SeasonTitle3": "Autumn",
+"SeasonTitle4": "Spring"
+
+
+
+}

@@ -1,5 +1,7 @@
 .cBody {
-height:100%;
+	height:100%;
+	display: flex;
+	flex-flow: row wrap
 }
 b{
 	font-weight: bold;
@@ -18,7 +20,7 @@ b{
 .iconText {
 	vertical-align:15px;
 }
-.container{
+.container{	
 	margin-top: 20px;
 	padding-left:10px;
 	padding-right:10px;

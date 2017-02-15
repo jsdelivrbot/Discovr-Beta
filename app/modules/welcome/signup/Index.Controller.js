@@ -102,8 +102,7 @@ discovrApp.controller('Signup.IndexController', function(
     $scope.selected = 'es-es';
     $scope.changeLang = function changeLangFn() {
         var opt = $scope.selected;
-         console.log(opt);
-        $translate.use('login/languages/' + opt);
+        $translate.use('languages/' + opt);
     };
 
     $scope.myInterval = 6000;

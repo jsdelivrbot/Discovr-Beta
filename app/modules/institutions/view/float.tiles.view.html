@@ -1,90 +1,52 @@
 <!-- TILES POCICIONADOS SOBRE EL SLIDER-->
-<ul>
+<ul class="ModalOpt">
+ 
+  <!-- ---------- TILES FLOTANTES SOBRE EL CAROUSEL  ----------- -->
+  <!-- ---------- TILES FLOTANTES CON LAS CARACTERISTICAS DE UN NEGOCIO  ----------- -->
+  <li id="DobleTile">
+    <div class="LiContainer"></div>
+    <div id="HaveThis">
+      <ul>
+        <li><i class="material-icons" tooltip-placement="bottom" uib-tooltip="WIFI">wifi</i>
+        </li>
+        <li><i class="material-icons" tooltip-placement="bottom" uib-tooltip="RESTAURANT">local_dining</i>
+        </li>
+        <li><i class="material-icons" tooltip-placement="bottom" uib-tooltip="GARAGE">drive_eta</i>
+        </li>
+        <li><i class="material-icons" tooltip-placement="bottom" uib-tooltip="TV">personal_video</i>
+        </li>
+        <li><i class="material-icons" tooltip-placement="bottom" uib-tooltip="CASINO">casino</i>
+        </li>
+        <li><i class="material-icons" tooltip-placement="bottom" uib-tooltip="GYM">fitness_center</i>
+        </li>
+        <li><i class="material-icons" tooltip-placement="bottom" uib-tooltip="POOL">pool</i>
+        </li>
+        <li><i class="material-icons" tooltip-placement="bottom" uib-tooltip="ROOM SERVICE">room_service</i>
+        </li>
+        <li><i class="material-icons" tooltip-placement="bottom" uib-tooltip="ACCESIBILITY">accessible</i>
+        </li>
+        <li><i class="material-icons" tooltip-placement="bottom" uib-tooltip="PUB">more_horiz</i>
+        </li>
+     </ul>
+   </div>
+  </li>
+  <!-- ---------- TILES FLOTANES DE OPCIONES (RESERVACION, MAPAS, RECORRIDOS VIRTUALES)  ----------- -->
+<!-- --------------- ------------------------------------------ -->
+  <float-tile info="vm.bookInfo" modal="vm.book.modal" tile="vm.book.tile" icon="vm.book.icon"></float-tile>
+  <float-tile info="vm.mapInfo" modal="vm.map.modal" tile="vm.map.tile" icon="vm.map.icon"></float-tile>
 
-    <a ui-sref="working">
-    <li class="scale">
-        <div class="LiContainer">
-            <i class="material-icons">monetization_on</i>
-        </div>
+  <a ui-sref="HousingGallery"><li class="scale">
+    <div class="LiContainer">
+      <i class="material-icons">panorama</i>
+    </div>
+    <div class="TitleDiv" translate>GalleryTitle</div>
+  </li></a>
 
-        <div class="TitleDiv" Translate>WalletTitle111</div>
-    </li>
-    </a>
-
-    <a ui-sref="working">
-    <li class="scale">
-        <div class="LiContainer">
-            <i class="material-icons">security</i>
-        </div>
-
-        <div class="TitleDiv" Translate>EmergenciesTitle</div>
-    </li>
-    </a>
-
-    <a ui-sref="working">
-    <li class="scale">
-        <div class="LiContainer">
-            <i class="material-icons">extension</i>
-        </div>
-
-        <div class="TitleDiv" Translate>PreferencesTitle</div>
-    </li>
-    </a>
-    
-    <a ui-sref="Specifichousing">
-    <li class="scale">
-            <div class="LiContainer">
-                <i class="material-icons">business</i>
-            </div>
-        <div class="TitleDiv" Translate>InstitutionsTitle</div>
-    </li>
-    </a>
-
-    <a ui-sref="working">
-    <li class="scale">
-        <div class="LiContainer">
-            <i class="material-icons">assistant_photo</i>
-        </div>
-
-        <div class="TitleDiv" Translate>CountriesTitle</div>
-    </li>
-    </a>
-
-    <a ui-sref="working">
-    <li class="scale">
-        <div class="LiContainer">
-            <i class="material-icons">directions_car</i>
-        </div>
-
-        <div class="TitleDiv" Translate>TransportTitle</div>
-    </li>
-    </a>
-    
-           <a ui-sref="Specifichousing">
-    <li class="scale">
-            <div class="LiContainer">
-                <i class="material-icons">business</i>
-            </div>
-        <div class="TitleDiv" Translate>InstitutionsTitle</div>
-    </li>
-    </a>
-        <!-- ---------------------------------------------------------------------------------------------------- x -->
-
-           <a ui-sref="Specifichousing">
-    <li class="scale">
-            <div class="LiContainer">
-                <i class="material-icons">business</i>
-            </div>
-        <div class="TitleDiv" Translate>InstitutionsTitle</div>
-    </li>
-    </a>
-
-        <a ui-sref="Specifichousing">
-    <li class="scale">
-            <div class="LiContainer">
-                <i class="material-icons">business</i>
-            </div>
-        <div class="TitleDiv" Translate>InstitutionsTitle</div>
-    </li>
-    </a>
+  <a ui-sref="HousingVR"><li class="scale">
+    <div class="LiContainer">
+      <i class="material-icons">camera_front</i>
+    </div>
+     <div class="TitleDiv" translate>FloatVRTitle</div>
+  </li></a>
 </ul>
+<!-- ---------- FIN DE LOS TILE FLOTANTES ----------- -->

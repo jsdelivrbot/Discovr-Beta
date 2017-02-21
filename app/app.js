@@ -119,28 +119,28 @@ const discovrApp = angular.module('DiscovrIndex', [
               controllerAs: 'vm'
             })
              //----------------------
-            .state('Entertaintment', {
-              url: '/entertaintment',
-              templateUrl: 'modules/entertaintment/Main.View.html',
-              controller: 'Entertaintment.IndexController',
+            .state('Entertainment', {
+              url: '/entertainment',
+              templateUrl: 'modules/entertainment/Main.View.html',
+              controller: 'Entertainment.IndexController',
               controllerAs: 'vm'
             })
-            .state('EntertaintmentView', {
-              url: '/entertaintment/view',
-              templateUrl: 'modules/entertaintment/view/Main.View.html',
-              controller: 'Entertaintment.IndexController',
+            .state('EntertainmentView', {
+              url: '/entertainment/view',
+              templateUrl: 'modules/entertainment/view/Main.View.html',
+              controller: 'Entertainment.IndexController',
               controllerAs: 'vm'
             })
-            .state('EntertaintmentGallery', {
-              url: '/entertaintment/view/:id/gallery',
+            .state('EntertainmentGallery', {
+              url: '/entertainment/view/:id/gallery',
               templateUrl: 'modules/templates/Gallery.View.html', //<--Check This
-              controller: 'EntertaintmentView.IndexController',
+              controller: 'EntertainmentView.IndexController',
               controllerAs: 'vm'
             })
-            .state('EntertaintmentVR', {
-              url: '/entertaintment/view/:id/tour',
+            .state('EntertainmentVR', {
+              url: '/entertainment/view/:id/tour',
               templateUrl: 'modules/templates/VR.View.html',
-              controller: 'EntertaintmentView.IndexController',
+              controller: 'EntertainmentView.IndexController',
               controllerAs: 'vm'
             })
             //----------------------

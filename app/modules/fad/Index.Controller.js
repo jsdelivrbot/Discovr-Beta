@@ -11,12 +11,12 @@ discovrApp.controller('FAD.IndexController', function(
     var vm = this;
     //local variables    
     vm.id = $stateParams.id;
-    vm.store = [
-      {name:'Store Example Name 1',
+    vm.restaurant = [
+      {name:'Restaurant Example Name 1',
       about:'Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.',
       appraisal: 4.5,
       id: 'HousingView',
-      image: '../../assets/files/img/main/store/T1.jpg',  
+      image: '../../assets/files/img/main/fad/R1.jpg',  
       tags:[
         {tag:'wifi',name:'Wifi'},
         {tag:'local_dining',name:'Restaurant'},
@@ -25,11 +25,11 @@ discovrApp.controller('FAD.IndexController', function(
         {tag:'casino',name:'Casino'},
         {tag:'fitness_center',name:'Gym'}
       ]},
-      {name:'Store Example Name 2',
+      {name:'Restaurant Example Name 2',
       about:'Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.',
       appraisal: 3.5,
       id: 'HousingView',
-      image: '../../assets/files/img/main/store/T2.jpg',
+      image: '../../assets/files/img/main/fad/R2.jpg',
       tags:[
         {tag:'wifi',name:'Wifi'},
         {tag:'local_dining',name:'Restaurant'},
@@ -38,11 +38,11 @@ discovrApp.controller('FAD.IndexController', function(
         {tag:'casino',name:'Casino'},
         {tag:'fitness_center',name:'Gym'}
       ]},
-      {name:'Store Example Name 3',
+      {name:'Restaurant Example Name 3',
       about:'Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.',
       appraisal: 2.5,
       id: 'HousingView',
-      image: '../../assets/files/img/main/store/T3.jpg',
+      image: '../../assets/files/img/main/fad/R3.jpg',
       tags:[
         {tag:'wifi',name:'Wifi'},
         {tag:'local_dining',name:'Restaurant'},
@@ -51,11 +51,11 @@ discovrApp.controller('FAD.IndexController', function(
         {tag:'casino',name:'Casino'},
         {tag:'fitness_center',name:'Gym'}
       ]},
-      {name:'Store Example Name 4',
+      {name:'Restaurant Example Name 4',
       about:'Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.',
       appraisal: 4.5,
       id: 'HousingView',
-      image: '../../assets/files/img/main/store/T4.jpg',
+      image: '../../assets/files/img/main/fad/R4.jpg',
       tags:[
         {tag:'wifi',name:'Wifi'},
         {tag:'local_dining',name:'Restaurant'},
@@ -64,11 +64,11 @@ discovrApp.controller('FAD.IndexController', function(
         {tag:'casino',name:'Casino'},
         {tag:'fitness_center',name:'Gym'}
       ]},
-      {name:'Store Example Name 5',
+      {name:'Restaurant Example Name 5',
       about:'Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.',
       appraisal: 4.6,
       id: 'HousingView',
-      image: '../../assets/files/img/main/store/T5.jpg',
+      image: '../../assets/files/img/main/fad/R5.jpg',
       tags:[
         {tag:'wifi',name:'Wifi'},
         {tag:'local_dining',name:'Restaurant'},
@@ -77,11 +77,11 @@ discovrApp.controller('FAD.IndexController', function(
         {tag:'casino',name:'Casino'},
         {tag:'fitness_center',name:'Gym'}
       ]},
-      {name:'Store Example Name 6',
+      {name:'Restaurant Example Name 6',
       about:'Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.',
       appraisal: 3.5,
       id: 'HousingView',
-      image: '../../assets/files/img/main/store/T6.jpg',
+      image: '../../assets/files/img/main/fad/R6.jpg',
       tags:[
         {tag:'wifi',name:'Wifi'},
         {tag:'local_dining',name:'Restaurant'},
@@ -91,12 +91,12 @@ discovrApp.controller('FAD.IndexController', function(
         {tag:'fitness_center',name:'Gym'}
       ]},
     ];
-    vm.handicrafts = [
-      {name:'Handicrafts Example Name 1',
+    vm.pub = [
+      {name:'Pub Example Name 1',
       about:'Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.',
       appraisal: 4.5,
       id: 'HousingView',
-      image: '../../assets/files/img/main/store/A1.jpg',  
+      image: '../../assets/files/img/main/fad/B1.jpg',  
       tags:[
         {tag:'wifi',name:'Wifi'},
         {tag:'local_dining',name:'Restaurant'},
@@ -105,11 +105,11 @@ discovrApp.controller('FAD.IndexController', function(
         {tag:'casino',name:'Casino'},
         {tag:'fitness_center',name:'Gym'}
       ]},
-      {name:'Handicrafts Example Name 2',
+      {name:'Pub Example Name 2',
       about:'Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.',
       appraisal: 3.5,
       id: 'HousingView',
-      image: '../../assets/files/img/main/store/A2.jpg',
+      image: '../../assets/files/img/main/fad/B2.jpg',
       tags:[
         {tag:'wifi',name:'Wifi'},
         {tag:'local_dining',name:'Restaurant'},
@@ -118,11 +118,11 @@ discovrApp.controller('FAD.IndexController', function(
         {tag:'casino',name:'Casino'},
         {tag:'fitness_center',name:'Gym'}
       ]},
-      {name:'Handicrafts Example Name 3',
+      {name:'Pub Example Name 3',
       about:'Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.',
       appraisal: 2.5,
       id: 'HousingView',
-      image: '../../assets/files/img/main/store/A3.jpg',
+      image: '../../assets/files/img/main/fad/B3.jpg',
       tags:[
         {tag:'wifi',name:'Wifi'},
         {tag:'local_dining',name:'Restaurant'},
@@ -131,11 +131,11 @@ discovrApp.controller('FAD.IndexController', function(
         {tag:'casino',name:'Casino'},
         {tag:'fitness_center',name:'Gym'}
       ]},
-      {name:'Handicrafts Example Name 4',
+      {name:'Pub Example Name 4',
       about:'Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.',
       appraisal: 4.5,
       id: 'HousingView',
-      image: '../../assets/files/img/main/store/A4.jpg',
+      image: '../../assets/files/img/main/fad/B4.jpg',
       tags:[
         {tag:'wifi',name:'Wifi'},
         {tag:'local_dining',name:'Restaurant'},
@@ -144,11 +144,11 @@ discovrApp.controller('FAD.IndexController', function(
         {tag:'casino',name:'Casino'},
         {tag:'fitness_center',name:'Gym'}
       ]},
-      {name:'Handicrafts Example Name 5',
+      {name:'Pub Example Name 5',
       about:'Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.',
       appraisal: 4.6,
       id: 'HousingView',
-      image: '../../assets/files/img/main/store/A5.jpg',
+      image: '../../assets/files/img/main/fad/B5.jpg',
       tags:[
         {tag:'wifi',name:'Wifi'},
         {tag:'local_dining',name:'Restaurant'},
@@ -157,11 +157,11 @@ discovrApp.controller('FAD.IndexController', function(
         {tag:'casino',name:'Casino'},
         {tag:'fitness_center',name:'Gym'}
       ]},
-      {name:'Handicrafts Example Name 6',
+      {name:'Pub Example Name 6',
       about:'Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.',
       appraisal: 3.5,
       id: 'HousingView',
-      image: '../../assets/files/img/main/store/A6.jpg',
+      image: '../../assets/files/img/main/fad/B6.jpg',
       tags:[
         {tag:'wifi',name:'Wifi'},
         {tag:'local_dining',name:'Restaurant'},
@@ -171,12 +171,12 @@ discovrApp.controller('FAD.IndexController', function(
         {tag:'fitness_center',name:'Gym'}
       ]},
     ];
-    vm.homeappliances = [
-      {name:'Home appliances Example Name 1',
+    vm.coffeeshop = [
+      {name:'Coffee Shop Example Name 1',
       about:'Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.',
       appraisal: 4.5,
       id: 'HousingView',
-      image: '../../assets/files/img/main/store/E1.jpg',  
+      image: '../../assets/files/img/main/fad/C1.jpg',  
       tags:[
         {tag:'wifi',name:'Wifi'},
         {tag:'local_dining',name:'Restaurant'},
@@ -185,11 +185,11 @@ discovrApp.controller('FAD.IndexController', function(
         {tag:'casino',name:'Casino'},
         {tag:'fitness_center',name:'Gym'}
       ]},
-      {name:'Home appliances Example Name 2',
+      {name:'Coffee Shop Example Name 2',
       about:'Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.',
       appraisal: 3.5,
       id: 'HousingView',
-      image: '../../assets/files/img/main/store/E2.jpg',
+      image: '../../assets/files/img/main/fad/C2.jpg',
       tags:[
         {tag:'wifi',name:'Wifi'},
         {tag:'local_dining',name:'Restaurant'},
@@ -198,11 +198,11 @@ discovrApp.controller('FAD.IndexController', function(
         {tag:'casino',name:'Casino'},
         {tag:'fitness_center',name:'Gym'}
       ]},
-      {name:'Home appliances Example Name 3',
+      {name:'Coffee Shop Example Name 3',
       about:'Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.',
       appraisal: 2.5,
       id: 'HousingView',
-      image: '../../assets/files/img/main/store/E3.jpg',
+      image: '../../assets/files/img/main/fad/C3.jpg',
       tags:[
         {tag:'wifi',name:'Wifi'},
         {tag:'local_dining',name:'Restaurant'},
@@ -211,11 +211,11 @@ discovrApp.controller('FAD.IndexController', function(
         {tag:'casino',name:'Casino'},
         {tag:'fitness_center',name:'Gym'}
       ]},
-      {name:'Home appliances Example Name 4',
+      {name:'Coffee Shop Example Name 4',
       about:'Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.',
       appraisal: 4.5,
       id: 'HousingView',
-      image: '../../assets/files/img/main/store/E4.jpg',
+      image: '../../assets/files/img/main/fad/C4.jpg',
       tags:[
         {tag:'wifi',name:'Wifi'},
         {tag:'local_dining',name:'Restaurant'},
@@ -224,11 +224,11 @@ discovrApp.controller('FAD.IndexController', function(
         {tag:'casino',name:'Casino'},
         {tag:'fitness_center',name:'Gym'}
       ]},
-      {name:'Home appliances Example Name 5',
+      {name:'Coffee Shop Example Name 5',
       about:'Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.',
       appraisal: 4.5,
       id: 'HousingView',
-      image: '../../assets/files/img/main/store/E5.jpg',
+      image: '../../assets/files/img/main/fad/C5.jpg',
       tags:[
         {tag:'wifi',name:'Wifi'},
         {tag:'local_dining',name:'Restaurant'},
@@ -236,11 +236,11 @@ discovrApp.controller('FAD.IndexController', function(
         {tag:'personal_video',name:'TV'},
         {tag:'casino',name:'Casino'},
         {tag:'fitness_center',name:'Gym'}
-      ]},{name:'Home appliances Example Name 6',
+      ]},{name:'Coffee Shop Example Name 6',
       about:'Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.',
       appraisal: 4.5,
       id: 'HousingView',
-      image: '../../assets/files/img/main/store/E6.jpg',
+      image: '../../assets/files/img/main/fad/C6.jpg',
       tags:[
         {tag:'wifi',name:'Wifi'},
         {tag:'local_dining',name:'Restaurant'},
@@ -250,12 +250,12 @@ discovrApp.controller('FAD.IndexController', function(
         {tag:'fitness_center',name:'Gym'}
       ]},
     ];
-    vm.autoparts = [
-      {name:'Auto Parts Example Name 1',
+    vm.naturalshakes = [
+      {name:'Natural Shakes Example Name 1',
       about:'Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.',
       appraisal: 4.5,
       id: 'HousingView',
-      image: '../../assets/files/img/main/store/AU1.jpg',  
+      image: '../../assets/files/img/main/fad/BT1.jpg',  
       tags:[
         {tag:'wifi',name:'Wifi'},
         {tag:'local_dining',name:'Restaurant'},
@@ -264,11 +264,11 @@ discovrApp.controller('FAD.IndexController', function(
         {tag:'casino',name:'Casino'},
         {tag:'fitness_center',name:'Gym'}
       ]},
-      {name:'Auto Parts Example Name 2',
+      {name:'Natural Shakes Example Name 2',
       about:'Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.',
       appraisal: 3.5,
       id: 'HousingView',
-      image: '../../assets/files/img/main/store/AU2.jpg',
+      image: '../../assets/files/img/main/fad/BT2.jpg',
       tags:[
         {tag:'wifi',name:'Wifi'},
         {tag:'local_dining',name:'Restaurant'},
@@ -277,11 +277,11 @@ discovrApp.controller('FAD.IndexController', function(
         {tag:'casino',name:'Casino'},
         {tag:'fitness_center',name:'Gym'}
       ]},
-      {name:'Auto Parts Example Name 3',
+      {name:'Natural Shakes Example Name 3',
       about:'Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.',
       appraisal: 2.5,
       id: 'HousingView',
-      image: '../../assets/files/img/main/store/AU3.jpg',
+      image: '../../assets/files/img/main/fad/BT3.jpg',
       tags:[
         {tag:'wifi',name:'Wifi'},
         {tag:'local_dining',name:'Restaurant'},
@@ -290,11 +290,11 @@ discovrApp.controller('FAD.IndexController', function(
         {tag:'casino',name:'Casino'},
         {tag:'fitness_center',name:'Gym'}
       ]},
-      {name:'Auto Parts Example Name 4',
+      {name:'Natural Shakes Example Name 4',
       about:'Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.',
       appraisal: 4.5,
       id: 'HousingView',
-      image: '../../assets/files/img/main/store/AU4.jpg',
+      image: '../../assets/files/img/main/fad/BT4.jpg',
       tags:[
         {tag:'wifi',name:'Wifi'},
         {tag:'local_dining',name:'Restaurant'},
@@ -303,11 +303,11 @@ discovrApp.controller('FAD.IndexController', function(
         {tag:'casino',name:'Casino'},
         {tag:'fitness_center',name:'Gym'}
       ]},
-      {name:'Auto Parts Example Name 5',
+      {name:'Natural Shakes Example Name 5',
       about:'Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.',
       appraisal: 4.6,
       id: 'HousingView',
-      image: '../../assets/files/img/main/store/AU5.jpeg',
+      image: '../../assets/files/img/main/fad/BT5.jpg',
       tags:[
         {tag:'wifi',name:'Wifi'},
         {tag:'local_dining',name:'Restaurant'},
@@ -316,11 +316,11 @@ discovrApp.controller('FAD.IndexController', function(
         {tag:'casino',name:'Casino'},
         {tag:'fitness_center',name:'Gym'}
       ]},
-      {name:'Auto Parts Example Name 6',
+      {name:'Natural Shakes Example Name 6',
       about:'Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.',
       appraisal: 3.5,
       id: 'HousingView',
-      image: '../../assets/files/img/main/store/AU6.jpg',
+      image: '../../assets/files/img/main/fad/BT6.jpg',
       tags:[
         {tag:'wifi',name:'Wifi'},
         {tag:'local_dining',name:'Restaurant'},
@@ -330,12 +330,12 @@ discovrApp.controller('FAD.IndexController', function(
         {tag:'fitness_center',name:'Gym'}
       ]},
       ];
-    vm.medicalsupplies = [
-      {name:'Medical supplies Example Name 1',
+    vm.buffet = [
+      {name:'Buffet Example Name 1',
       about:'Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.',
       appraisal: 4.5,
       id: 'HousingView',
-      image: '../../assets/files/img/main/store/SM1.jpg',  
+      image: '../../assets/files/img/main/fad/BF1.jpg',  
       tags:[
         {tag:'wifi',name:'Wifi'},
         {tag:'local_dining',name:'Restaurant'},
@@ -344,11 +344,11 @@ discovrApp.controller('FAD.IndexController', function(
         {tag:'casino',name:'Casino'},
         {tag:'fitness_center',name:'Gym'}
       ]},
-      {name:'Medical supplies Example Name 2',
+      {name:'Buffet Example Name 2',
       about:'Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.',
       appraisal: 3.5,
       id: 'HousingView',
-      image: '../../assets/files/img/main/store/SM2.JPG',
+      image: '../../assets/files/img/main/fad/BF2.JPG',
       tags:[
         {tag:'wifi',name:'Wifi'},
         {tag:'local_dining',name:'Restaurant'},
@@ -357,11 +357,11 @@ discovrApp.controller('FAD.IndexController', function(
         {tag:'casino',name:'Casino'},
         {tag:'fitness_center',name:'Gym'}
       ]},
-      {name:'Medical supplies Example Name 3',
+      {name:'Buffet Example Name 3',
       about:'Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.',
       appraisal: 2.5,
       id: 'HousingView',
-      image: '../../assets/files/img/main/store/SM3.png',
+      image: '../../assets/files/img/main/fad/BF3.jpg',
       tags:[
         {tag:'wifi',name:'Wifi'},
         {tag:'local_dining',name:'Restaurant'},
@@ -370,11 +370,11 @@ discovrApp.controller('FAD.IndexController', function(
         {tag:'casino',name:'Casino'},
         {tag:'fitness_center',name:'Gym'}
       ]},
-      {name:'Medical supplies Example Name 4',
+      {name:'Buffet Example Name 4',
       about:'Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.',
       appraisal: 4.5,
       id: 'HousingView',
-      image: '../../assets/files/img/main/store/SM4.jpg',
+      image: '../../assets/files/img/main/fad/BF4.jpg',
       tags:[
         {tag:'wifi',name:'Wifi'},
         {tag:'local_dining',name:'Restaurant'},
@@ -383,11 +383,11 @@ discovrApp.controller('FAD.IndexController', function(
         {tag:'casino',name:'Casino'},
         {tag:'fitness_center',name:'Gym'}
       ]},
-      {name:'Medical supplies Example Name 5',
+      {name:'Buffet Example Name 5',
       about:'Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.',
       appraisal: 4.6,
       id: 'HousingView',
-      image: '../../assets/files/img/main/store/SM5.jpg',
+      image: '../../assets/files/img/main/fad/BF5.jpg',
       tags:[
         {tag:'wifi',name:'Wifi'},
         {tag:'local_dining',name:'Restaurant'},
@@ -396,11 +396,11 @@ discovrApp.controller('FAD.IndexController', function(
         {tag:'casino',name:'Casino'},
         {tag:'fitness_center',name:'Gym'}
       ]},
-      {name:'Medical supplies Example Name 6',
+      {name:'Buffet Example Name 6',
       about:'Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.',
       appraisal: 3.5,
       id: 'HousingView',
-      image: '../../assets/files/img/main/store/SM6.jpg',
+      image: '../../assets/files/img/main/fad/BF6.jpg',
       tags:[
         {tag:'wifi',name:'Wifi'},
         {tag:'local_dining',name:'Restaurant'},
@@ -442,42 +442,42 @@ discovrApp.controller('FAD.IndexController', function(
     $scope.noWrapSlides = false;
     $scope.active = 0;
     var slides = $scope.slides = [{
-            image: '../../assets/files/img/main/store/slider/1.jpg',            
+            image: '../../assets/files/img/main/fad/slider/1.jpg',            
             id: 0,
             name: "Example Test Name 1"
         },
         {
-            image: '../../assets/files/img/main/store/slider/2.jpg',
+            image: '../../assets/files/img/main/fad/slider/2.jpg',
             id: 1,
             name: "Example Test Name 2"
         },
         {
-            image: '../../assets/files/img/main/store/slider/3.jpg',
+            image: '../../assets/files/img/main/fad/slider/3.jpg',
             id: 2,
             name: "Example Test Name 3"
         },
         {
-            image: '../../assets/files/img/main/store/slider/4.jpg',
+            image: '../../assets/files/img/main/fad/slider/4.png',
             id: 3,
             name: "Example Test Name 4"
         },
         {
-            image: '../../assets/files/img/main/store/slider/5.jpg',
+            image: '../../assets/files/img/main/fad/slider/5.jpg',
             id: 4,
             name: "Example Test Name 5"
         },
         {
-            image: '../../assets/files/img/main/store/slider/6.jpg',
+            image: '../../assets/files/img/main/fad/slider/6.jpg',
             id: 5,
             name: "Example Test Name 6"
         },
         {
-            image: '../../assets/files/img/main/store/slider/7.jpg',
+            image: '../../assets/files/img/main/fad/slider/7.jpg',
             id: 6,
             name: "Example Test Name 7"
         },
         {
-            image: '../../assets/files/img/main/store/slider/8.jpg',
+            image: '../../assets/files/img/main/fad/slider/8.jpg',
             id: 7,
             name: "Example Test Name 8"
         }

@@ -8,6 +8,7 @@ const discovrApp = angular.module('DiscovrIndex', [
     'ngCookies',
     'angular-jwt',
     'ui.navbar',
+    'ngPhotoswipe',
     'ngMap',
     'pascalprecht.translate'])
     .constant('apiURL', 'https://discovr-gekkou95.c9users.io/')
@@ -297,7 +298,7 @@ const discovrApp = angular.module('DiscovrIndex', [
             })
             //----------------------        
             .state('Gallery', {
-              url: '/gallery',
+              url: '/gallery/:gid?pid',
               templateUrl: 'modules/gallery/Main.View.html',
               controller: 'Gallery.IndexController',
               controllerAs: 'vm'
@@ -352,7 +353,7 @@ const discovrApp = angular.module('DiscovrIndex', [
         }
     // redirect to login page if not logged in and trying to access a restricted page
     $rootScope.$on('$locationChangeStart', function(event, next, current) {
-        var publicPages = ['/welcome','/welcome/signup','/business/welcome'];
+        var publicPages = ['/welcome','/welcome/signup'];
         var restrictedPage = publicPages.indexOf($location.path()) === -1;
         if (restrictedPage && !$localStorage.currentUser) {
             $location.path('/welcome');

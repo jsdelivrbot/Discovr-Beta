@@ -173,17 +173,17 @@ discovrApp.controller('Home.IndexController', function(
     $scope.noWrapSlides2 = false;
     $scope.active2 = 0;
     var slides2 = $scope.slides2 = [{
-            image: '../../assets/files/img/main/wheretogo/1.jpg',
+            image: '../../assets/files/img/main/wheretogo/slider/1.jpg',
             id: 0,
             name: "Example Test Name"
         },
         {
-            image: '../../assets/files/img/main/wheretogo/2.jpg',
+            image: '../../assets/files/img/main/wheretogo/slider/2.jpg',
             id: 1,
             name: "Example Test Name"
         },
         {
-            image: '../../assets/files/img/main/wheretogo/3.jpg',
+            image: '../../assets/files/img/main/wheretogo/slider/3.jpg',
             id: 2,
             name: "Example Test Name"
         }
@@ -249,22 +249,22 @@ discovrApp.controller('Home.IndexController', function(
     $scope.noWrapSlides5 = false;
     $scope.active5 = 0;
     var slides5 = $scope.slides5 = [{
-            image: '../../assets/files/img/main/store/1.jpg',
+            image: '../../assets/files/img/main/store/slider/1.jpg',
             id: 0,
             name: "Example Test Name"
         },
         {
-            image: '../../assets/files/img/main/store/2.jpg',
+            image: '../../assets/files/img/main/store/slider/2.jpg',
             id: 1,
             name: "Example Test Name"
         },
         {
-            image: '../../assets/files/img/main/store/3.jpg',
+            image: '../../assets/files/img/main/store/slider/3.jpg',
             id: 2,
             name: "Example Test Name"
         },
         {
-            image: '../../assets/files/img/main/store/4.jpg',
+            image: '../../assets/files/img/main/store/slider/4.jpg',
             id: 3,
             name: "Example Test Name"
         }
@@ -277,28 +277,28 @@ discovrApp.controller('Home.IndexController', function(
     $scope.noWrapSlides6 = false;
     $scope.active6 = 0;
     var slides6 = $scope.slides6 = [{
-            image: '../../assets/files/img/main/entertaintment/1.jpg',
+            image: '../../assets/files/img/main/entertaintment/slider/1.jpg',
             id: 0,
             name: "Example Test Name"
         },
         {
-            image: '../../assets/files/img/main/entertaintment/2.jpg',
+            image: '../../assets/files/img/main/entertaintment/slider/2.jpg',
             id: 1,
             name: "Example Test Name"
         },
         {
-            image: '../../assets/files/img/main/entertaintment/3.jpg',
+            image: '../../assets/files/img/main/entertaintment/slider/3.jpg',
             id: 2,
             name: "Example Test Name"
         },
         {
-            image: '../../assets/files/img/main/entertaintment/4.jpg',
+            image: '../../assets/files/img/main/entertaintment/slider/4.jpg',
             id: 3,
             name: "Example Test Name"
         },
 
         {
-            image: '../../assets/files/img/main/entertaintment/4.jpg',
+            image: '../../assets/files/img/main/entertaintment/slider/4.jpg',
             id: 4,
             name: "Example Test Name"
         }
@@ -310,17 +310,17 @@ discovrApp.controller('Home.IndexController', function(
     $scope.noWrapSlides7 = false;
     $scope.active7 = 0;
     var slides7 = $scope.slides7 = [{
-            image: '../../assets/files/img/main/fad/1.jpg',
+            image: '../../assets/files/img/main/fad/slider/1.jpg',
             id: 0,
             name: "Example Test Name"
         },
         {
-            image: '../../assets/files/img/main/fad/2.jpg',
+            image: '../../assets/files/img/main/fad/slider/2.jpg',
             id: 1,
             name: "Example Test Name"
         },
         {
-            image: '../../assets/files/img/main/fad/3.jpg',
+            image: '../../assets/files/img/main/fad/slider/3.jpg',
             id: 2,
             name: "Example Test Name"
         }

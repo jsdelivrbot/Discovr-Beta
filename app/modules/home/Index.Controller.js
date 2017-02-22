@@ -222,23 +222,43 @@ discovrApp.controller('Home.IndexController', function(
     $scope.noWrapSlides4 = false;
     $scope.active4 = 0;
     var slides4 = $scope.slides4 = [{
-            image: '../../assets/files/img/main/housing/1.jpg',
+            image: '../../assets/files/img/main/housing/slider/1.jpg',
             id: 0,
             name: "Example Test Name"
         },
         {
-            image: '../../assets/files/img/main/housing/2.jpg',
+            image: '../../assets/files/img/main/housing/slider/2.jpg',
             id: 1,
             name: "Example Test Name"
         },
         {
-            image: '../../assets/files/img/main/housing/3.jpg',
+            image: '../../assets/files/img/main/housing/slider/3.jpg',
             id: 2,
             name: "Example Test Name"
         },
         {
-            image: '../../assets/files/img/main/housing/4.jpg',
+            image: '../../assets/files/img/main/housing/slider/4.jpg',
             id: 3,
+            name: "Example Test Name"
+        },
+        {
+            image: '../../assets/files/img/main/housing/slider/5.jpg',
+            id: 4,
+            name: "Example Test Name"
+        },
+        {
+            image: '../../assets/files/img/main/housing/slider/6.jpg',
+            id: 5,
+            name: "Example Test Name"
+        },
+        {
+            image: '../../assets/files/img/main/housing/slider/7.jpg',
+            id: 6,
+            name: "Example Test Name"
+        },
+        {
+            image: '../../assets/files/img/main/housing/slider/8.jpg',
+            id: 7,
             name: "Example Test Name"
         }
     ];
@@ -266,6 +286,26 @@ discovrApp.controller('Home.IndexController', function(
         {
             image: '../../assets/files/img/main/store/slider/4.jpg',
             id: 3,
+            name: "Example Test Name"
+        },
+        {
+            image: '../../assets/files/img/main/store/slider/5.jpg',
+            id: 4,
+            name: "Example Test Name"
+        },
+        {
+            image: '../../assets/files/img/main/store/slider/6.jpg',
+            id: 5,
+            name: "Example Test Name"
+        },
+        {
+            image: '../../assets/files/img/main/store/slider/7.jpg',
+            id: 6,
+            name: "Example Test Name"
+        },
+        {
+            image: '../../assets/files/img/main/store/slider/8.jpg',
+            id: 7,
             name: "Example Test Name"
         }
     ];
@@ -296,10 +336,24 @@ discovrApp.controller('Home.IndexController', function(
             id: 3,
             name: "Example Test Name"
         },
-
         {
-            image: '../../assets/files/img/main/entertainment/slider/4.jpg',
+            image: '../../assets/files/img/main/entertainment/slider/5.jpg',
             id: 4,
+            name: "Example Test Name"
+        },
+        {
+            image: '../../assets/files/img/main/entertainment/slider/6.jpg',
+            id: 5,
+            name: "Example Test Name"
+        },
+        {
+            image: '../../assets/files/img/main/entertainment/slider/7.jpg',
+            id: 6,
+            name: "Example Test Name"
+        },
+        {
+            image: '../../assets/files/img/main/entertainment/slider/8.jpg',
+            id: 7,
             name: "Example Test Name"
         }
     ];
@@ -323,6 +377,31 @@ discovrApp.controller('Home.IndexController', function(
             image: '../../assets/files/img/main/fad/slider/3.jpg',
             id: 2,
             name: "Example Test Name"
+        },
+        {
+            image: '../../assets/files/img/main/fad/slider/4.jpg',
+            id: 3,
+            name: "Example Test Name"
+        },
+        {
+            image: '../../assets/files/img/main/fad/slider/5.jpg',
+            id: 4,
+            name: "Example Test Name"
+        },
+        {
+            image: '../../assets/files/img/main/fad/slider/6.jpg',
+            id: 5,
+            name: "Example Test Name"
+        },
+        {
+            image: '../../assets/files/img/main/fad/slider/7.jpg',
+            id: 6,
+            name: "Example Test Name"
+        },
+        {
+            image: '../../assets/files/img/main/fad/slider/8.jpg',
+            id: 7,
+            name: "Example Test Name"
         }
     ];
     var currIndex = 0;
@@ -339,6 +418,36 @@ discovrApp.controller('Home.IndexController', function(
         {
             image: '../../assets/files/img/main/promotion/slider/2.jpg',
             id: 1,
+            name: "Example Test Name"
+        },
+        {
+            image: '../../assets/files/img/main/promotion/slider/3.jpg',
+            id: 2,
+            name: "Example Test Name"
+        },
+        {
+            image: '../../assets/files/img/main/promotion/slider/4.jpg',
+            id: 3,
+            name: "Example Test Name"
+        },
+        {
+            image: '../../assets/files/img/main/promotion/slider/5.jpg',
+            id: 4,
+            name: "Example Test Name"
+        },
+        {
+            image: '../../assets/files/img/main/promotion/slider/6.jpg',
+            id: 5,
+            name: "Example Test Name"
+        },
+        {
+            image: '../../assets/files/img/main/promotion/slider/7.jpg',
+            id: 6,
+            name: "Example Test Name"
+        },
+        {
+            image: '../../assets/files/img/main/promotion/slider/8.png',
+            id: 7,
             name: "Example Test Name"
         }
     ];
@@ -360,32 +469,32 @@ discovrApp.controller('Home.IndexController', function(
         },
         {
             image: '../../assets/files/img/main/places/slider/3.jpg',
-            id: 1,
+            id: 2,
             name: "Example Test Name"
         },
         {
             image: '../../assets/files/img/main/places/slider/4.jpg',
-            id: 1,
+            id: 3,
             name: "Example Test Name"
         },
         {
             image: '../../assets/files/img/main/places/slider/5.jpg',
-            id: 1,
+            id: 4,
             name: "Example Test Name"
         },
         {
             image: '../../assets/files/img/main/places/slider/6.jpg',
-            id: 1,
+            id: 5,
             name: "Example Test Name"
         },
         {
             image: '../../assets/files/img/main/places/slider/7.jpeg',
-            id: 1,
+            id: 6,
             name: "Example Test Name"
         },
         {
-            image: '../../assets/files/img/main/places/slider/8.png',
-            id: 1,
+            image: '../../assets/files/img/main/places/slider/8.jpg',
+            id: 7,
             name: "Example Test Name"
         }
     ];

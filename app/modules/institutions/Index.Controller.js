@@ -417,42 +417,42 @@ discovrApp.controller('Institution.IndexController', function(
     $scope.noWrapSlides = false;
     $scope.active = 0;
     var slides = $scope.slides = [{
-            image: '../../assets/files/img/main/institutions/ED1.jpg',            
+            image: '../../assets/files/img/main/institutions/slider/1.jpg',
             id: 0,
             name: "Example Test Name 1"
         },
         {
-            image: '../../assets/files/img/main/institutions/ED2.jpg',
+            image: '../../assets/files/img/main/institutions/slider/2.jpg',
             id: 1,
             name: "Example Test Name 2"
         },
         {
-            image: '../../assets/files/img/main/institutions/F-MANAGUA3.jpg',
+            image: '../../assets/files/img/main/institutions/slider/3.jpg',
             id: 2,
             name: "Example Test Name 3"
         },
         {
-            image: '../../assets/files/img/main/institutions/S6.jpg',
+            image: '../../assets/files/img/main/institutions/slider/4.jpg',
             id: 3,
             name: "Example Test Name 4"
         },
         {
-            image: '../../assets/files/img/main/institutions/S3.jpg',
+            image: '../../assets/files/img/main/institutions/slider/5.jpg',
             id: 4,
             name: "Example Test Name 5"
         },
         {
-            image: '../../assets/files/img/main/institutions/E6.jpg',
+            image: '../../assets/files/img/main/institutions/slider/6.jpg',
             id: 5,
             name: "Example Test Name 6"
         },
         {
-            image: '../../assets/files/img/main/institutions/SE4.jpg',
+            image: '../../assets/files/img/main/institutions/slider/7.jpg',
             id: 6,
             name: "Example Test Name 7"
         },
         {
-            image: '../../assets/files/img/main/institutions/ED5.jpg',
+            image: '../../assets/files/img/main/institutions/slider/8.jpg',
             id: 7,
             name: "Example Test Name 8"
         }

@@ -277,28 +277,28 @@ discovrApp.controller('Home.IndexController', function(
     $scope.noWrapSlides6 = false;
     $scope.active6 = 0;
     var slides6 = $scope.slides6 = [{
-            image: '../../assets/files/img/main/entertaintment/slider/1.jpg',
+            image: '../../assets/files/img/main/entertainment/slider/1.jpg',
             id: 0,
             name: "Example Test Name"
         },
         {
-            image: '../../assets/files/img/main/entertaintment/slider/2.jpg',
+            image: '../../assets/files/img/main/entertainment/slider/2.jpg',
             id: 1,
             name: "Example Test Name"
         },
         {
-            image: '../../assets/files/img/main/entertaintment/slider/3.jpg',
+            image: '../../assets/files/img/main/entertainment/slider/3.jpg',
             id: 2,
             name: "Example Test Name"
         },
         {
-            image: '../../assets/files/img/main/entertaintment/slider/4.jpg',
+            image: '../../assets/files/img/main/entertainment/slider/4.jpg',
             id: 3,
             name: "Example Test Name"
         },
 
         {
-            image: '../../assets/files/img/main/entertaintment/slider/4.jpg',
+            image: '../../assets/files/img/main/entertainment/slider/4.jpg',
             id: 4,
             name: "Example Test Name"
         }
@@ -328,17 +328,63 @@ discovrApp.controller('Home.IndexController', function(
     var currIndex = 0;
 
     /*-------------------------------------------------------------------------------------------------*/
-
     $scope.myInterval8 = 7100;
     $scope.noWrapSlides8 = false;
     $scope.active8 = 0;
     var slides8 = $scope.slides8 = [{
-            image: '../../assets/files/img/main/promotion/1.jpg',
+            image: '../../assets/files/img/main/promotion/slider/1.jpg',
             id: 0,
             name: "Example Test Name"
         },
         {
-            image: '../../assets/files/img/main/promotion/2.jpg',
+            image: '../../assets/files/img/main/promotion/slider/2.jpg',
+            id: 1,
+            name: "Example Test Name"
+        }
+    ];
+    var currIndex = 0;
+
+    /*-------------------------------------------------------------------------------------------------*/
+    $scope.myInterval9 = 7100;
+    $scope.noWrapSlides9 = false;
+    $scope.active9 = 0;
+    var slides9 = $scope.slides9 = [{
+            image: '../../assets/files/img/main/places/slider/1.jpg',
+            id: 0,
+            name: "Example Test Name"
+        },
+        {
+            image: '../../assets/files/img/main/places/slider/2.jpg',
+            id: 1,
+            name: "Example Test Name"
+        },
+        {
+            image: '../../assets/files/img/main/places/slider/3.jpg',
+            id: 1,
+            name: "Example Test Name"
+        },
+        {
+            image: '../../assets/files/img/main/places/slider/4.jpg',
+            id: 1,
+            name: "Example Test Name"
+        },
+        {
+            image: '../../assets/files/img/main/places/slider/5.jpg',
+            id: 1,
+            name: "Example Test Name"
+        },
+        {
+            image: '../../assets/files/img/main/places/slider/6.jpg',
+            id: 1,
+            name: "Example Test Name"
+        },
+        {
+            image: '../../assets/files/img/main/places/slider/7.jpeg',
+            id: 1,
+            name: "Example Test Name"
+        },
+        {
+            image: '../../assets/files/img/main/places/slider/8.png',
             id: 1,
             name: "Example Test Name"
         }

@@ -171,11 +171,11 @@
     <div class="TileSitesContenido">
         <i class="material-icons materialOut">explore</i>
         <div class="slider">
-            <div uib-carousel active="active1" interval="myInterval1" no-wrap="noWrapSlides1">
-                <div uib-slide ng-repeat="slide1 in slides1 track by slide1.id" index="slide1.id">
-                    <a ui-sref="Place"><img ng-src="{{slide1.image || '//:0'}}" style="margin:auto;"></a>
+            <div uib-carousel active="active1" interval="myInterval1" no-wrap="noWrapSlides9">
+                <div uib-slide ng-repeat="slides9 in slides9 track by slides9.id" index="slides9.id">
+                    <a ui-sref="Place"><img ng-src="{{slides9.image || '//:0'}}" style="margin:auto;"></a>
                     <div id="Tile-title" class="carousel-caption">
-                        <h4> {{ slide1.name }} </h4>
+                        <h4> {{ slides9.name }} </h4>
                     </div>
                     <div class="BlurredTileBar"></div>
                 </div>

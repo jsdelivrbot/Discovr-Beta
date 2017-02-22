@@ -1,0 +1,26 @@
+<div class="create">
+    <form>
+        <i class="fa fa-times-circle"></i>
+        <input class="number" ng-model="number" placeholder="Enter card number" type="text">
+        <input class="name" ng-model="name" placeholder="Enter your name" type="text">
+        <input class="expiry" ng-model="expiry" placeholder="MM / YY" type="text">
+        <div class="choose_a_card" >
+            <img ng-click="choose('mastercard-curved-64px')" src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/217538/mastercard-curved-64px.png">
+            <img ng-click="choose('discover-curved-64px')" src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/217538/discover-curved-64px.png">
+            <img class="selected" ng-click="choose('visa-curved-64px')" src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/217538/visa-curved-64px.png">
+            <div class="card">
+            <div class="card_number">
+                <p>{{number}}</p>
+            </div>
+            <div class="card_holder">
+                <p>{{name}}</p>
+                <p>{{expiry}}</p>
+            </div>
+            <div class="card_icon">
+                <img src="../../assets/files/img/main/wallet/card/{{choice}}.png">                        
+            </div>
+            </div>
+            <input ng-click="addCard(number, name, expiry)" type="submit" value="Add card">
+        </div>
+    </form>
+</div>

@@ -259,14 +259,6 @@ const discovrApp = angular.module('DiscovrIndex', [
               controller: 'Preferences.IndexController',
               controllerAs: 'vm'
             })
-            /*
-            //----------------------      
-            .state('Preferences', {
-              url: '/preferences',
-              templateUrl: 'modules/preferences/Main.View.html',
-              controller: 'Preferences.IndexController',
-              controllerAs: 'vm'
-            })
             //----------------------      
             .state('Wallet', {
               url: '/wallet',
@@ -274,6 +266,14 @@ const discovrApp = angular.module('DiscovrIndex', [
               controller: 'Wallet.IndexController',
               controllerAs: 'vm'
             })  
+            /*
+            //----------------------      
+            .state('Preferences', {
+              url: '/preferences',
+              templateUrl: 'modules/preferences/Main.View.html',
+              controller: 'Preferences.IndexController',
+              controllerAs: 'vm'
+            })            
             //----------------------      
             .state('Adventures', {
               url: '/adventures',

@@ -1,0 +1,66 @@
+<!-- Este es el contenedor principal-->
+<div class="contain"><!--Este es el contenedor en el que se hacen las publicaciones -->
+    <div class="friends"><!-- Inicia  amigos -->
+        <main>
+            <div class="list">
+                <ul ng-repeat="card in cards" ng-show="card.id == cardIndex">
+                <div class="card">
+                    <div class="card_number">
+                    <p>{{card.cardNumber}}</p>
+                    </div>
+                    <div class="card_holder">
+                    <p>{{card.cardHolder}}</p>
+                    <p>{{card.expiryDate}}</p>
+                    </div>
+                    <div class="card_icon">
+                    <img src="../../assets/files/img/main/wallet/card/{{card.type}}.png">
+                    </div>
+                </div>
+                <div class="transactions">
+                    <table>
+                    <thead>
+                        <th translate>DateHeaderTitle</th>
+                        <th translate>OrderHeaderTitle</th>
+                        <th translate>ConceptHeaderTitle</th>
+                        <th translate>MerchantHeaderTitle</th>
+                        <th translate>AmountHeaderTitle</th>
+                    </thead>
+                    <tr ng-repeat="transaction in card.transactions">
+                        <td>{{ transaction.date }}</td>
+                        <td>Order ####</td>
+                        <td>Product Example Name</td>
+                        <td>{{ transaction.merchant }}</td>
+                        <td>{{ transaction.price | currency:"$" }}</td>
+                    </tr>
+                    </table>
+                </div>
+                </ul>
+            </div>
+            
+        </main>
+
+    </div><!-- Fin  amigos -->
+    <div class="recomend"><!-- Inicia recomendados -->
+        <h4>Recomendados</h4>
+        <aside>
+            <div class="wallet">
+                <div class="holder">
+                    <div class="card" ng-click="index(card.id)" ng-repeat="card in cards | orderBy:'id':true">
+                        <div class="card_number">
+                            <p>{{card.cardNumber}}</p>
+                        </div>
+                        <div class="card_holder">
+                            <p>{{card.cardHolder}}</p>
+                            <p>{{card.expiryDate}}</p>
+                        </div>
+                        <div class="card_icon">
+                            <img src="../../assets/files/img/main/wallet/card/{{card.type}}.png">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </aside>
+    </div><!-- Fin Recomendados -->
+</div> <!-- Fin container -->
+<!-- Fin cBody -->
+

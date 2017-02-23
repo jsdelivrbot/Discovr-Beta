@@ -95,7 +95,7 @@ const discovrApp = angular.module('DiscovrIndex', [
               controllerAs: 'vm'
             })
             .state('StoreView', {
-              url: '/store/view',
+              url: '/store/view/:id',
               templateUrl: 'modules/store/view/Main.View.html',
               controller: 'Store.IndexController',
               controllerAs: 'vm'
@@ -126,7 +126,7 @@ const discovrApp = angular.module('DiscovrIndex', [
               controllerAs: 'vm'
             })
             .state('EntertainmentView', {
-              url: '/entertainment/view',
+              url: '/entertainment/view/:id',
               templateUrl: 'modules/entertainment/view/Main.View.html',
               controller: 'Entertainment.IndexController',
               controllerAs: 'vm'
@@ -151,9 +151,9 @@ const discovrApp = angular.module('DiscovrIndex', [
               controllerAs: 'vm'
             })
             .state('FADView', {
-              url: '/fad/view',
+              url: '/fad/view/:id',
               templateUrl: 'modules/fad/view/Main.View.html',
-              controller: 'FAD.IndexController',
+              controller: 'FADView.IndexController',
               controllerAs: 'vm'
             })
             .state('FADGallery', {
@@ -340,7 +340,23 @@ const discovrApp = angular.module('DiscovrIndex', [
               templateUrl: 'module2/welcome/index.view.html',
               controller: 'BusinessWelcome.IndexController',
               controllerAs: 'vm'
+            })
+            .state('BusinessSignup', {
+              url: 'business/welcome/signup',
+              templateUrl: 'module2/welcome/signup/Main.View.html',
+              controller: 'BusinessSignup.IndexController',
+              controllerAs: 'vm'
+            })
+            //----------------------
+            .state('BusinessHome', {
+              url: 'business/',
+              templateUrl: 'modules2/home/Main.View.html',
+              controller: 'BusinessHome.IndexController',
+              controllerAs: 'vm',
+              cache: false //required
             });
+            //----------------------
+            
 
          // default route
         $urlRouterProvider.otherwise("/");

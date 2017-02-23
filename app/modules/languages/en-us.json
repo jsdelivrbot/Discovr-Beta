@@ -189,7 +189,51 @@
 "SeasonTitle1": "Summer",
 "SeasonTitle2": "Winter",
 "SeasonTitle3": "Autumn",
-"SeasonTitle4": "Spring"
+"SeasonTitle4": "Spring",
+
+"StoresTitle": "Stores",
+"HandicraftsTitle": "Handicrafts",
+"HomeAppliancesTitle": "Home Appliances",
+"AutoPartsTitle": "Auto Parts",
+"MedicalSuppliesTitle": "Medical Supplies",
+
+"ParksTitle": "Parks",
+"StadiumsTitle": "Stadiums",
+"DiscothequesTitle": "Discotheques",
+"CinemasTitle": "Cinemas",
+"GameCentersTitle": "Game Centers",
+
+"RestaurantsTitle": "Restaurants",
+"PubsTitle": "Pubs",
+"CoffeeShopsTitle": "Coffee Shops",
+"NaturalShakesTitle": "Natural Shakes",
+"BuffetsTitle": "Buffets",
+
+"NaturesTitle": "Natures",
+"SportsTitle": "Sports",
+"HistoricalsTitle": "Historicals",
+
+"AlbumsTitle": "Albums",
+
+"UnderTitle": "Under",
+"ConstructionTitle": "Construction",
+
+"SportTitle": "Sport",
+"ArtTitle": "Art & Culture",
+"HistoryTitle": "History",
+
+"FootballTitle": "Football",
+"BaseballTitle": "Baseball",
+"BasketballTitle": "Basketball",
+"TennisTitle": "Tennis",
+"CyclingTitle": "Cycling",
+"SwimmingTitle": "Swimming",
+"TrekkingTitle": "Trekking",
+"AthleticsTitle": "Athletics",
+"CanopyTitle": "Canopy",
+"FishingTitle": "Fishing",
+"MarathonTitle": "Marathon",
+"SkatingTitle": "Skating"
 
 
 

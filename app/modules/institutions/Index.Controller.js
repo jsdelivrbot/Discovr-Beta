@@ -15,7 +15,7 @@ discovrApp.controller('Institution.IndexController', function(
       {name:'Health Example Name 1',
       about:'Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.',
       appraisal: 4.5,
-      id: 'HousingView',
+      id: 'InstitutionView',
       image: '../../assets/files/img/main/institutions/S1.jpg',  
       tags:[
         {tag:'wifi',name:'Wifi'},
@@ -28,7 +28,7 @@ discovrApp.controller('Institution.IndexController', function(
       {name:'Health Example Name 2',
       about:'Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.',
       appraisal: 3.5,
-      id: 'HousingView',
+      id: 'InstitutionView',
       image: '../../assets/files/img/main/institutions/S2.jpg',
       tags:[
         {tag:'wifi',name:'Wifi'},
@@ -41,7 +41,7 @@ discovrApp.controller('Institution.IndexController', function(
       {name:'Health Example Name 3',
       about:'Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.',
       appraisal: 2.5,
-      id: 'HousingView',
+      id: 'InstitutionView',
       image: '../../assets/files/img/main/institutions/S3.jpg',
       tags:[
         {tag:'wifi',name:'Wifi'},
@@ -54,7 +54,7 @@ discovrApp.controller('Institution.IndexController', function(
       {name:'Health Example Name 4',
       about:'Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.',
       appraisal: 4.5,
-      id: 'HousingView',
+      id: 'InstitutionView',
       image: '../../assets/files/img/main/institutions/S4.jpg',
       tags:[
         {tag:'wifi',name:'Wifi'},
@@ -67,7 +67,7 @@ discovrApp.controller('Institution.IndexController', function(
       {name:'Health Example Name 5',
       about:'Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.',
       appraisal: 4.6,
-      id: 'HousingView',
+      id: 'InstitutionView',
       image: '../../assets/files/img/main/institutions/S5.jpg',
       tags:[
         {tag:'wifi',name:'Wifi'},
@@ -80,7 +80,7 @@ discovrApp.controller('Institution.IndexController', function(
       {name:'Health Example Name 6',
       about:'Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.',
       appraisal: 3.5,
-      id: 'HousingView',
+      id: 'InstitutionView',
       image: '../../assets/files/img/main/institutions/S6.jpg',
       tags:[
         {tag:'wifi',name:'Wifi'},
@@ -95,7 +95,7 @@ discovrApp.controller('Institution.IndexController', function(
       {name:'Embassy Example Name 1',
       about:'Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.',
       appraisal: 4.5,
-      id: 'HousingView',
+      id: 'InstitutionView',
       image: '../../assets/files/img/main/institutions/E1.jpg',  
       tags:[
         {tag:'wifi',name:'Wifi'},
@@ -108,7 +108,7 @@ discovrApp.controller('Institution.IndexController', function(
       {name:'Embassy Example Name 2',
       about:'Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.',
       appraisal: 3.5,
-      id: 'HousingView',
+      id: 'InstitutionView',
       image: '../../assets/files/img/main/institutions/E2.jpg',
       tags:[
         {tag:'wifi',name:'Wifi'},
@@ -121,7 +121,7 @@ discovrApp.controller('Institution.IndexController', function(
       {name:'Embassy Example Name 3',
       about:'Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.',
       appraisal: 2.5,
-      id: 'HousingView',
+      id: 'InstitutionView',
       image: '../../assets/files/img/main/institutions/E3.jpg',
       tags:[
         {tag:'wifi',name:'Wifi'},
@@ -134,7 +134,7 @@ discovrApp.controller('Institution.IndexController', function(
       {name:'Embassy Example Name 4',
       about:'Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.',
       appraisal: 4.5,
-      id: 'HousingView',
+      id: 'InstitutionView',
       image: '../../assets/files/img/main/institutions/E4.jpg',
       tags:[
         {tag:'wifi',name:'Wifi'},
@@ -147,7 +147,7 @@ discovrApp.controller('Institution.IndexController', function(
       {name:'Embassy Example Name 5',
       about:'Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.',
       appraisal: 4.6,
-      id: 'HousingView',
+      id: 'InstitutionView',
       image: '../../assets/files/img/main/institutions/E5.png',
       tags:[
         {tag:'wifi',name:'Wifi'},
@@ -160,7 +160,7 @@ discovrApp.controller('Institution.IndexController', function(
       {name:'Embassy Example Name 6',
       about:'Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.',
       appraisal: 3.5,
-      id: 'HousingView',
+      id: 'InstitutionView',
       image: '../../assets/files/img/main/institutions/E6.jpg',
       tags:[
         {tag:'wifi',name:'Wifi'},
@@ -175,7 +175,7 @@ discovrApp.controller('Institution.IndexController', function(
       {name:'Security Example Name 1',
       about:'Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.',
       appraisal: 4.5,
-      id: 'HousingView',
+      id: 'InstitutionView',
       image: '../../assets/files/img/main/institutions/SE1.jpg',  
       tags:[
         {tag:'wifi',name:'Wifi'},
@@ -188,7 +188,7 @@ discovrApp.controller('Institution.IndexController', function(
       {name:'Security Example Name 2',
       about:'Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.',
       appraisal: 3.5,
-      id: 'HousingView',
+      id: 'InstitutionView',
       image: '../../assets/files/img/main/institutions/SE2.jpg',
       tags:[
         {tag:'wifi',name:'Wifi'},
@@ -201,7 +201,7 @@ discovrApp.controller('Institution.IndexController', function(
       {name:'Security Example Name 3',
       about:'Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.',
       appraisal: 2.5,
-      id: 'HousingView',
+      id: 'InstitutionView',
       image: '../../assets/files/img/main/institutions/SE3.jpg',
       tags:[
         {tag:'wifi',name:'Wifi'},
@@ -214,7 +214,7 @@ discovrApp.controller('Institution.IndexController', function(
       {name:'Security Example Name 4',
       about:'Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.',
       appraisal: 4.5,
-      id: 'HousingView',
+      id: 'InstitutionView',
       image: '../../assets/files/img/main/institutions/SE4.jpg',
       tags:[
         {tag:'wifi',name:'Wifi'},
@@ -229,7 +229,7 @@ discovrApp.controller('Institution.IndexController', function(
       {name:'Finance Example Name 1',
       about:'Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.',
       appraisal: 4.5,
-      id: 'HousingView',
+      id: 'InstitutionView',
       image: '../../assets/files/img/main/institutions/F-ESTELI.jpg',  
       tags:[
         {tag:'wifi',name:'Wifi'},
@@ -242,7 +242,7 @@ discovrApp.controller('Institution.IndexController', function(
       {name:'Finance Example Name 2',
       about:'Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.',
       appraisal: 3.5,
-      id: 'HousingView',
+      id: 'InstitutionView',
       image: '../../assets/files/img/main/institutions/F-ESTELI2.png',
       tags:[
         {tag:'wifi',name:'Wifi'},
@@ -255,7 +255,7 @@ discovrApp.controller('Institution.IndexController', function(
       {name:'Finance Example Name 3',
       about:'Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.',
       appraisal: 2.5,
-      id: 'HousingView',
+      id: 'InstitutionView',
       image: '../../assets/files/img/main/institutions/F-MATAGALPA.jpg',
       tags:[
         {tag:'wifi',name:'Wifi'},
@@ -268,7 +268,7 @@ discovrApp.controller('Institution.IndexController', function(
       {name:'Finance Example Name 4',
       about:'Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.',
       appraisal: 4.5,
-      id: 'HousingView',
+      id: 'InstitutionView',
       image: '../../assets/files/img/main/institutions/F-MANAGUA.jpg',
       tags:[
         {tag:'wifi',name:'Wifi'},
@@ -281,7 +281,7 @@ discovrApp.controller('Institution.IndexController', function(
       {name:'Finance Example Name 5',
       about:'Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.',
       appraisal: 4.6,
-      id: 'HousingView',
+      id: 'InstitutionView',
       image: '../../assets/files/img/main/institutions/F-MANAGUA2.jpg',
       tags:[
         {tag:'wifi',name:'Wifi'},
@@ -294,7 +294,7 @@ discovrApp.controller('Institution.IndexController', function(
       {name:'Finance Example Name 6',
       about:'Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.',
       appraisal: 3.5,
-      id: 'HousingView',
+      id: 'InstitutionView',
       image: '../../assets/files/img/main/institutions/F-MANAGUA3.jpg',
       tags:[
         {tag:'wifi',name:'Wifi'},
@@ -309,7 +309,7 @@ discovrApp.controller('Institution.IndexController', function(
       {name:'Education Example Name 1',
       about:'Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.',
       appraisal: 4.5,
-      id: 'HousingView',
+      id: 'InstitutionView',
       image: '../../assets/files/img/main/institutions/ED1.jpg',  
       tags:[
         {tag:'wifi',name:'Wifi'},
@@ -322,7 +322,7 @@ discovrApp.controller('Institution.IndexController', function(
       {name:'Education Example Name 2',
       about:'Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.',
       appraisal: 3.5,
-      id: 'HousingView',
+      id: 'InstitutionView',
       image: '../../assets/files/img/main/institutions/ED2.JPG',
       tags:[
         {tag:'wifi',name:'Wifi'},
@@ -335,7 +335,7 @@ discovrApp.controller('Institution.IndexController', function(
       {name:'Education Example Name 3',
       about:'Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.',
       appraisal: 2.5,
-      id: 'HousingView',
+      id: 'InstitutionView',
       image: '../../assets/files/img/main/institutions/ED3.jpg',
       tags:[
         {tag:'wifi',name:'Wifi'},
@@ -348,7 +348,7 @@ discovrApp.controller('Institution.IndexController', function(
       {name:'Education Example Name 4',
       about:'Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.',
       appraisal: 4.5,
-      id: 'HousingView',
+      id: 'InstitutionView',
       image: '../../assets/files/img/main/institutions/ED4.jpg',
       tags:[
         {tag:'wifi',name:'Wifi'},
@@ -361,7 +361,7 @@ discovrApp.controller('Institution.IndexController', function(
       {name:'Education Example Name 5',
       about:'Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.',
       appraisal: 4.6,
-      id: 'HousingView',
+      id: 'InstitutionView',
       image: '../../assets/files/img/main/institutions/ED5.jpg',
       tags:[
         {tag:'wifi',name:'Wifi'},
@@ -374,7 +374,7 @@ discovrApp.controller('Institution.IndexController', function(
       {name:'Education Example Name 6',
       about:'Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.',
       appraisal: 3.5,
-      id: 'HousingView',
+      id: 'InstitutionView',
       image: '../../assets/files/img/main/institutions/ED6.jpg',
       tags:[
         {tag:'wifi',name:'Wifi'},

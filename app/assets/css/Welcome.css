@@ -217,10 +217,6 @@
 	padding-right:7%;
 	padding-left:7%;
 }
-<<<<<<< HEAD
-
-=======
->>>>>>> origin/master
 /* ------- ESTILOS QUE SE APLICAN CUANDO LA PAGINA TIENE UN ANCHO DE 765PX (VISTA MOBIL) -----------*/
 @media only screen and (max-width: 765px) {
   :-webkit-scrollbar {

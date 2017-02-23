@@ -1,0 +1,134 @@
+<div class="FondoBodyIndex" > <!-- CLASE CSS QUE ESTA EN INDEX.CSS -->
+	<!-- ----------------     IMPORT CSS FILES     ------------------------- -->
+	<link rel="stylesheet" href="../../assets/css/Welcome.css">
+	<!-- ----------------     END IMPORT FILES     ------------------------- -->
+	<div class="ContainerAlltoAll">
+	  <div class="ContentAnimated">
+			<!-- ----------------     INICIA BARRA DE MENU     ------------------------- -->
+			<div class="ContenedorMenu">
+				<nav class="navbar navbar-default" role="navigation">
+			        <div class="navbar-header">
+								<!---------------- BOTON HAMBURGUESA-->
+			            <button type="button" class="navbar-toggle" ng-click="isNavCollapsed = !isNavCollapsed">
+			                <span class="sr-only">Toggle navigation</span>
+			                <span class="icon-bar"></span>
+			                <span class="icon-bar"></span>
+			                <span class="icon-bar"></span>
+			            </button>
+									<!---------------- NOMBRE DE LA PAGINA-->
+			            <a class="navbar-brand" ui-sref="login">{{ 'BrandTitle' | translate }}</a>
+			        </div>
+			        <!---------------- OPCIONES DE LA PAGINA-->
+			        <div class="collapse navbar-collapse" uib-collapse="isNavCollapsed">
+			            <ul id="NavBarMenu" class="nav navbar-nav navbar-right">
+							<li><a href="#formcontent" prevent-default="" scroll-to="formcontent">Welcome | Login</a></li>
+							<li><a href="#opt2" prevent-default="" scroll-to="opt2">For Housing</a></li>
+							<li><a href="#opt3" prevent-default="" scroll-to="opt3">For Food and Drinks</a></li>
+							<li><a href="#opt4" prevent-default="" scroll-to="opt4">For Entertainment</a></li>
+							<li><a href="#opt5" prevent-default="" scroll-to="opt5">For Store</a></li>
+							<li><a href="#opt5" prevent-default="" scroll-to="opt6">For Institution</a></li>
+							<li><a href="#opt5" prevent-default="" scroll-to="opt7">Support</a></li>
+							<li><a ui-sref="BusinessWelcome">{{ 'MenuOpt6' | translate }}</a></li>
+							<!---------------- OPCION DE LENGUAGE-->
+			                <li uib-dropdown>
+								<a id="language" href="#" uib-dropdown-toggle>
+									<i class="material-icons">language</i>
+								</a>
+								<!---------------- CARGAR LOS LENGUAJES DESDE EL CONTROLADOR-->
+								<ul class="dropdown-menu" uib-dropdown-menu role="menu" aria-labelledby="language">
+									<li role="menuitem" ng-repeat="lan in vm.listLan"><a href="#" ng-click="vm.changeLang(lan.key)">{{lan.value}}</a></li>
+								</ul>
+			                </li>
+			            </ul>
+			        </div>
+			    </nav>
+			</div>
+			<!-- ----------------     FINALIZA BARRA DE MENU     ------------------------- -->
+			
+
+			<!-- ----------------     FORMULARIO DE INICIO DE SESION    ------------------------- -->
+			<div id="formcontent">
+				<form name="form" ng-submit="form.$valid && vm.login()" novalidate>
+					<!---------------- INPUTS DE USERNAME & PASSWORD-->
+					<div class="Register1">{{ 'UserInputLabel' | translate }}</div>
+					<input type="text" placeholder="{{ 'UserInputPlaceHolder' | translate }}" class="inputTex" ng-model="vm.username" required>
+					<div class="input-group">
+						<div class="Register1">{{ 'PassInputLabel' | translate }}</div>
+						<input type="password" placeholder="{{ 'PassInputPlaceHolder' | translate }}" class="inputTex" id="txtPassword" ng-model="vm.password" required>
+						<button id="btnToggle" class="toggle">show</button>
+					</div>
+					<!---------------- PARA ACCEDER A LA PAGINA DE REGISTRO-->
+					<p class="Register">{{ 'FormText1' | translate }} <span><a ui-sref="Signup" class="SingUp">{{ 'FormText2' | translate }}</a></span></p>
+					<!---------------- BOTON PARA LOGEARSE-->
+					<input type="submit" ng-disabled="vm.loading" class="btn btn-primary1" value="{{ 'BtnLogin' | translate }}">
+					<!---------------- PARA MOSTRAR ERRORES -- NO FUNCIONAL-->
+					<div ng-if="vm.error" >{{vm.error}}</div>
+				</form>
+			</div>
+			<!-- ----------------     END LOGIN FORM     ------------------------- -->
+			<!------------------- CUERPO DE LA PAGINA CON TEXTO-->
+			<div class="ContainerText">
+				<br />
+				<div class="Txt">
+					<h2>Welcome | Login</h2><br>
+					<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Vel magnam distinctio impedit debitis saepe officiis porro dolorem! Molestias aliquid natus, blanditiis autem impedit nesciunt culpa, in, a nihil explicabo</p>
+					<br>
+					<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Esse eos maiores nam voluptatem quod nostrum voluptatibus suscipit ipsum neque doloremque tenetur, incidunt, consequuntur, voluptates eum aut est cupiditate. A, quisquam!</p>
+					<div ng-include src="'module2/welcome/Pay.View.html'"> </div>
+					<br />
+				</div>
+				<hr class="separator" id="opt2">
+				<br>
+				<div class="Txt">
+					<h2 id="">For Housing</h2><br>
+					<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Vel magnam distinctio impedit debitis saepe officiis porro dolorem! Molestias aliquid natus, blanditiis autem impedit nesciunt culpa, in, a nihil explicabo</p>
+					<br>
+					<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Esse eos maiores nam voluptatem quod nostrum voluptatibus suscipit ipsum neque doloremque tenetur, incidunt, consequuntur, voluptates eum aut est cupiditate. A, quisquam!</p>
+					<br>
+					<div ng-include src="'module2/welcome/Housing.View.html'"> </div>
+				</div>
+				<hr class="separator" id="opt3">
+				<br>
+				<div class="Txt">
+					<h2>For Food and Drinks</h2><br>
+					<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Vel magnam distinctio impedit debitis saepe officiis porro dolorem! Molestias aliquid natus, blanditiis autem impedit nesciunt culpa, in, a nihil explicabo</p>
+					<br>
+					<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Esse eos maiores nam voluptatem quod nostrum voluptatibus suscipit ipsum neque doloremque tenetur, incidunt, consequuntur, voluptates eum aut est cupiditate. A, quisquam!</p>
+					<br>
+					<div ng-include src="'module2/welcome/FAD.View.html'"> </div>
+				</div>
+				<hr class="separator" id="opt4">
+				<br>
+				<div class="Txt">
+					<h2>For Entertainmen</h2><br>
+					<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Vel magnam distinctio impedit debitis saepe officiis porro dolorem! Molestias aliquid natus, blanditiis autem impedit nesciunt culpa, in, a nihil explicabo</p>
+					<br>
+					<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Esse eos maiores nam voluptatem quod nostrum voluptatibus suscipit ipsum neque doloremque tenetur, incidunt, consequuntur, voluptates eum aut est cupiditate. A, quisquam!</p>
+					<br>
+					<div ng-include src="'module2/welcome/Entertainment.View.html'"> </div>
+				</div>
+				<hr class="separator" id="opt5">
+				<br>
+				<div class="Txt">
+					<h2>For Store</h2><br>
+					<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Vel magnam distinctio impedit debitis saepe officiis porro dolorem! Molestias aliquid natus, blanditiis autem impedit nesciunt culpa, in, a nihil explicabo</p>
+					<br>
+					<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Esse eos maiores nam voluptatem quod nostrum voluptatibus suscipit ipsum neque doloremque tenetur, incidunt, consequuntur, voluptates eum aut est cupiditate. A, quisquam!</p>
+					<br>
+					<div ng-include src="'module2/welcome/Store.View.html'"> </div>
+				</div>
+				<hr class="separator" id="opt6">
+				<br>
+				<div class="Txt">
+					<h2>For Institution</h2><br>
+					<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Vel magnam distinctio impedit debitis saepe officiis porro dolorem! Molestias aliquid natus, blanditiis autem impedit nesciunt culpa, in, a nihil explicabo</p>
+					<br>
+					<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Esse eos maiores nam voluptatem quod nostrum voluptatibus suscipit ipsum neque doloremque tenetur, incidunt, consequuntur, voluptates eum aut est cupiditate. A, quisquam!</p>
+				</div>
+				
+			</div>
+		</div>
+	<div class="background"></div>
+</div>	
+	<!------------------- FIN DE CUERPO DE LA PAGINA CON TEXTO-->
+</div>

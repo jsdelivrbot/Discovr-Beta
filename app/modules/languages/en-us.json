@@ -213,7 +213,27 @@
 "SportsTitle": "Sports",
 "HistoricalsTitle": "Historicals",
 
-"AlbumsTitle": "Albums"
+"AlbumsTitle": "Albums",
+
+"UnderTitle": "Under",
+"ConstructionTitle": "Construction",
+
+"SportTitle": "Sport",
+"ArtTitle": "Art & Culture",
+"HistoryTitle": "History",
+
+"FootballTitle": "Football",
+"BaseballTitle": "Baseball",
+"BasketballTitle": "Basketball",
+"TennisTitle": "Tennis",
+"CyclingTitle": "Cycling",
+"SwimmingTitle": "Swimming",
+"TrekkingTitle": "Trekking",
+"AthleticsTitle": "Athletics",
+"CanopyTitle": "Canopy",
+"FishingTitle": "Fishing",
+"MarathonTitle": "Marathon",
+"SkatingTitle": "Skating"
 
 
 

@@ -211,7 +211,27 @@
 "SportsTitle": "Deportes",
 "HistoricalsTitle": "Historicos",
 
-"AlbumsTitle": "Albums"
+"AlbumsTitle": "Albums",
+
+"UnderTitle": "En",
+"ConstructionTitle": "Construccion",
+
+"SportTitle": "Deportes",
+"ArtTitle": "Arte & Cultura",
+"HistoryTitle": "Historia",
+
+"FootballTitle": "Futbol",
+"BaseballTitle": "Béisbol",
+"BasketballTitle": "Baloncesto",
+"TennisTitle": "Tenis",
+"CyclingTitle": "Ciclismo",
+"SwimmingTitle": "Natacion",
+"TrekkingTitle": "Senderismo",
+"AthleticsTitle": "Atletismo",
+"CanopyTitle": "Canopy",
+"FishingTitle": "Pesca",
+"MarathonTitle": "Maraton",
+"SkatingTitle": "Patinaje"
 
 
 

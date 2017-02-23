@@ -1,6 +1,4 @@
-.cBody {
-    height:100%;
-}
+
 /* Inicia estilo contenedor flotante */
 .ContainerFloatTiles {
 	list-style: none;
@@ -20,12 +18,14 @@
 .contain{ /* Estilo de contenedor principal */
 	width: 100%;
     height: 100%;
+	display: flex;
 	margin-right: auto;
     margin-left: auto;
 	margin-top:15px;
 }
 .gnumber{ /* Estilo de contenedor de numeros generales */
     width:73%;
+	height: 100%;
 	padding-right: 10px;
 	padding-left: 25px;
     float:left;
@@ -49,6 +49,11 @@
 	font-weight: bold;
 	padding-left:50px;;
 	padding-bottom:30px;
+}
+.mnumber h4{/* Estilo para el téxto en contenedor de números principales */
+	text-align: center;
+	color: #fff;
+
 }
 .gnumdet{ /* Estilo detalle de números generales */
     width: 275px;
@@ -129,21 +134,154 @@
 	width: 100%;
 	height: 267px;
 }
-/*----------  Chat Input    ------------*/
-  .slide-list {
-        list-style-type: none;
-        margin: 0;
-        padding: 0;
-    }
-    .slide-list > li {
-        display: inline;
-    }
-    .slide-list > li:hover {
-        cursor: pointer;
-    }
-    .slide-list > li > img {
-        width: 100px;
-        height: 100px;
-    }
+/*---------- BEGIN GALLERY BODY    ------------*/
+.slide-list {
+	list-style-type: none;
+	margin: 0;
+	padding: 0;
+}
+.slide-list > li {
+	display: inline;
+}
+.slide-list > li:hover {
+	cursor: pointer;
+}
+.slide-list > li > img {
+	box-shadow: 0 2px 2px 0 rgba(0,0,0,.14),0 3px 1px -2px rgba(0,0,0,.2),0 1px 5px 0 rgba(0,0,0,.12);
+	width: 280px;
+	height: 250px;
+	margin-bottom: 5px;
+}
 
-/*----------  MODAL    ------------*/
+/*----------  END GALLERY BODY    ------------*/
+/*------------------------  ESTILOS PARA LOS TILES DEL CUERPO   ----------------------------------------*/
+
+.TileSitesContenido .slider {
+  width: 100%;
+  margin: auto;
+  overflow: hidden;
+  height: 130px;
+  max-height: 130px;
+}
+.TileSitesContenido .slider li {
+  width: 100%;
+  list-style: none;
+  margin: 0px;
+}
+.TileSitesContenido .slider img {
+  width: 100%;
+  height: 130px;
+  object-fit: cover;
+}
+.ContainerTileSites {
+  width: 100%;
+  margin-top: 10px;
+  overflow: hidden;
+}
+.TileSite1,
+.TileSite2,
+.TileSite3,
+.TileSite4,
+.TileSite5,
+.TileSite6,
+.TileSite7 {
+  width: 90%;
+  float: left;
+  height: 130px;
+  margin-right: 1.4%;
+  color: #fff;
+  margin-left: 0.8%;
+  margin-bottom: 10px;
+  background-color: rgba(255, 2555, 255,0.5);
+  backdrop-filter: blur(5px);
+  -ms-backdrop-filter: blur(5px);
+  -webkit-backdrop-filter: blur(5px);
+}
+.TileSitesContenido {
+  box-shadow: 0 2px 2px 0 rgba(0,0,0,.14),0 3px 1px -2px rgba(0,0,0,.2),0 1px 5px 0 rgba(0,0,0,.12);
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+  text-align: center;
+}
+/* ------------------------------------------------------------------------------------------ */
+.SpanTitle {
+  float: right;
+  margin-right: 12px;
+  position: relative;
+  margin-top: -34px;
+  z-index: 2;
+}
+/* AQUI SE GENERA LA BARRA DIFUMINADA QUE ESTA EN LA PARTE INFERIOR DE LOS TILES */
+.BlurredGeneralTileBar {
+  position: relative;
+  margin-top: -34px;
+  height: 35px;
+  width: 100%;
+  z-index: 1;
+  background: -moz-linear-gradient(top, rgba(0, 0, 0, 0) 1%, rgba(0, 0, 0, 0.65) 83%, rgba(0, 0, 0, 0.65) 84%, rgba(0, 0, 0, 0.65) 85%, rgba(0, 0, 0, 0.65) 87%);
+  /* FF3.6-15 */
+  background: -webkit-linear-gradient(top, rgba(0, 0, 0, 0) 1%, rgba(0, 0, 0, 0.65) 83%, rgba(0, 0, 0, 0.65) 84%, rgba(0, 0, 0, 0.65) 85%, rgba(0, 0, 0, 0.65) 87%);
+  /* Chrome10-25,Safari5.1-6 */
+  background: linear-gradient(to bottom, rgba(0, 0, 0, 0) 1%, rgba(0, 0, 0, 0.65) 83%, rgba(0, 0, 0, 0.65) 84%, rgba(0, 0, 0, 0.65) 85%, rgba(0, 0, 0, 0.65) 87%);
+  /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+  filter: progid: DXImageTransform.Microsoft.gradient( startColorstr='#00000000', endColorstr='#a6000000', GradientType=0);
+}
+.LiContainer .BlurredGeneralTileBar {
+  z-index: 3;
+}
+/* AQUI SE ADAPTAN LAS IMAGENES CONTENIDAD EN LOS TILES */
+.TileSitesContenido .material-icons {
+  font-size: 73px;
+  padding-top: 30px;
+  padding-bottom: 28px;
+  text-align: center;
+}
+/*  Animaciones de hover y active*/
+/*
+.TileSite1:hover, .TileSite2:hover, .TileSite3:hover, .TileSite4:hover, .TileSite5:hover, .TileSite6:hover{
+	-webkit-transform: scale(1.05);
+}
+.TileSite1:active, .TileSite2:active, .TileSite3:active, .TileSite4:active, .TileSite5:active, .TileSite6:active{
+	-webkit-transform: scale(1);
+} */
+.TileSite1 .carousel-indicators {
+  padding-left: 20px;
+  margin-bottom: -12px;
+}
+.PrincipalSlider .carousel-indicators {
+  padding-left: 20px;
+  margin-bottom: -5px;
+}
+
+.TileSite1 img:hover {
+  -webkit-transform: scale(1.1);
+  transition: all 0.3s;
+}
+.TileSite1 img:active {
+  -webkit-transform: scale(1.2);
+  transition: all 0.3s;
+}
+/*DISEÑO RESPONSITIVE----------------------------------------------*/
+@media only screen and (max-width: 767px) {
+  .TileSite1 {
+      width: 49%;
+      margin: 0px;
+      margin-left: 1%;
+      margin-bottom: 10px;
+  }
+  .TileSite1:nth-of-type(2) {
+      width: 48%;
+      margin-right: 1%;
+  }
+  .TileSite1:nth-of-type(4) {
+      width: 48%;
+      margin-right: 1%;
+  }
+
+.TileSite1:nth-of-type(6) {
+      width: 48%;
+      margin-right: 1%;
+  }
+}
+/*------------------------  FIN ESTILOS PARA LOS TILES DEL CUERPO   ----------------------------------------*/

@@ -1,19 +1,83 @@
-<div class="cBody"> <!-- Este es el contenedor principal-->
-    <div class="contain"><!--Este es el contenedor en el que se hacen las publicaciones -->
-        <div class="gnumber"><!-- Inicia general number --> 
-			<h1> {{ vm.title }} </h1>  
-			 <ul class="slide-list">
-				<li ng-repeat="s in vm.photos track by $index" ng-click="vm.showGallery($index)">
-					<img ng-src="{{ s.src }}" alt="slide number {{ $index }}" />
-				</li>
-			</ul>
-			<div ng-photoswipe slides="vm.photos" open="vm.open" slide-selector=".slide-list > li > img"
-				on-close="vm.closeGallery()" options="vm.opts"></div>
-			</div><!-- Fin general number -->
+<!-- Este es el contenedor principal-->
+<div class="contain"><!--Este es el contenedor en el que se hacen las publicaciones -->
+	<div class="gnumber"><!-- Inicia general number --> 
+			<ul class="slide-list">
+			<li ng-repeat="s in vm.photos track by $index" ng-click="vm.showGallery($index)">
+				<img ng-src="{{ s.src }}" alt="slide number {{ $index }}" />
+			</li>
+		</ul>
+		<div ng-photoswipe slides="vm.photos" open="vm.open" slide-selector=".slide-list > li > img"
+			on-close="vm.closeGallery()" options="vm.opts"></div>
+		</div><!-- Fin general number -->
 
-        <div class="mnumber"><!-- Inicia main number -->
- 
-        </div><!-- Fin main number -->
-    </div> <!-- Fin container -->
-
-</div> <!-- Fin cBody -->
+	<div class="mnumber"><!-- Inicia main number -->
+		<h4 translate>AlbumsTitle</h4>
+		<!-- TILES DE OTROS SITIOS, ESTOS SON LOS MOSTRADOS BAJO EL SLIDER-->
+		<!-- ---------------------------------------- TILE DE EVENTOS -------------------------------------------- -->
+		<a ui-sref="Working" class="TileSite1">
+			<div class="TileSitesContenido">				
+			<i class="material-icons  materialOut">photo_album</i>
+			<div class="slider">
+				<div uib-carousel active="active" interval="myInterval" no-wrap="noWrapSlides">
+				<div uib-slide ng-repeat="slide1 in albums track by slide1.id" index="slide1.id">
+					<img ng-src="{{slide1.image}}" style="margin:auto;">
+					<div id="Tile-title" class="carousel-caption">
+					</div>
+					<div class="BlurredGeneralTileBar"></div>
+				</div>
+				</div>
+				<span class="SpanTitle" translate>AlbumsTitle</span>
+			</div>
+			</div>
+		</a>
+		<a ui-sref="Working" class="TileSite1">
+			<div class="TileSitesContenido">
+			<i class="material-icons  materialOut">photo_album</i>
+			<div class="slider">
+				<div uib-carousel active="active" interval="myInterval" no-wrap="noWrapSlides">
+				<div uib-slide ng-repeat="slide2 in albums1 track by slide2.id" index="slide2.id">
+					<img ng-src="{{slide2.image}}" style="margin:auto;">
+					<div id="Tile-title" class="carousel-caption">
+					</div>
+					<div class="BlurredGeneralTileBar"></div>
+				</div>
+				</div>
+				<span class="SpanTitle" translate>AlbumsTitle</span>
+			</div>
+			</div>
+		</a>
+		<a ui-sref="Working" class="TileSite1">
+			<div class="TileSitesContenido">
+			<i class="material-icons  materialOut">photo_album</i>
+			<div class="slider">
+				<div uib-carousel active="active" interval="myInterval" no-wrap="noWrapSlides">
+				<div uib-slide ng-repeat="slide3 in albums2 track by slide3.id" index="slide3.id">
+					<img ng-src="{{slide3.image}}" style="margin:auto;">
+					<div id="Tile-title" class="carousel-caption">
+					</div>
+					<div class="BlurredGeneralTileBar"></div>
+				</div>
+				</div>
+				<span class="SpanTitle" translate>AlbumsTitle</span>
+			</div>
+			</div>
+		</a>
+		<a ui-sref="Working" class="TileSite1">
+			<div class="TileSitesContenido">
+			<i class="material-icons  materialOut">photo_album</i>
+			<div class="slider">
+				<div uib-carousel active="active" interval="myInterval" no-wrap="noWrapSlides">
+				<div uib-slide ng-repeat="slide4 in albums3 track by slide4.id" index="slide4.id">
+					<img ng-src="{{slide4.image}}" style="margin:auto;">
+					<div id="Tile-title" class="carousel-caption">
+					</div>
+					<div class="BlurredGeneralTileBar"></div>
+				</div>
+			</div>
+				<span class="SpanTitle" translate>AlbumsTitle</span>
+			</div>
+			</div>
+		</a>
+	</div><!-- Fin main number -->
+</div> <!-- Fin container -->
+<!-- Fin cBody -->

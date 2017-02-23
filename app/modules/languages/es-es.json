@@ -187,7 +187,31 @@
 "SeasonTitle1": "Verano",
 "SeasonTitle2": "Invierno",
 "SeasonTitle3": "Otoño",
-"SeasonTitle4": "Primavera"
+"SeasonTitle4": "Primavera",
+
+"StoresTitle": "Tiendas",
+"HandicraftsTitle": "Artesania",
+"HomeAppliancesTitle": "Electrodomesticos",
+"AutoPartsTitle": "Auto Partes",
+"MedicalSuppliesTitle": "Suministros Medicos",
+
+"ParksTitle": "Parques",
+"StadiumsTitle": "Estadios",
+"DiscothequesTitle": "Discotecas",
+"CinemasTitle": "Cines",
+"GameCentersTitle": "Centros de Juego",
+
+"RestaurantsTitle": "Restaurantes",
+"PubsTitle": "Bares",
+"CoffeeShopsTitle": "Cafeterias",
+"NaturalShakesTitle": "Batidos",
+"BuffetsTitle": "Buffets",
+
+"NaturesTitle": "Naturaleza",
+"SportsTitle": "Deportes",
+"HistoricalsTitle": "Historicos",
+
+"AlbumsTitle": "Albums"
 
 
 

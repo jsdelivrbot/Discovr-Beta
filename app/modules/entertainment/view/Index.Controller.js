@@ -1,4 +1,4 @@
-discovrApp.controller('HousingView.IndexController', function(
+discovrApp.controller('EntertainmentView.IndexController', function(
   $localStorage,
   $location,
   AuthenticationService,

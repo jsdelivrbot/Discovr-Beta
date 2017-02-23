@@ -1,4 +1,4 @@
-discovrApp.controller('HousingView.IndexController', function(
+discovrApp.controller('FADView.IndexController', function(
   $localStorage,
   $location,
   AuthenticationService,

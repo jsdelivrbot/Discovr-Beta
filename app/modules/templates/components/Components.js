@@ -2,7 +2,7 @@
 discovrApp.component('tileGeneral', {
     templateUrl:'modules/templates/components/GeneralTile.html',
     bindings: {
-            info: '<'
+            info: '<'       
         },
     controller: function($uibModal) {
         var $ctrl = this;
@@ -13,6 +13,7 @@ discovrApp.component('tileGeneral', {
                 controller: ['modalData', function(modalData) {
                     var $ctrl = this;
                     $ctrl.modalData = modalData;
+                    $ctrl.type 
                 }],
                 controllerAs: '$ctrl',
                 resolve: {

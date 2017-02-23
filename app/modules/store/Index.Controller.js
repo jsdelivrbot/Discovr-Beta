@@ -15,7 +15,7 @@ discovrApp.controller('Store.IndexController', function(
       {name:'Store Example Name 1',
       about:'Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.',
       appraisal: 4.5,
-      id: 'HousingView',
+      id: 'StoreView',
       image: '../../assets/files/img/main/store/T1.jpg',  
       tags:[
         {tag:'wifi',name:'Wifi'},
@@ -28,7 +28,7 @@ discovrApp.controller('Store.IndexController', function(
       {name:'Store Example Name 2',
       about:'Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.',
       appraisal: 3.5,
-      id: 'HousingView',
+      id: 'StoreView',
       image: '../../assets/files/img/main/store/T2.jpg',
       tags:[
         {tag:'wifi',name:'Wifi'},
@@ -41,7 +41,7 @@ discovrApp.controller('Store.IndexController', function(
       {name:'Store Example Name 3',
       about:'Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.',
       appraisal: 2.5,
-      id: 'HousingView',
+      id: 'StoreView',
       image: '../../assets/files/img/main/store/T3.jpg',
       tags:[
         {tag:'wifi',name:'Wifi'},
@@ -54,7 +54,7 @@ discovrApp.controller('Store.IndexController', function(
       {name:'Store Example Name 4',
       about:'Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.',
       appraisal: 4.5,
-      id: 'HousingView',
+      id: 'StoreView',
       image: '../../assets/files/img/main/store/T4.jpg',
       tags:[
         {tag:'wifi',name:'Wifi'},
@@ -67,7 +67,7 @@ discovrApp.controller('Store.IndexController', function(
       {name:'Store Example Name 5',
       about:'Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.',
       appraisal: 4.6,
-      id: 'HousingView',
+      id: 'StoreView',
       image: '../../assets/files/img/main/store/T5.jpg',
       tags:[
         {tag:'wifi',name:'Wifi'},
@@ -80,7 +80,7 @@ discovrApp.controller('Store.IndexController', function(
       {name:'Store Example Name 6',
       about:'Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.',
       appraisal: 3.5,
-      id: 'HousingView',
+      id: 'StoreView',
       image: '../../assets/files/img/main/store/T6.jpg',
       tags:[
         {tag:'wifi',name:'Wifi'},
@@ -95,7 +95,7 @@ discovrApp.controller('Store.IndexController', function(
       {name:'Handicrafts Example Name 1',
       about:'Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.',
       appraisal: 4.5,
-      id: 'HousingView',
+      id: 'StoreView',
       image: '../../assets/files/img/main/store/A1.jpg',  
       tags:[
         {tag:'wifi',name:'Wifi'},
@@ -108,7 +108,7 @@ discovrApp.controller('Store.IndexController', function(
       {name:'Handicrafts Example Name 2',
       about:'Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.',
       appraisal: 3.5,
-      id: 'HousingView',
+      id: 'StoreView',
       image: '../../assets/files/img/main/store/A2.jpg',
       tags:[
         {tag:'wifi',name:'Wifi'},
@@ -121,7 +121,7 @@ discovrApp.controller('Store.IndexController', function(
       {name:'Handicrafts Example Name 3',
       about:'Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.',
       appraisal: 2.5,
-      id: 'HousingView',
+      id: 'StoreView',
       image: '../../assets/files/img/main/store/A3.jpg',
       tags:[
         {tag:'wifi',name:'Wifi'},
@@ -134,7 +134,7 @@ discovrApp.controller('Store.IndexController', function(
       {name:'Handicrafts Example Name 4',
       about:'Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.',
       appraisal: 4.5,
-      id: 'HousingView',
+      id: 'StoreView',
       image: '../../assets/files/img/main/store/A4.jpg',
       tags:[
         {tag:'wifi',name:'Wifi'},
@@ -147,7 +147,7 @@ discovrApp.controller('Store.IndexController', function(
       {name:'Handicrafts Example Name 5',
       about:'Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.',
       appraisal: 4.6,
-      id: 'HousingView',
+      id: 'StoreView',
       image: '../../assets/files/img/main/store/A5.jpg',
       tags:[
         {tag:'wifi',name:'Wifi'},
@@ -160,7 +160,7 @@ discovrApp.controller('Store.IndexController', function(
       {name:'Handicrafts Example Name 6',
       about:'Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.',
       appraisal: 3.5,
-      id: 'HousingView',
+      id: 'StoreView',
       image: '../../assets/files/img/main/store/A6.jpg',
       tags:[
         {tag:'wifi',name:'Wifi'},
@@ -175,7 +175,7 @@ discovrApp.controller('Store.IndexController', function(
       {name:'Home appliances Example Name 1',
       about:'Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.',
       appraisal: 4.5,
-      id: 'HousingView',
+      id: 'StoreView',
       image: '../../assets/files/img/main/store/E1.jpg',  
       tags:[
         {tag:'wifi',name:'Wifi'},
@@ -188,7 +188,7 @@ discovrApp.controller('Store.IndexController', function(
       {name:'Home appliances Example Name 2',
       about:'Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.',
       appraisal: 3.5,
-      id: 'HousingView',
+      id: 'StoreView',
       image: '../../assets/files/img/main/store/E2.jpg',
       tags:[
         {tag:'wifi',name:'Wifi'},
@@ -201,7 +201,7 @@ discovrApp.controller('Store.IndexController', function(
       {name:'Home appliances Example Name 3',
       about:'Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.',
       appraisal: 2.5,
-      id: 'HousingView',
+      id: 'StoreView',
       image: '../../assets/files/img/main/store/E3.jpg',
       tags:[
         {tag:'wifi',name:'Wifi'},
@@ -214,7 +214,7 @@ discovrApp.controller('Store.IndexController', function(
       {name:'Home appliances Example Name 4',
       about:'Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.',
       appraisal: 4.5,
-      id: 'HousingView',
+      id: 'StoreView',
       image: '../../assets/files/img/main/store/E4.jpg',
       tags:[
         {tag:'wifi',name:'Wifi'},
@@ -227,7 +227,7 @@ discovrApp.controller('Store.IndexController', function(
       {name:'Home appliances Example Name 5',
       about:'Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.',
       appraisal: 4.5,
-      id: 'HousingView',
+      id: 'StoreView',
       image: '../../assets/files/img/main/store/E5.jpg',
       tags:[
         {tag:'wifi',name:'Wifi'},
@@ -239,7 +239,7 @@ discovrApp.controller('Store.IndexController', function(
       ]},{name:'Home appliances Example Name 6',
       about:'Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.',
       appraisal: 4.5,
-      id: 'HousingView',
+      id: 'StoreView',
       image: '../../assets/files/img/main/store/E6.jpg',
       tags:[
         {tag:'wifi',name:'Wifi'},
@@ -254,7 +254,7 @@ discovrApp.controller('Store.IndexController', function(
       {name:'Auto Parts Example Name 1',
       about:'Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.',
       appraisal: 4.5,
-      id: 'HousingView',
+      id: 'StoreView',
       image: '../../assets/files/img/main/store/AU1.jpg',  
       tags:[
         {tag:'wifi',name:'Wifi'},
@@ -267,7 +267,7 @@ discovrApp.controller('Store.IndexController', function(
       {name:'Auto Parts Example Name 2',
       about:'Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.',
       appraisal: 3.5,
-      id: 'HousingView',
+      id: 'StoreView',
       image: '../../assets/files/img/main/store/AU2.jpg',
       tags:[
         {tag:'wifi',name:'Wifi'},
@@ -280,7 +280,7 @@ discovrApp.controller('Store.IndexController', function(
       {name:'Auto Parts Example Name 3',
       about:'Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.',
       appraisal: 2.5,
-      id: 'HousingView',
+      id: 'StoreView',
       image: '../../assets/files/img/main/store/AU3.jpg',
       tags:[
         {tag:'wifi',name:'Wifi'},
@@ -293,7 +293,7 @@ discovrApp.controller('Store.IndexController', function(
       {name:'Auto Parts Example Name 4',
       about:'Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.',
       appraisal: 4.5,
-      id: 'HousingView',
+      id: 'StoreView',
       image: '../../assets/files/img/main/store/AU4.jpg',
       tags:[
         {tag:'wifi',name:'Wifi'},
@@ -306,7 +306,7 @@ discovrApp.controller('Store.IndexController', function(
       {name:'Auto Parts Example Name 5',
       about:'Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.',
       appraisal: 4.6,
-      id: 'HousingView',
+      id: 'StoreView',
       image: '../../assets/files/img/main/store/AU5.jpeg',
       tags:[
         {tag:'wifi',name:'Wifi'},
@@ -319,7 +319,7 @@ discovrApp.controller('Store.IndexController', function(
       {name:'Auto Parts Example Name 6',
       about:'Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.',
       appraisal: 3.5,
-      id: 'HousingView',
+      id: 'StoreView',
       image: '../../assets/files/img/main/store/AU6.jpg',
       tags:[
         {tag:'wifi',name:'Wifi'},
@@ -334,7 +334,7 @@ discovrApp.controller('Store.IndexController', function(
       {name:'Medical supplies Example Name 1',
       about:'Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.',
       appraisal: 4.5,
-      id: 'HousingView',
+      id: 'StoreView',
       image: '../../assets/files/img/main/store/SM1.jpg',  
       tags:[
         {tag:'wifi',name:'Wifi'},
@@ -347,7 +347,7 @@ discovrApp.controller('Store.IndexController', function(
       {name:'Medical supplies Example Name 2',
       about:'Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.',
       appraisal: 3.5,
-      id: 'HousingView',
+      id: 'StoreView',
       image: '../../assets/files/img/main/store/SM2.JPG',
       tags:[
         {tag:'wifi',name:'Wifi'},
@@ -360,7 +360,7 @@ discovrApp.controller('Store.IndexController', function(
       {name:'Medical supplies Example Name 3',
       about:'Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.',
       appraisal: 2.5,
-      id: 'HousingView',
+      id: 'StoreView',
       image: '../../assets/files/img/main/store/SM3.png',
       tags:[
         {tag:'wifi',name:'Wifi'},
@@ -373,7 +373,7 @@ discovrApp.controller('Store.IndexController', function(
       {name:'Medical supplies Example Name 4',
       about:'Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.',
       appraisal: 4.5,
-      id: 'HousingView',
+      id: 'StoreView',
       image: '../../assets/files/img/main/store/SM4.jpg',
       tags:[
         {tag:'wifi',name:'Wifi'},
@@ -386,7 +386,7 @@ discovrApp.controller('Store.IndexController', function(
       {name:'Medical supplies Example Name 5',
       about:'Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.',
       appraisal: 4.6,
-      id: 'HousingView',
+      id: 'StoreView',
       image: '../../assets/files/img/main/store/SM5.jpg',
       tags:[
         {tag:'wifi',name:'Wifi'},
@@ -399,7 +399,7 @@ discovrApp.controller('Store.IndexController', function(
       {name:'Medical supplies Example Name 6',
       about:'Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.',
       appraisal: 3.5,
-      id: 'HousingView',
+      id: 'StoreView',
       image: '../../assets/files/img/main/store/SM6.jpg',
       tags:[
         {tag:'wifi',name:'Wifi'},

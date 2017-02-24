@@ -1,0 +1,187 @@
+.menuHome {
+    width: 100;
+    text-align: center;
+    position: relative;
+    margin-top: -50px;
+    z-index: 990;
+}
+
+.menuHome li {
+    float: left;
+    list-style: none;
+    width: 14.28%;
+    height: 50px;
+    background: rgba(31, 31, 31, 0.5);
+    color: #fff;
+    font-weight: bold;
+    vertical-align: middle;
+    padding-top: 5px;
+}
+
+.slider h4 {
+    display: none;
+}
+
+.menuHome li .circleNotifi {
+    position: relative;
+    margin-left: 20px;
+    background-color: #F99471;    
+    border-radius: 50%;
+    width: 24px;
+    height: 24px;
+    font-size: 10px;
+    padding-top: 5px;
+    display: inline-block;
+    z-index: 999;
+}
+
+.menuHome li .material-icons {
+    vertical-align: bottom;
+    margin-right: 5px;
+}
+
+#brand {
+    padding-top: 15px;
+    vertical-align: middle;
+    text-align: center;
+}
+.containerSplit {
+    width: 100%;
+}
+
+.splitL {
+    width: 50%;
+    float: left;
+    padding: 20px;
+}
+
+.splitL h2 {
+    font-weight: bold;
+    padding: 0px;
+    margin: 0px;
+    font-size: 18px;
+    margin-bottom: 10px;
+}
+
+.splitL h2 .material-icons {
+    vertical-align: bottom;
+}
+
+.TxtCont {
+    background-color: white;
+    box-shadow: 0 2px 2px 0 rgba(0,0,0,.14),0 3px 1px -2px rgba(0,0,0,.2),0 1px 5px 0 rgba(0,0,0,.12);
+    padding: 10px 20px 20px 20px;
+    display: table;
+    width: 100%;
+}
+
+.NameBus {
+    width: 80%;
+    border: 2px solid #F99471;    
+    padding: 5px;
+    margin-bottom: 10px;
+    clear: both;
+}
+
+.splitR {
+    width: 50%;
+    float: right;
+    padding: 20px;
+}
+
+#langr {
+    border-radius: 0px;
+    -webkit-border-radius: 0px;
+    -webkit-appearance: input;
+    width: 28%;
+    float: right;
+}
+
+.photoCont {
+    background-color: #a7b0ad;
+    width: 170px;
+    height: 160px;
+    margin-left: -6px;
+    margin-top: -120px;
+}
+
+#photoAd {
+    position: relative;
+    float: right;
+    margin-top: -155px;
+    margin-right: 10px;
+}
+
+.ContainerOC {
+    width: 100%;
+}
+
+.modulebar a {
+    float: left;
+    list-style: none;
+    width: 13%;
+    height: 40px;
+    background: rgba(31, 31, 31, 0.7);
+    color: #fff;
+    font-weight: bold;
+    padding: 7px;
+    margin-left: 1%;
+    margin-top: 15px;
+    text-align: center;
+    vertical-align: middle;
+    font-weight: bold;
+}
+
+.modulebar a .material-icons {
+    margin-top: -5px;
+    margin-right: 15px;
+    vertical-align: middle;
+}
+
+.modulebar a span {
+    vertical-align: top;
+}
+
+.ContainerOC .First {
+    width: 40%;
+    float: left;
+    font-weight: bold;
+}
+
+.Open {
+    width: 50%;
+    float: left;
+}
+
+.Close {
+    width: 50%;
+    float: right;
+}
+
+.timeO {
+    color: white;
+    background-color: #F99471;
+    padding: 5px;
+    display: table;
+}
+
+.Second {
+    float: right;
+    width: 59%;
+}
+
+.Laboral {
+    width: 100%;
+    padding-left: 20px;
+}
+
+.day {
+    width: 45px;
+    text-align: center;
+    background-color: #F99471;
+    color: white;
+    padding: 5px;
+    display: table;
+    float: left;
+    margin-right: 5px;
+}

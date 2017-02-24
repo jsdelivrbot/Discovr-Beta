@@ -1,387 +1,208 @@
-.menuHome{
-	width: 100;
-	text-align: center;
-	position: relative;
-	margin-top: -60px;
-	z-index: 990;
-}
-
-.menuHome li{
-	float: left;
-	list-style: none;
-	width: 14.28%;
-	height: 50px;
-	background: rgba(31, 31, 31, 0.7);
-	color: #fff;
-	font-weight: bold;
-	padding-top: 7px;
-	
-}
-
-.slider h4{
-	display: none;
-}
-
-.menuHome li div{
-	position: relative;
-	margin-top: -40px;
-	display: table;
-	margin-left: 90px;
-	border: 2px solid  #fff;
-	border-radius: 50%;
-    width: 20px;
-    min-height: 18px;
-    font-size: 11px;
-
-}
-
-.menuHome li:nth-child(1) div{
-	margin-left: 94px;
-}
-
-.menuHome li:nth-child(2) div{
-	margin-left: 92px;
-}
-
-.menuHome li:nth-child(3) div{
-	margin-left: 100px;
-}
-
-.menuHome li:nth-child(6) div{
-	margin-left: 100px;
-}
-
-
-.menuHome li .material-icons{
-	vertical-align: bottom;
-	margin-right: 5px;
-}
-
-.containerSplit{
-	width: 100%;
-}
-
-.splitL{
-	width: 50%;
-	float: left;
-	padding: 20px;
-
-}
-
-.splitL h2{
-	font-weight: bold;
-	padding: 0px;
-	margin: 0px;
-	font-size: 18px;
-	margin-bottom: 10px;
-}
-
-.splitL h2 .material-icons{
-	vertical-align: bottom;
-}
-
-.TxtCont{
-	border: 2px solid #313113;
-	padding: 10px;
-	display: table;
-	width: 100%;
-}
-
-.TxtCont p{
-	font-weight: bold;
-
-}
-
-.NameBus{
-	width: 70%;
-	border-style: none;
-	padding: 5px;
-	margin-bottom: 10px;
-	clear: both;
-}
-
-.splitR{
-	width: 50%;
-	float: right;
-	padding: 20px;
-}
-#langr{
-	border-radius: 0px;
-	-webkit-border-radius: 0px;
-	-webkit-appearance: input;    
-	width: 28%;
-	float: right;
-	margin: 15px;
-}
-#langr1{
-	border-radius: 0px;
-	-webkit-border-radius: 0px;
-	-webkit-appearance: input;    
-	width: 28%;
-	float: right;
-	margin-top: -40px;
-	margin-bottom: 10px;
-}
-#photoCont{
-	width:170px;
-	height: 160px;
-	margin-left:-6px;
-	margin-top:-130px;
-}
-#photoAd {		
-	position: relative;
-    float: right;
-    margin-top: -155px;
-    margin-right: 20px;    
-}
-.ContainerOC{
-	width: 100%;
-	
-}
-.modulebar a{
-	float: left;
-	list-style: none;
-	width: 13%;
-	height: 40px;
-	background: rgba(31, 31, 31, 0.7);
-	color: #fff;
-	font-weight: bold;
-	padding: 7px;	
-	margin-left:1%;
-	margin-top:15px;
-	text-align:center;
-	vertical-align: middle;
-	font-weight: bold;
-	
-}
-.modulebar a .material-icons{
-	margin-top:-5px;
-	margin-right:15px;
-	vertical-align: middle;
-}
-.modulebar a span{
-	vertical-align: top;
-}
-
-.ContainerOC .First{
-	width: 50%;
-	float: left;
-	font-weight: bold;
-	
-}
-
-.Open{
-	width: 50%;
-	float: left;
-}
-
-.Close{
-	width: 50%;
-	float: right;
-}
-
-.timeO{
-	border: 2px solid  #313113;
-	padding: 5px;
-	display: table;
-}
-
-.Second{
-	float: right;
-	width: 49%;
-}
-
-.Laboral{
-	width: 100%;
-	padding-left: 20px;
-}
-
-.day{
-	border: 2px solid  #313113;
-	padding: 5px;
-	display: table;
-	float: left;
-	margin-right: 5px;
-}
 /*---- Inica estilo de tarjeta de precios ----*/
+
 @import url(https://fonts.googleapis.com/css?family=Lato:700);
 body {
-  font-family: 'lato', sans-serif;
-  -webkit-font-smoothing: antialiased;
-  background: linear-gradient(35deg, #84fab0, #8fd3f4);
-  padding: 0;
-  margin: 0;
-  height: 100vh;
+	font-family: 'lato', sans-serif;
+	-webkit-font-smoothing: antialiased;
+	background: linear-gradient(35deg, #84fab0, #8fd3f4);
+	padding: 0;
+	margin: 0;
+	height: 100vh;
 }
 
 .wrapper-card {
-  display: flex;
-  flex-wrap: nowrap;
-  margin: 40px auto;
-  width: 77%;
+	display: flex;
+	flex-wrap: nowrap;
+	margin: 40px auto;
+	width: 77%;
 }
 
 .card {
-  background: #fff;
-  border-radius: 3px;
-  box-shadow: 0 1px 1px transparent;
-  flex: 1;
-  margin: 8px;
-  padding: 30px;
-  position: relative;
-  text-align: center;
-  transition: all 0.5s ease-in-out;
+	background: #fff;
+	border-radius: 3px;
+	box-shadow: 0 1px 1px transparent;
+	flex: 1;
+	margin: 8px;
+	padding: 30px;
+	position: relative;
+	text-align: center;
+	transition: all 0.5s ease-in-out;
 }
+
 .card.popular {
-  margin-top: -10px;
-  margin-bottom: -10px;
+	margin-top: -10px;
+	margin-bottom: -10px;
 }
+
 .card.popular .card-title h3 {
-  color: #3498db;
-  font-size: 22px;
+	color: #3498db;
+	font-size: 22px;
 }
+
 .card.popular .card-price {
-  margin: 50px;
+	margin: 50px;
 }
+
 .card.popular .card-price h1 {
-  color: #3498db;
-  font-size: 60px;
+	color: #3498db;
+	font-size: 60px;
 }
+
 .card.popular .card-action button {
-  background-color: #3498db;
-  border-radius: 80px;
-  color: #fff;
-  font-size: 17px;
-  margin-top: -15px;
-  padding: 15px;
-  height: 80px;
+	background-color: #3498db;
+	border-radius: 80px;
+	color: #fff;
+	font-size: 17px;
+	margin-top: -15px;
+	padding: 15px;
+	height: 80px;
 }
+
 .card.popular .card-action button:hover {
-  background-color: #2386c8;
-  font-size: 23px;
+	background-color: #2386c8;
+	font-size: 23px;
 }
+
 .card:hover {
-  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
+	box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
 }
 
 .card-ribbon {
-  position: absolute;
-  overflow: hidden;
-  top: -10px;
-  left: -10px;
-  width: 114px;
-  height: 112px;
+	position: absolute;
+	overflow: hidden;
+	top: -10px;
+	left: -10px;
+	width: 114px;
+	height: 112px;
 }
+
 .card-ribbon span {
-  position: absolute;
-  display: block;
-  width: 160px;
-  padding: 10px 0;
-  background-color: #3498db;
-  box-shadow: 0 5px 5px rgba(0, 0, 0, 0.2);
-  color: #fff;
-  font-size: 13px;
-  text-transform: uppercase;
-  text-align: center;
-  left: -35px;
-  top: 25px;
-  transform: rotate(-45deg);
+	position: absolute;
+	display: block;
+	width: 160px;
+	padding: 10px 0;
+	background-color: #3498db;
+	box-shadow: 0 5px 5px rgba(0, 0, 0, 0.2);
+	color: #fff;
+	font-size: 13px;
+	text-transform: uppercase;
+	text-align: center;
+	left: -35px;
+	top: 25px;
+	transform: rotate(-45deg);
 }
-.card-ribbon::before, .card-ribbon::after {
-  position: absolute;
-  z-index: -1;
-  content: '';
-  display: block;
-  border: 5px solid #2980b9;
-  border-top-color: transparent;
-  border-left-color: transparent;
-}
-.card-ribbon::before {
-  top: 0;
-  right: 0;
-}
+
+.card-ribbon::before,
 .card-ribbon::after {
-  bottom: 0;
-  left: 0;
+	position: absolute;
+	z-index: -1;
+	content: '';
+	display: block;
+	border: 5px solid #2980b9;
+	border-top-color: transparent;
+	border-left-color: transparent;
+}
+
+.card-ribbon::before {
+	top: 0;
+	right: 0;
+}
+
+.card-ribbon::after {
+	bottom: 0;
+	left: 0;
 }
 
 .card-title h3 {
-  color: rgba(0, 0, 0, 0.3);
-  font-size: 15px;
-  text-transform: uppercase;
+	color: rgba(0, 0, 0, 0.3);
+	font-size: 15px;
+	text-transform: uppercase;
 }
+
 .card-title h4 {
-  color: rgba(0, 0, 0, 0.6);
+	color: rgba(0, 0, 0, 0.6);
 }
 
 .card-price {
-  margin: 60px 0;
+	margin: 60px 0;
 }
+
 .card-price h1 {
-  font-size: 46px;
-  color:#f9814d;
+	font-size: 46px;
+	color: #f9814d;
 }
+
 .card-price h1 sup {
-  font-size: 15px;
-  display: inline-block;
-  margin-left: -20px;
-  width: 10px;
+	font-size: 15px;
+	display: inline-block;
+	margin-left: -20px;
+	width: 10px;
 }
+
 .card-price h1 small {
-  color: rgba(0, 0, 0, 0.3);
-  display: block;
-  font-size: 11px;
-  text-transform: uppercase;
+	color: rgba(0, 0, 0, 0.3);
+	display: block;
+	font-size: 11px;
+	text-transform: uppercase;
 }
 
 .card-description ul {
-  display: block;
-  list-style: none;
-  margin: 60px 0;
-  padding: 0;
+	display: block;
+	list-style: none;
+	margin: 60px 0;
+	padding: 0;
 }
+
 .card-description li {
-  color: rgba(0, 0, 0, 0.6);
-  font-size: 15px;
-  margin: 0 0 15px;
+	color: rgba(0, 0, 0, 0.6);
+	font-size: 15px;
+	margin: 0 0 15px;
 }
+
 .card-description li::before {
-  font-family: FontAwesome;
-  content: "\f00c";
-  padding: 0 5px 0 0;
-  color: rgba(0, 0, 0, 0.15);
+	font-family: FontAwesome;
+	content: "\f00c";
+	padding: 0 5px 0 0;
+	color: rgba(0, 0, 0, 0.15);
 }
 
 .card-action button {
-  background: transparent;
-  border: 2px solid #3498db;
-  border-radius: 30px;
-  color: #3498db;
-  cursor: pointer;
-  display: block;
-  font-size: 15px;
-  font-weight: bold;
-  padding: 20px;
-  width: 100%;
-  height: 60px;
-  text-transform: uppercase;
-  transition: all 0.3s ease-in-out;
-}
-.card-action button:hover {
-  background-color: #3498db;
-  box-shadow: 0 2px 4px #196090;
-  color: #fff;
-  font-size: 17px;
+	background: transparent;
+	border: 2px solid #3498db;
+	border-radius: 30px;
+	color: #3498db;
+	cursor: pointer;
+	display: block;
+	font-size: 15px;
+	font-weight: bold;
+	padding: 20px;
+	width: 100%;
+	height: 60px;
+	text-transform: uppercase;
+	transition: all 0.3s ease-in-out;
 }
 
+.card-action button:hover {
+	background-color: #3498db;
+	box-shadow: 0 2px 4px #196090;
+	color: #fff;
+	font-size: 17px;
+}
+
+
 /*---- Fin estilos tarjeta de precio ----*/
+
+
 /*--Estilo aplicados a Housing.view y a Store view--*/
+
 .service-section {
 	padding-top: 100px;
 }
+
 .services {
 	margin-bottom: 50px;
 }
+
 .services-content {
 	padding: 30px 30px 20px;
 	margin-top: 30px;
@@ -390,11 +211,13 @@ body {
 	display: table-cell;
 	border-radius: 0;
 	border: 1px solid #f9814d;
-	color:black;
+	color: black;
 }
-.services-content h5{
-	font-weight:bold;
+
+.services-content h5 {
+	font-weight: bold;
 }
+
 .services .icon {
 	color: #ffffff;
 	font-size: 28px;
@@ -411,24 +234,32 @@ body {
 	margin-right: -11px;
 }
 
+
 /*--Fin estilo aplicados a Housing.view--*/
+
+
 /*--Estilo aplicados a FAD.view--*/
+
 .person {
 	max-width: 300px;
 	text-align: center;
 }
+
 .person img {
 	width: 220px;
-	height:220px;
+	height: 220px;
 	margin: auto;
-	background-color:white;
+	background-color: white;
 }
+
 .person-content {
 	margin-top: 20px;
 }
+
 .person h4 {
 	font-weight: 400;
 }
+
 .person h5 {
 	color: #fc8d5d;
 	font-size: 14px;
@@ -436,14 +267,20 @@ body {
 	margin-bottom: 20px;
 	text-align: center;
 }
-.social-icons, .footer .footer-share {
+
+.social-icons,
+.footer .footer-share {
 	margin-top: 20px;
 }
-.social-icons li, .footer .footer-share li {
+
+.social-icons li,
+.footer .footer-share li {
 	display: inline-block;
 	float: none;
 }
-.social-icons a, .footer .footer-share a {
+
+.social-icons a,
+.footer .footer-share a {
 	border: 1px solid #cecece;
 	color: #8a8a8a;
 	display: block;
@@ -454,32 +291,45 @@ body {
 	text-align: center;
 	width: 32px;
 }
+
 .social-icons a:hover {
 	background-color: #fc8d5d;
 	border-color: #fc8d5d;
 	color: #fff;
 }
+
+
 /*--Fin estilo aplicados a FAD.view--*/
+
+
 /*-- Estilos aplicados a Entertainment view --*/
+
 .work img {
 	width: 240px;
 	height: 240px;
-	padding-top:15px;
+	padding-top: 15px;
 }
-.work h5, .work p, .work img {
+
+.work h5,
+.work p,
+.work img {
 	-moz-transition: all, 0.5s;
 	-o-transition: all, 0.5s;
 	-webkit-transition: all, 0.5s;
 	transition: all, 0.5s;
 }
-.work h5, .work p {
+
+.work h5,
+.work p {
 	color: #fff;
 	margin: 0;
 	opacity: 0;
 }
+
 .work span {
 	font-size: 45px;
 }
+
 .work h5 {
 	margin-bottom: 5px;
 	-moz-transform: translate3d(0, -200%, 0);
@@ -487,23 +337,28 @@ body {
 	-webkit-transform: translate3d(0, -200%, 0);
 	transform: translate3d(0, -200%, 0);
 }
+
 .work p {
 	-moz-transform: translate3d(0, 200%, 0);
 	-ms-transform: translate3d(0, 200%, 0);
 	-webkit-transform: translate3d(0, 200%, 0);
 	transform: translate3d(0, 200%, 0);
 }
+
 .work-box:hover img {
 	-moz-transform: scale(1.2);
 	-ms-transform: scale(1.2);
 	-webkit-transform: scale(1.2);
 	transform: scale(1.2);
-	z-index:3;
+	z-index: 3;
 }
+
 .work-box:hover .overlay {
 	opacity: 1;
 }
-.work-box:hover .overlay h5, .work-box:hover .overlay p {
+
+.work-box:hover .overlay h5,
+.work-box:hover .overlay p {
 	opacity: 1;
 	-moz-transform: translate3d(0, 0, 0);
 	-ms-transform: translate3d(0, 0, 0);
@@ -511,4 +366,352 @@ body {
 	transform: translate3d(0, 0, 0);
 }
 
-/*-- Fin estilos aplicados a Entertainment view --*/
+.FondoBodyIndex .carousel-indicators {
+	margin-bottom: -5px;
+	margin-left: 20px;
+}
+
+
+/*-------- NavBar ---------- */
+
+.ContenedorMenu {
+	height: 60px;
+	width: 100%;
+	z-index: 999;
+	border-bottom: 0px;
+	top: 0;
+	position: fixed;
+	background: rgba(36, 36, 36, 0.84);
+	background: -moz-linear-gradient(top, rgba(36, 36, 36, 0.84) 0%, rgba(31, 31, 31, 0.7) 15%, rgba(26, 26, 26, 0.52) 34%, rgba(26, 26, 26, 0) 88%);
+	background: -webkit-gradient(left top, left bottom, color-stop(0%, rgba(36, 36, 36, 0.84)), color-stop(15%, rgba(31, 31, 31, 0.7)), color-stop(34%, rgba(26, 26, 26, 0.52)), color-stop(88%, rgba(26, 26, 26, 0)));
+	background: -webkit-linear-gradient(top, rgba(36, 36, 36, 0.84) 0%, rgba(31, 31, 31, 0.7) 15%, rgba(26, 26, 26, 0.52) 34%, rgba(26, 26, 26, 0) 88%);
+	background: -o-linear-gradient(top, rgba(36, 36, 36, 0.84) 0%, rgba(31, 31, 31, 0.7) 15%, rgba(26, 26, 26, 0.52) 34%, rgba(26, 26, 26, 0) 88%);
+	background: -ms-linear-gradient(top, rgba(36, 36, 36, 0.84) 0%, rgba(31, 31, 31, 0.7) 15%, rgba(26, 26, 26, 0.52) 34%, rgba(26, 26, 26, 0) 88%);
+	background: linear-gradient(to bottom, rgba(36, 36, 36, 0.84) 0%, rgba(31, 31, 31, 0.7) 15%, rgba(26, 26, 26, 0.52) 34%, rgba(26, 26, 26, 0) 88%);
+	filter: progid: DXImageTransform.Microsoft.gradient( startColorstr='#242424', endColorstr='#1a1a1a', GradientType=0);
+}
+
+.ContenedorMenu nav div ul li a,
+.ContenedorMenu nav div a {
+	text-decoration: none;
+}
+
+
+/* --- CLASES PARA EL MENUS FIJO EN LA PARTE SUPERIOR  --- */
+
+.menu-fixed {
+	text-decoration: none;
+	z-index: 999;
+	top: 0;
+	position: fixed;
+	width: 100%;
+	color: #fff;
+	background: linear-gradient(to bottom, rgba(36, 36, 36, 0.84) 0%, rgba(31, 31, 31, 0.7) 0%, rgba(26, 26, 26, 0.52) 0%, rgba(26, 26, 26, 0) 0%);
+	background-color: #1b232a;
+	max-height: 50px;
+}
+
+.menu-fixed a {
+	text-decoration: none;
+	color: #fff;
+}
+
+.menu-fixed a:hover {
+	text-decoration: none;
+	color: #0091EA;
+}
+
+.menu-fixed a:active {
+	color: #0091EA;
+}
+
+.navbar-default .navbar-nav>li>a:hover {
+	color: #0091EA;
+}
+
+
+/*-------- End NavBar ---------- */
+
+
+/*------------- ESTILOS PARA EL FORMULARIO DE LOGEO --------- */
+
+#formcontent {
+	margin-right: 20px;
+	float: right;
+	width: 400px;
+	height: 270px;
+	max-height: 400px;
+	background-color: rgba(33, 33, 33, 0.7);
+	backdrop-filter: blur(5px);
+	-ms-backdrop-filter: blur(5px);
+	-webkit-backdrop-filter: blur(5px);
+	color: #000;
+	text-align: center;
+	margin-left: 10px;
+	margin-top: -210px;
+	padding-top: 10px;
+	position: relative;
+	z-index: 99;
+}
+
+#formcontent h2 {
+	color: #fff;
+	padding: 5px;
+	padding-bottom: 10px;
+	padding-top: 22px;
+}
+
+.btn-primary1 {
+	outline: 0px;
+	padding: 15px;
+	text-align: center;
+	width: 100%;
+	border-style: none;
+	background-color: #00ABC0;
+	margin: 0 auto;
+	margin-top: 10px;
+	color: #fff;
+	font-size: 17px;
+	cursor: pointer;
+	z-index: 99;
+}
+
+.btn-primary1:hover {
+	background-color: #097988;
+	color: #fff;
+}
+
+.btn-primary1:active {
+	background-color: #097988;
+	color: #fff;
+}
+
+.Register1 {
+	color: #fff;
+	font-weight: bold;
+	text-align: left;
+	padding-left: 15px;
+	padding-top: 10px;
+}
+
+
+/*------- BOTON PARA MOSTRAR O OCULTAR CONTRASEÑA*/
+
+.toggle {
+	background: none;
+	border: none;
+	color: #337ab7;
+	display: inline-block;
+	font-size: .9em;
+	font-weight: 600;
+	padding: .5em;
+	position: absolute;
+	right: 1.9em;
+	top: 3.4em;
+	z-index: 9;
+}
+
+
+/*------------- FIN ESTILOS PARA EL FORMULARIO DE LOGEO --------- */
+
+
+/*------------- ESTILOS PARA EL FORMULARIO DE REGISTRO --------- */
+
+#formsigin {
+	margin-right: 10px;
+	float: right;
+	width: 480px;
+	height: 560px;
+	max-height: 1000px;
+	background-color: rgba(33, 33, 33, 0.7);
+	backdrop-filter: blur(5px);
+	-ms-backdrop-filter: blur(5px);
+	-webkit-backdrop-filter: blur(5px);
+	color: #fff;
+	margin-left: 20px;
+	margin-top: -210px;
+	position: relative;
+	z-index: 99;
+}
+
+.form-group {
+	display: inline-block;
+	width: 228px;
+	height: 75px;
+	border: 0px;
+	padding-left: 20px;
+	padding-top: 30px;
+	padding-bottom: 30px;
+	text-align: left;
+}
+
+.form-group1 {
+	display: inline-block;
+	width: 150px;
+	height: 75px;
+	border: 0px;
+	padding-left: 20px;
+	padding-top: 30px;
+}
+
+#genre {
+	width: 90px;
+	margin-left: 40px;
+}
+
+#birdth {
+	width: 175px;
+}
+
+#tel {
+	margin-left: 40px;
+	width: 140px;
+}
+
+#terms {
+	margin-left: 10px;
+	margin-right: 5px;
+	padding-top: 30px;
+}
+
+#login {
+	padding-top: 10px;
+	text-align: center;
+}
+
+
+/*------------- FIN ESTILOS PARA EL FORMULARIO DE REGISTRO --------- */
+
+
+/*-------------------  -------------------------*/
+
+@media (min-width: 766px) {
+	#Txt1 {
+		padding-right: 35%;
+		margin-top: -22%;
+	}
+}
+
+
+/* ------------ TEXTOS EN EL BODY  ---------------------*/
+
+.ContainerText {
+	background: #936e76;
+	background: -webkit-linear-gradient(315deg, #3f4159 0%, #725767 50%, #cd908b 100%);
+	background: linear-gradient(135deg, #3f4159 0%, #725767 50%, #cd908b 100%);
+	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='$mauve', endColorstr='$blush', GradientType=1);
+	color: #fff;
+	padding: 10px;
+	padding-left: 30px;
+	padding-right: 30px;
+	width: 100%;
+	float: left;
+	margin-top: -70px;
+}
+
+.ContainerText h1,
+.ContainerText h2 {
+	font-size: 20px;
+	font-weight: bold;
+}
+
+.ImgTitleLG {
+	width: 100%;
+	height: 200px;
+}
+
+.Txt p,
+.Txt h2 {
+	text-align: center;
+	padding-right: 7%;
+	padding-left: 7%;
+}
+
+
+/* ------- ESTILOS QUE SE APLICAN CUANDO LA PAGINA TIENE UN ANCHO DE 765PX (VISTA MOBIL) -----------*/
+
+@media only screen and (max-width: 765px) {
+	 :-webkit-scrollbar {
+		width: 0px;
+		height: 0px;
+	}
+	/*----- FORMULARIO */
+	#formcontent {
+		margin-right: 0px;
+		width: 100%;
+		margin-top: 0px;
+		position: inherit;
+		margin-bottom: 70px;
+	}
+	#formsigin {
+		margin-right: 0px;
+		width: 100%;
+		margin-top: 0px;
+		position: inherit;
+		margin-bottom: 70px;
+		Display: table;
+	}
+	.inputTex {
+		width: 90%;
+	}
+	/*----- MENU */
+	.MenuLogin ul li {
+		display: block;
+		width: 100%;
+	}
+	.navbar {
+		background-color: #1b232a;
+		color: white;
+	}
+	.navbar-brand {
+		color: white;
+	}
+	.material-icons {
+		color: white;
+	}
+	.MenuLogin ul li:nth-of-type(1) {
+		padding: 0px;
+		padding-top: 10px;
+	}
+	.navbar-toggle {
+		background-color: #1b232a;
+		;
+	}
+	.navbar-default .navbar-toggle:hover,
+	.navbar-default .navbar-toggle:focus {
+		background-color: transparent;
+		color: red;
+	}
+	.navbar-default .navbar-toggle {
+		border: 0px;
+	}
+	.navbar-default .navbar-nav>.open>a,
+	.navbar-default .navbar-nav>.open>a:hover,
+	.navbar-default .navbar-nav>.open>a:focus {
+		color: blue;
+		background-color: transparent;
+	}
+	/*----- TEXTO */
+	.ContainerText {
+		width: 100%;
+		margin-top: -70px;
+	}
+	.ImgLg {
+		width: 100%;
+		margin: 0 auto;
+		text-align: center;
+	}
+	.ImgTitleLG {
+		width: 100%;
+		padding-left: 10px;
+		padding-right: 10px;
+		padding-bottom: 10px;
+		padding-top: 0px;
+	}
+	.ImgTitleLG img {
+		height: 100%;
+	}
+}
+
+
+/* ------- FIN DE LOS ESTILOS QUE SE APLICAN CUANDO LA PAGINA TIENE UN ANCHO DE 765PX (VISTA MOBIL) -----------*/

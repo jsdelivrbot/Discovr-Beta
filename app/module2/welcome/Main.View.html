@@ -1,6 +1,6 @@
 <div class="FondoBodyIndex" > <!-- CLASE CSS QUE ESTA EN INDEX.CSS -->
 	<!-- ----------------     IMPORT CSS FILES     ------------------------- -->
-	<link rel="stylesheet" href="../../assets/css/Welcome.css">
+	<link rel="stylesheet" href="../../assets/css/business/Welcome.css">
 	<!-- ----------------     END IMPORT FILES     ------------------------- -->
 	<div class="ContainerAlltoAll">
 	  <div class="ContentAnimated">
@@ -16,7 +16,7 @@
 			                <span class="icon-bar"></span>
 			            </button>
 									<!---------------- NOMBRE DE LA PAGINA-->
-			            <a class="navbar-brand" ui-sref="login">{{ 'BrandTitle' | translate }}</a>
+			            <a class="navbar-brand" ui-sref="Welcome">{{ 'BrandTitle' | translate }}</a>
 			        </div>
 			        <!---------------- OPCIONES DE LA PAGINA-->
 			        <div class="collapse navbar-collapse" uib-collapse="isNavCollapsed">
@@ -28,7 +28,7 @@
 							<li><a href="#opt5" prevent-default="" scroll-to="opt5">For Store</a></li>
 							<li><a href="#opt5" prevent-default="" scroll-to="opt6">For Institution</a></li>
 							<li><a href="#opt5" prevent-default="" scroll-to="opt7">Support</a></li>
-							<li><a ui-sref="BusinessWelcome">{{ 'MenuOpt6' | translate }}</a></li>
+							<li><a ui-sref="Welcome">About Us</a></li>
 							<!---------------- OPCION DE LENGUAGE-->
 			                <li uib-dropdown>
 								<a id="language" href="#" uib-dropdown-toggle>
@@ -60,7 +60,7 @@
 					<!---------------- PARA ACCEDER A LA PAGINA DE REGISTRO-->
 					<p class="Register">{{ 'FormText1' | translate }} <span><a ui-sref="Signup" class="SingUp">{{ 'FormText2' | translate }}</a></span></p>
 					<!---------------- BOTON PARA LOGEARSE-->
-					<input type="submit" ng-disabled="vm.loading" class="btn btn-primary1" value="{{ 'BtnLogin' | translate }}">
+					<input type="submit" ng-disabled="vm.loading"  ui-sref="BusinessHome"class="btn btn-primary1" value="{{ 'BtnLogin' | translate }}">
 					<!---------------- PARA MOSTRAR ERRORES -- NO FUNCIONAL-->
 					<div ng-if="vm.error" >{{vm.error}}</div>
 				</form>
@@ -71,13 +71,14 @@
 				<br />
 				<div class="Txt">
 					<h2>Welcome | Login</h2><br>
-					<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Vel magnam distinctio impedit debitis saepe officiis porro dolorem! Molestias aliquid natus, blanditiis autem impedit nesciunt culpa, in, a nihil explicabo</p>
+					<p> Lorem ipsum dolor sit amet, consectetur adipisicing elit. Cum impedit nam vero vitae velit deserunt ipsa amet placeat. Cupiditate ab asperiores fugiat deleniti delectus laboriosam, aliquam pariatur facilis excepturi rem. </p>
 					<br>
 					<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Esse eos maiores nam voluptatem quod nostrum voluptatibus suscipit ipsum neque doloremque tenetur, incidunt, consequuntur, voluptates eum aut est cupiditate. A, quisquam!</p>
+					<br />
 					<div ng-include src="'module2/welcome/Pay.View.html'"> </div>
 					<br />
 				</div>
-				<hr class="separator" id="opt2">
+				<hr class="separatorWhite" id="opt2">
 				<br>
 				<div class="Txt">
 					<h2 id="">For Housing</h2><br>
@@ -86,8 +87,9 @@
 					<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Esse eos maiores nam voluptatem quod nostrum voluptatibus suscipit ipsum neque doloremque tenetur, incidunt, consequuntur, voluptates eum aut est cupiditate. A, quisquam!</p>
 					<br>
 					<div ng-include src="'module2/welcome/Housing.View.html'"> </div>
+					<br />
 				</div>
-				<hr class="separator" id="opt3">
+				<hr class="separatorWhite" id="opt3">
 				<br>
 				<div class="Txt">
 					<h2>For Food and Drinks</h2><br>
@@ -96,8 +98,9 @@
 					<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Esse eos maiores nam voluptatem quod nostrum voluptatibus suscipit ipsum neque doloremque tenetur, incidunt, consequuntur, voluptates eum aut est cupiditate. A, quisquam!</p>
 					<br>
 					<div ng-include src="'module2/welcome/FAD.View.html'"> </div>
+					<br />
 				</div>
-				<hr class="separator" id="opt4">
+				<hr class="separatorWhite" id="opt4">
 				<br>
 				<div class="Txt">
 					<h2>For Entertainmen</h2><br>
@@ -106,8 +109,9 @@
 					<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Esse eos maiores nam voluptatem quod nostrum voluptatibus suscipit ipsum neque doloremque tenetur, incidunt, consequuntur, voluptates eum aut est cupiditate. A, quisquam!</p>
 					<br>
 					<div ng-include src="'module2/welcome/Entertainment.View.html'"> </div>
+					<br />
 				</div>
-				<hr class="separator" id="opt5">
+				<hr class="separatorWhite" id="opt5">
 				<br>
 				<div class="Txt">
 					<h2>For Store</h2><br>
@@ -117,7 +121,7 @@
 					<br>
 					<div ng-include src="'module2/welcome/Store.View.html'"> </div>
 				</div>
-				<hr class="separator" id="opt6">
+				<hr class="separatorWhite" id="opt6">
 				<br>
 				<div class="Txt">
 					<h2>For Institution</h2><br>

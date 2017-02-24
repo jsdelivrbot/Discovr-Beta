@@ -82,35 +82,46 @@ discovrApp.controller('Login.IndexController', function(
     $scope.noWrapSlides = false;
     $scope.active = 0;
     var slides = $scope.slides = [{
-            image: '../../assets/files/img/main/slider/1.jpg',
+            image: '../../assets/files/img/main/welcome/slider/1.jpg',
             id: 0,
             name: "Esto es un Nombre de Ejemplo"
         },
         {
-            image: '../../assets/files/img/main/slider/2.jpg',
+            image: '../../assets/files/img/main/welcome/slider/2.jpg',
             id: 1,
             name: "Esto es un Nombre de Ejemplo"
         },
         {
-            image: '../../assets/files/img/main/slider/3.jpg',
+            image: '../../assets/files/img/main/welcome/slider/3.jpg',
             id: 2,
             name: "Esto es un Nombre de Ejemplo"
         },
         {
-            image: '../../assets/files/img/main/slider/4.jpg',
+            image: '../../assets/files/img/main/welcome/slider/4.jpg',
             id: 3,
             name: "Esto es un Nombre de Ejemplo"
         },
         {
-            image: '../../assets/files/img/main/slider/5.jpg',
+            image: '../../assets/files/img/main/welcome/slider/5.jpg',
             id: 4,
             name: "Esto es un Nombre de Ejemplo"
         },
         {
-            image: '../../assets/files/img/main/slider/6.jpg',
+            image: '../../assets/files/img/main/welcome/slider/6.jpg',
             id: 5,
             name: "Esto es un Nombre de Ejemplo"
+        },
+        {
+            image: '../../assets/files/img/main/welcome/slider/7.jpg',
+            id: 6,
+            name: "Esto es un Nombre de Ejemplo"
+        },
+        {
+            image: '../../assets/files/img/main/welcome/slider/8.jpg',
+            id: 7,
+            name: "Esto es un Nombre de Ejemplo"
         }
+        
     ];
 
     /*-------------------------------------------------------------------------------------------------*/
